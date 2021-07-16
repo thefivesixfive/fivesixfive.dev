@@ -4,6 +4,8 @@ a,p { margin: 0; }
 html, body {
     margin: 0;
     height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Shared Navbar / Footer */
@@ -26,17 +28,21 @@ html, body {
     padding: 10px 30px;
     /* Font Settings */
     font-family: "DM Serif Text", serif;
-    font-size: 17px;
-    color: #bf0576ff;
+    font-size: 15px;
+    color:#bf0576ff;
     text-decoration: none;
     /* Animation */
     transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
+    -webkit-transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
 }
+.navbarr {
+    float: right !important;
+}
+/* Navbar Effects */
 .navbar a:hover {
     color: #ffffff;
     background-color: #bf0576ff;
 }
-
 /* Footer */
 .footer {
     /* Positioning */
@@ -54,12 +60,13 @@ html, body {
 .footer a {
     /* Font Settings */
     text-decoration: none;
-    color: #F238A9;
+    color: #bf0576ff;
     font-weight: 600;
 }
 
 /* All Pages */
-.frontpage, .aboutpage {
+#frontpage, #aboutpage {
+    z-index: 1;
     /* Sizing */
     height: 100vh;
     width: 100vw;
@@ -69,8 +76,7 @@ html, body {
 }
 
 /* Front Page */
-.frontpage {
-    z-index: 1;
+#frontpage {
     /* Color */
     background-color:#bf0576ff;
     /* Align Children */
@@ -86,16 +92,47 @@ html, body {
 }
 .frontpagelinks a {
     /* Spacing */
-    margin-right: 1%;
+    margin-right: 3vw;
     /* Font Settings */
     font-family: "DM Serif Text", serif;
     font-size: 1.5em;
     color: #E8A4CD;
-    /* Link Settings */
     text-decoration: none;
     /* Animation */
     transition: color 0.33s ease-in-out;
+    -webkit-transition: color 0.33s ease-in-out;;
 }
 .frontpagelinks a:hover {
     color: #F9E8F3;
+}
+
+/* About Page */
+#aboutpage {
+    /* Color */
+    background-color:#ffffff;
+    /* Align Children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutpagecontent {
+    /* Padding */
+    margin: 5vw;
+}
+.aboutpagecontent p {
+    /* Font Settings */
+    font-family: "DM Sans", serif;
+    font-size: 1.25em;
+    line-height: 2em;
+    color: #000000;
+    /* Spacing */
+    margin: 2vh;
+}
+.aboutpagequote {
+    /* Spacing */
+    padding-right: 10vw;
+    /* Background Settings */
+    background-image: url("/static/img/quote.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
 }
