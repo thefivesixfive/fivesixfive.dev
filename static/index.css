@@ -58,9 +58,14 @@ html, body {
     font-weight: 600;
 }
 
-
-.navbar:a {
-    color: black;
+/* All Pages */
+.frontpage, .aboutpage {
+    /* Sizing */
+    height: 100vh;
+    width: 100vw;
+    min-height: 100vmin;
+    min-width: 100vw;
+    max-width: 100vw;
 }
 
 /* Front Page */
@@ -68,12 +73,6 @@ html, body {
     z-index: 1;
     /* Color */
     background-color:#bf0576ff;
-    /* Sizing */
-    height: 100vh;
-    width: 100vw;
-    min-height: 100vmin;
-    min-width: 100vw;
-    max-width: 100vw;
     /* Align Children */
     display: flex;
     justify-content: center;
