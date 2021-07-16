@@ -1,0 +1,70 @@
+/* CSS Clear */
+a,p { margin: 0; }
+/* Fit to Entire Page */
+html, body {
+    margin: 0;
+    height: 100%;
+}
+/* Front Page */
+.frontpage {
+    /* Layering */
+    z-index: 1;
+    /* Color */
+    background-color:#bf0576ff;
+    /* Sizing */
+    min-height: 100vmin;
+    height: 100vmin;
+    max-height: 100vmin;
+
+    min-width: 100vw;
+    width: 100vw;
+    max-width: 100vw;
+    /* Align Children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frontpagetitle {
+    /* Font Settings */
+    font-family: "DM Serif Display", serif;
+    font-size: 4em;
+    color: white;
+}
+.frontpagelink {
+    /* Spacing */
+    padding-right: 2%;
+    /* Font Settings */
+    font-family: "DM Serif Text", serif;
+    font-size: 1.5em;
+    color: #E8A4CD;
+    /* Link Settings */
+    text-decoration: none;
+    /* Animation */
+    transition: color 0.33s ease-in-out;
+}
+.frontpagelink:hover {
+    color: #F9E8F3;
+}
+
+/* Footer */
+.header {
+    /* Layering */
+    z-index: 7;
+    /* Positioning */
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* Sizing */
+    width: 100vw;
+    /* Coloring */
+    background-color: white;
+}
+.headertext {
+    /* Font Settings */
+    color: black;
+    font-family: "DM Mono", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    /* Spacing */
+    padding: 0.5%;
+}
