@@ -1,0 +1,18 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+/* Front Page */
+.frontpage {
+    /* Sizing */
+    height: 100%;
+    width: 100%;
+    /* Coloring */
+    background-color:#bf0576;
+}
+/* Title */
+.frontpagetitle {
+    /* Fix Spacing */
+    margin: 0;
+}
+
