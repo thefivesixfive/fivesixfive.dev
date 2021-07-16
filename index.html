@@ -7,37 +7,68 @@
         <link rel="stylesheet" href="/static/index.css">
         <!-- Tab Appearance -->
         <title>fivesixfive's site</title>
-        <link rel="icon" type="image/png" href="/static/img/favicon.png">
+        <link rel="icon" type="image/png" href="/static/img/logo.png">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans&family=DM+Serif+Display&family=DM+Serif+Text&display=swap" rel="stylesheet">
         <!-- Other Resources -->
-        <link href="/static/front-page-text.txt">
-        
+        <link href="/static/front-page-text.txt">       
     </head>
     <!-- Body Content -->
     <body>
+        <!-- Navigation Bar -->
+        <div class=navbar>
+            <a href="#frontpage">HOME</a>
+            <a href="#aboutpage">ABOUT</a>
+            <!-- Off-site -->
+            <a class="navbarr" target="_blank" rel="noopener noreferrer" href="https://github.com/thefivesixfive">GITHUB</a>
+            <a class="navbarr" target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">DISCORD</a>
+            <a class="navbarr" target="_blank" rel="noopener noreferrer" href="https://twitch.tv/fivesixfive">TWITCH</a>        
+            <a class="navbarr" target="_blank" rel="noopener noreferrer" href="https://youtube.com/fivesixfive?sub_confirmation=1">YOUTUBE</a>
+            
+        </div>
+
         <!-- Title Page -->
-        <div class=frontpage>
+        <div id=frontpage>
             <!-- Page Content -->
             <div class=frontpagecontent>
-                <p class=frontpagetitle>
-                    greetings, fivesixfive here.
-                </p>
+                <p>greetings, fivesixfive here.</p>
                 <div class=frontpagelinks>
-                    <a class=frontpagelink href="https://youtube.com/fivesixfive?sub_confirmation=1">YouTube</a>
-                    <a class=frontpagelink href="https://twitch.tv/fivesixfive">Twitch</a>
-                    <a class=frontpagelink href="https://twitter.com/thefivesixfive">Twitter</a>
-                    <a class=frontpagelink href="https://github.com/thefivesixfive">GitHub</a>
+                    
+                </div>
+                <div class=frontpagelinks>
+                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/thefivesixfive">@thefivesixfive</a>
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <div class=header>
-            <p class=headertext>
-                This site is a work in progress.
-                Email contact@fivesixfive.dev for questions or comments.</p>
+        <!-- About -->
+        <div id=aboutpage>
+            <!-- Page Content -->
+            <div class=aboutpagecontent>
+                <p>
+                    I'm Caleb "fivesixfive" North, preferrably known as a programmer who makes 
+                    videos about programming. I provide clean, entertaining, and sometimes stupid
+                    content. I publish my videos on YouTube and occasionally livestream on Twitch.
+                    I've worked heavily with Python for an upwards of six years to make various
+                    softwares and Discord bots. I even made a game on the side, which is my 
+                    personal favorite project. 
+                </p>
+                <p>I'm also a Christian, but not the Bible-thumping kind.</p>
+                <p class="aboutpagequote">
+                    There is a certain branch of Christianity that has so effectively
+                    hijacked the word "Christian" that I feel uncomfortable sometimes 
+                    using it to describe myself. But I am a Christian.<br></newline>-John Green
+                </p>
             </div>
+        </div>
+        <!-- Footer -->
+        <div class=footer>
+            <p>
+                This site is a work in progress.
+                Email <a href="mailto:contact@fivesixfive.dev?subject=Feedback">contact@fivesixfive.dev</a>
+                for questions or comments.
+            </p>
+        </div>
     </body>
 </html>
