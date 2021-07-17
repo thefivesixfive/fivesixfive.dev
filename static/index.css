@@ -1,5 +1,8 @@
+/* Smoothing */
+* { scroll-behavior: smooth; }
 /* CSS Clear */
 a,p { margin: 0; }
+
 /* Fit to Entire Page */
 html, body {
     margin: 0;
