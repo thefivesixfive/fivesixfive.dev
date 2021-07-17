@@ -19,7 +19,7 @@ html, body {
     left: 0;
     width: 100vw;
     /* Coloring */
-     background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 /* Navbar */
@@ -28,7 +28,7 @@ html, body {
     /* Positioning */
     float: left;
     text-align: center;
-    padding: 10px 30px;
+    padding: 0.75vh 1vw;
     /* Font Settings */
     font-family: "DM Serif Text", serif;
     font-size: 15px;
