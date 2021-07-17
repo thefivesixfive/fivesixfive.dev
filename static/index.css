@@ -4,24 +4,20 @@
 a,p { margin: 0; }
 
 /* Fit to Entire Page */
-html, body {
+body {
     margin: 0;
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
-body {
-    position: fixed;
-}
 
 /* Shared Navbar / Footer */
 #stickyfooter, #navbar {
-    z-index: 1;
+    z-index: 2;
     /* Positioning */
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 100%;
-    overflow-x: hidden;
     /* Coloring */
     background-color: #ffffff;
 }
