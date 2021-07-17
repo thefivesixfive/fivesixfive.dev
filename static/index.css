@@ -10,21 +10,25 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+body {
+    position: fixed;
+}
 
 /* Shared Navbar / Footer */
-.footer, .navbar {
-    z-index: 2;
+#stickyfooter, #navbar {
+    z-index: 1;
     /* Positioning */
     position: absolute;
     left: 0;
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
     /* Coloring */
     background-color: #ffffff;
 }
 
 /* Navbar */
-.navbar { top: 0; }
-.navbar a {
+#navbar { top: 0; }
+#navbar a {
     /* Positioning */
     float: left;
     text-align: center;
@@ -42,16 +46,16 @@ html, body {
     float: right !important;
 }
 /* Navbar Effects */
-.navbar a:hover {
+#navbar a:hover {
     color: #ffffff;
     background-color: #bf0576ff;
 }
 /* Footer */
-.footer {
+#stickyfooter {
     /* Positioning */
     bottom: 0;
 }
-.footer p {
+#stickyfooter p {
     /* Font Settings */
     color: #000000;
     font-family: "DM Mono", sans-serif;
