@@ -164,7 +164,7 @@ body {
     /* Spacing */
     padding-right: 10vw;
     /* Background Settings */
-    background-image: url("/static/img/quote.png");
+    background-image: url("/images/quote.png");
     background-repeat: no-repeat;
     background-size: contain; 
 }
