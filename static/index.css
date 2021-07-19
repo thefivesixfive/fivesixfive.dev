@@ -1,5 +1,17 @@
 /* Smoothing */
 * { scroll-behavior: smooth; }
+/* Animation */
+a { 
+    /* Animation */
+    transition: color 0.33s ease-in-out;
+    -webkit-transition: color 0.33s ease-in-out;
+}
+.centered {
+    /* Sizing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* CSS Clear */
 a,p { margin: 0; }
 
@@ -12,18 +24,16 @@ body {
 }
 
 /* Shared Navbar / Footer */
-#stickyfooter, #navbar {
+#navbar {
     z-index: 2;
     /* Positioning */
     position: fixed;
     left: 0;
+    top: 0;
     width: 100%;
     /* Coloring */
     background-color: #ffffff;
 }
-
-/* Navbar */
-#navbar { top: 0; }
 #navbar a {
     /* Positioning */
     float: left;
@@ -46,25 +56,49 @@ body {
     color: #ffffff;
     background-color: #bf0576ff;
 }
-/* Footer */
-#stickyfooter {
+
+/* True Footer */
+#footer {
     /* Positioning */
-    bottom: 0;
+    /* Sizing */
+    width: 100%;
+    height: 20vh;
+    /* Coloring */
+    background-color: #000000;
 }
-#stickyfooter p {
+#footer ul {
+    /* Set Spacing */
+    padding: 0;
+    /* Positioning */
+    position: relative;
+    top: 2vh;
+    left: 2vw;
+    /* Decoration */
+    list-style: none;  
     /* Font Settings */
-    color: #000000;
-    font-family: "DM Mono", sans-serif;
+    font-family: "DM Serif Text", serif; 
+}
+#footer ul p {
+    font-size: 1.25em;
+    color: #ffffff;
+}
+#footer ul a {
+    /* Font Settings */
+    font-family: "DM Serif Text", serif;
     font-size: 1em;
-    text-align: center;
-    /* Spacing */
-    padding: 0.5%;
-}
-.footer a {
-    /* Font Settings */
     text-decoration: none;
-    color: #bf0576ff;
-    font-weight: 600;
+    color: #ffffff; 
+}
+#footer ul a:hover {
+    color: #E8A4CD;
+}
+#copyright {
+    /* Sizing */
+    margin-top: 4vh;
+    /* Font Settings */
+    font-family: "DM Serif Text", serif;
+    font-size: 1em;
+    color: #bbbbbb; 
 }
 
 /* All Pages */
@@ -82,30 +116,29 @@ body {
 #frontpage {
     /* Color */
     background-color:#bf0576ff;
-    /* Align Children */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.frontpagecontent p {
+#frontpagecontent p {
     /* Font Settings */
     font-family: "DM Serif Display", serif;
     font-size: 5em;
     color: #ffffff;
 }
-.frontpagelinks a {
+#frontpagelinks a {
     /* Spacing */
     margin-right: 3vw;
+    float: left;
     /* Font Settings */
     font-family: "DM Serif Text", serif;
     font-size: 1.5em;
     color: #E8A4CD;
     text-decoration: none;
-    /* Animation */
-    transition: color 0.33s ease-in-out;
-    -webkit-transition: color 0.33s ease-in-out;;
 }
-.frontpagelinks a:hover {
+#frontpagelinks #contentstatus {
+    /* Spacing */
+    margin-right: 0;
+    float: right;
+}
+#frontpagelinks a:hover {
     color: #F9E8F3;
 }
 
@@ -113,16 +146,12 @@ body {
 #aboutpage {
     /* Color */
     background-color:#ffffff;
-    /* Align Children */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.aboutpagecontent {
+#aboutpagecontent {
     /* Padding */
     margin: 5vw;
 }
-.aboutpagecontent p {
+#aboutpagecontent p {
     /* Font Settings */
     font-family: "DM Sans", serif;
     font-size: 1.25em;
@@ -131,7 +160,7 @@ body {
     /* Spacing */
     margin: 2vh;
 }
-.aboutpagequote {
+#aboutpagequote {
     /* Spacing */
     padding-right: 10vw;
     /* Background Settings */
