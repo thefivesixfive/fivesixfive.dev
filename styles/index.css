@@ -145,11 +145,14 @@ body {
 /* About Page */
 #aboutpage {
     /* Color */
-    background-color:#ffffff;
+    background-color: #ffffff
 }
 #aboutpagecontent {
     /* Padding */
-    margin: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 5vw;
+    background-color: #F9E8F3;
 }
 #aboutpagecontent p {
     /* Font Settings */
@@ -157,6 +160,7 @@ body {
     font-size: 1.25em;
     line-height: 2em;
     color: #000000;
+    text-align: justify;
     /* Spacing */
     margin: 2vh;
 }
