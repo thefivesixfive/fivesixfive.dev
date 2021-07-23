@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <!-- Stylesheet -->
         <link rel="stylesheet" href="/styles/index.css">
+        <!-- <link rel="stylesheet" href="/styles/index_mobile.css"> -->
         <!-- Texts -->
         <link href="/texts/front-page-about.txt">
         <link href="/texts/front-page-quote.txt">
@@ -27,27 +28,44 @@
     <!-- Body Content -->
     <body>
         <!-- Navigation Bar -->
-        <div id=navbar>
+        <div class=centered id=navbar>
             <a href="#frontpage">HOME</a>
+            <a href="#linkspage">LINKS</a>
             <a href="#aboutpage">ABOUT</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://cash.app/$fivesixfive">DONATE</a>
-            <!-- Off-site -->
-            <a class="navbarr" target="_blank" rel="noopener noreferrer" href="https://github.com/thefivesixfive">GITHUB</a>
-            <a class="navbarr" target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">DISCORD</a>
-            <a class="navbarr" target="_blank" rel="noopener noreferrer" href="https://twitch.tv/fivesixfive">TWITCH</a>        
-            <a class="navbarr" target="_blank" rel="noopener noreferrer" href="https://youtube.com/fivesixfive?sub_confirmation=1">YOUTUBE</a>     
         </div>
         <!-- Title Page -->
         <div class=centered id=frontpage>
             <!-- Page Content -->
             <div id=frontpagecontent>
                 <p>greetings, fivesixfive here.</p>
-                <div id=frontpagelinks>
-                    <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">@thefivesixfive</a>
-                    <a id=contentstatus target="_blank" rel="noopener noreferrer" href="https://youtu.be/syfQVHMAAKQ">Most Recent Video</a>
+                <div class=centered id=frontpagelinks>
+                    <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">@thefivesixfive</>
+                    <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/syfQVHMAAKQ">Most Recent Video</a>
                 </div>
             </div>
         </div>
+
+        <!-- Links Page -->
+        <div id=linkspage>
+            <!-- Page Content -->
+            <div id=linkspagecontent>
+                <!-- YouTube -->
+                <div class="centered linkspagelink">
+                    <a class=site target="_blank" rel="noopener noreferrer" href="https://youtube.com/fivesixfive?sub_confirmation=1">YouTube</a>     
+                    <p class=sitedesc>Where the bulk of my content is</p>
+                </div>
+                <!-- Twitch -->
+                <div class="centered linkspagelink">
+                    <a class=site target="_blank" rel="noopener noreferrer" href="https://twitch.tv/fivesixfive">Twitch</a>
+                    <p class=sitedesc>I stream games occasionally</p>
+                </div>
+                <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">Instagram</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/thefivesixfive">GitHub</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">Discord</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://cash.app/$fivesixfive">Donate</a>
+            </div>
+        </div>
+
         <!-- About -->
         <div class=centered id=aboutpage>
             <!-- Page Content -->

@@ -21,6 +21,7 @@ body {
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    background-color: white;
 }
 
 /* Shared Navbar / Footer */
@@ -102,7 +103,7 @@ body {
 }
 
 /* All Pages */
-#frontpage, #aboutpage {
+#frontpage, #linkspage, #aboutpage {
     z-index: 1;
     /* Sizing */
     height: 100vh;
@@ -125,21 +126,52 @@ body {
 }
 #frontpagelinks a {
     /* Spacing */
-    margin-right: 3vw;
+    margin: 3vw;
     float: left;
     /* Font Settings */
     font-family: "DM Serif Text", serif;
-    font-size: 1.5em;
+    font-size: 1.75em;
     color: #E8A4CD;
     text-decoration: none;
 }
-#frontpagelinks #contentstatus {
-    /* Spacing */
-    margin-right: 0;
-    float: right;
-}
 #frontpagelinks a:hover {
     color: #F9E8F3;
+}
+
+/* Links Page */
+#linkspage {
+    /* Color */
+    background-color: #ffffff;
+}
+#linkspagecontent {
+    /* Padding */
+    padding: 5%;
+}
+.linkspagelink {
+    /* Sizing */
+    align-items: baseline !important;
+
+}
+.linkspagelink .site {
+    /* Font Settings */
+    font-family: "DM Serif Text", serif;
+    font-size: 3em;
+    text-decoration-color: #00000000;
+    color: #bf0576ff;
+    /* Animation */
+    transition: text-decoration-color 0.33s ease-in-out;
+    -webkit-transition: text-decoration-color 0.33s ease-in-out;
+}
+.linkspagelink .site:hover {
+    text-decoration: underline;
+}
+.linkspagelink .sitedesc {
+    /* Font Settings */
+    font-family: "DM Serif Text", serif;
+    color: #E8A4CD;
+    font-size: 2em;
+    /* Spacing */
+    padding-left: 0.5%;
 }
 
 /* About Page */
@@ -152,7 +184,7 @@ body {
     margin-left: 5vw;
     margin-right: 5vw;
     padding: 5vw;
-    background-color: #F9E8F3;
+    background-color: #F9E8F3
 }
 #aboutpagecontent p {
     /* Font Settings */
