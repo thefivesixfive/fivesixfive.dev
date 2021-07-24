@@ -33,7 +33,7 @@ body {
     top: 0;
     width: 100%;
     /* Coloring */
-    background-color: #ffffff;
+    background-color: #bf0576ff;
 }
 #navbar a {
     /* Positioning */
@@ -43,7 +43,7 @@ body {
     /* Font Settings */
     font-family: "DM Serif Text", serif;
     font-size: 15px;
-    color:#bf0576ff;
+    color:#ffffff;
     text-decoration: none;
     /* Animation */
     transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
@@ -54,8 +54,8 @@ body {
 }
 /* Navbar Effects */
 #navbar a:hover {
-    color: #ffffff;
-    background-color: #bf0576ff;
+    color: #bf05bf;
+    background-color: #ffffff;
 }
 
 /* True Footer */
