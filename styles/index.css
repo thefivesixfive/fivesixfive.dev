@@ -84,7 +84,7 @@ body {
 .linkspagelink .site {
     /* Font Settings */
     font-family: "DM Serif Text", serif;
-    font-size: 4em;
+    font-size: 4.125em;
     text-decoration-color: #00000000;
     color: #bf0576ff;
     /* Animation */
@@ -98,7 +98,7 @@ body {
     /* Font Settings */
     font-family: "DM Serif Text", serif;
     color: #E8A4CD;
-    font-size: 2em;
+    font-size: 2.125em;
     /* Spacing */
     padding-left: 2%;
 }
