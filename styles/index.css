@@ -48,7 +48,9 @@ body {
 }
 #frontpagelinks a {
     /* Spacing */
-    margin: 3vw;
+    margin-top: 1.5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
     float: left;
     /* Font Settings */
     font-family: "DM Serif Text", serif;
