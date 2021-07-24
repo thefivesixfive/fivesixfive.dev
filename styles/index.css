@@ -24,84 +24,6 @@ body {
     background-color: white;
 }
 
-/* Shared Navbar / Footer */
-#navbar {
-    z-index: 2;
-    /* Positioning */
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Coloring */
-    background-color: #bf0576ff;
-}
-#navbar a {
-    /* Positioning */
-    float: left;
-    text-align: center;
-    padding: 0.75vh 1vw;
-    /* Font Settings */
-    font-family: "DM Serif Text", serif;
-    font-size: 15px;
-    color:#ffffff;
-    text-decoration: none;
-    /* Animation */
-    transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
-    -webkit-transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
-}
-.navbarr {
-    float: right !important;
-}
-/* Navbar Effects */
-#navbar a:hover {
-    color: #bf05bf;
-    background-color: #ffffff;
-}
-
-/* True Footer */
-#footer {
-    /* Positioning */
-    /* Sizing */
-    width: 100%;
-    height: 20vh;
-    /* Coloring */
-    background-color: #000000;
-}
-#footer ul {
-    /* Set Spacing */
-    padding: 0;
-    /* Positioning */
-    position: relative;
-    top: 2vh;
-    left: 2vw;
-    /* Decoration */
-    list-style: none;  
-    /* Font Settings */
-    font-family: "DM Serif Text", serif; 
-}
-#footer ul p {
-    font-size: 1.25em;
-    color: #ffffff;
-}
-#footer ul a {
-    /* Font Settings */
-    font-family: "DM Serif Text", serif;
-    font-size: 1em;
-    text-decoration: none;
-    color: #ffffff; 
-}
-#footer ul a:hover {
-    color: #E8A4CD;
-}
-#copyright {
-    /* Sizing */
-    margin-top: 4vh;
-    /* Font Settings */
-    font-family: "DM Serif Text", serif;
-    font-size: 1em;
-    color: #bbbbbb; 
-}
-
 /* All Pages */
 #frontpage, #linkspage, #aboutpage {
     z-index: 1;
@@ -126,7 +48,9 @@ body {
 }
 #frontpagelinks a {
     /* Spacing */
-    margin: 3vw;
+    margin-top: 1.5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
     float: left;
     /* Font Settings */
     font-family: "DM Serif Text", serif;
@@ -146,9 +70,9 @@ body {
 #linkspagecontent {
     width: 100%;
     /* Spacing */
-    padding: 15vw;
+    padding-left: 25vw;
+    padding-right: 25vw;
 }
-
 .linkspagelink {
     /* Spacing */
     display: flex;
@@ -174,7 +98,7 @@ body {
     /* Font Settings */
     font-family: "DM Serif Text", serif;
     color: #E8A4CD;
-    font-size: 2em;
+    font-size: 2.125em;
     /* Spacing */
     padding-left: 2%;
 }
