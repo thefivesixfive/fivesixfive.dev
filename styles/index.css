@@ -13,7 +13,7 @@ a {
     align-items: center;
 }
 /* CSS Clear */
-a,p { margin: 0; }
+a,p,ul { margin: 0; }
 
 /* Fit to Entire Page */
 body {
@@ -25,7 +25,8 @@ body {
 }
 
 /* All Pages */
-#frontpage, #linkspage, #aboutpage {
+#frontpage, #linkspage, 
+#aboutpage, #donatepage {
     z-index: 1;
     /* Sizing */
     height: 100vh;
@@ -80,7 +81,7 @@ body {
     align-items: baseline !important;
     /* Sizing */
     width: 100%;
-}
+} 
 .linkspagelink .site {
     /* Font Settings */
     font-family: "DM Serif Text", serif;
@@ -92,7 +93,7 @@ body {
     -webkit-transition: text-decoration-color 0.33s ease-in-out;
 }
 .linkspagelink .site:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 .linkspagelink .sitedesc {
     /* Font Settings */
@@ -133,3 +134,5 @@ body {
     background-repeat: no-repeat;
     background-size: contain; 
 }
+
+/* Donation Page */
