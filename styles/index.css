@@ -136,3 +136,12 @@ body {
 }
 
 /* Donation Page */
+#donatepage {
+    /* Color */
+    background-color:#ffffff;
+    /* Sizing */
+    z-index: 1;
+    height: 50vh !important;
+    min-height: 50vmin !important;
+    /* Font Settings */
+}
