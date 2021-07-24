@@ -144,18 +144,23 @@ body {
     background-color: #ffffff;
 }
 #linkspagecontent {
-    /* Padding */
-    padding: 5%;
+    width: 100%;
+    /* Spacing */
+    padding: 15vw;
 }
-.linkspagelink {
-    /* Sizing */
-    align-items: baseline !important;
 
+.linkspagelink {
+    /* Spacing */
+    display: flex;
+    justify-content: left;
+    align-items: baseline !important;
+    /* Sizing */
+    width: 100%;
 }
 .linkspagelink .site {
     /* Font Settings */
     font-family: "DM Serif Text", serif;
-    font-size: 3em;
+    font-size: 4em;
     text-decoration-color: #00000000;
     color: #bf0576ff;
     /* Animation */
@@ -171,7 +176,7 @@ body {
     color: #E8A4CD;
     font-size: 2em;
     /* Spacing */
-    padding-left: 0.5%;
+    padding-left: 2%;
 }
 
 /* About Page */
