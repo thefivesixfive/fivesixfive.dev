@@ -70,9 +70,9 @@ body {
 #linkspagecontent {
     width: 100%;
     /* Spacing */
-    padding: 15vw;
+    padding-left: 25vw;
+    padding-right: 25vw;
 }
-
 .linkspagelink {
     /* Spacing */
     display: flex;
