@@ -26,7 +26,7 @@ body {
 
 /* All Pages */
 #frontpage, #linkspage, 
-#aboutpage, #donatepage {
+#aboutpage, #specspage {
     z-index: 1;
     /* Sizing */
     height: 100vh;
@@ -34,6 +34,8 @@ body {
     min-height: 100vmin;
     min-width: 100vw;
     max-width: 100vw;
+    /* Positioning */
+    position: relative;
 }
 
 /* Front Page */
@@ -104,6 +106,42 @@ body {
     padding-left: 2%;
 }
 
+/* Specs page */
+#specspage {
+    /* Background Image */
+    background-color: #ffffff;
+    background-image: url("/images/computer.jpeg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 120% 120%;
+}
+#specspagecontent {
+    /* Padding */
+    background-color: #F9E8F3
+}
+.spec {
+    /* Positioning */
+    position: absolute;
+    /* Font Settings */
+    font-family: "DM Mono";
+    font-size: 150%;
+    /* Coloring */
+    color: #ffffff;
+    background-color: #bf0576ff;
+    /* Padding */
+    padding: 1%;
+}
+#cpu {
+    /* Positioning */
+    top: 25%;
+    left: 26%;
+}
+#gpu {
+    /* Positioning */
+    top: 58%;
+    left: 21.5%;
+}
+
 /* About Page */
 #aboutpage {
     /* Color */
@@ -133,15 +171,4 @@ body {
     background-image: url("/images/quote.png");
     background-repeat: no-repeat;
     background-size: contain; 
-}
-
-/* Donation Page */
-#donatepage {
-    /* Color */
-    background-color:#ffffff;
-    /* Sizing */
-    z-index: 1;
-    height: 50vh !important;
-    min-height: 50vmin !important;
-    /* Font Settings */
 }
