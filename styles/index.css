@@ -13,7 +13,7 @@ a {
     align-items: center;
 }
 /* CSS Clear */
-a,p { margin: 0; }
+a,p,ul { margin: 0; }
 
 /* Fit to Entire Page */
 body {
@@ -25,7 +25,8 @@ body {
 }
 
 /* All Pages */
-#frontpage, #linkspage, #aboutpage {
+#frontpage, #linkspage, 
+#aboutpage, #specspage {
     z-index: 1;
     /* Sizing */
     height: 100vh;
@@ -33,6 +34,8 @@ body {
     min-height: 100vmin;
     min-width: 100vw;
     max-width: 100vw;
+    /* Positioning */
+    position: relative;
 }
 
 /* Front Page */
@@ -80,7 +83,7 @@ body {
     align-items: baseline !important;
     /* Sizing */
     width: 100%;
-}
+} 
 .linkspagelink .site {
     /* Font Settings */
     font-family: "DM Serif Text", serif;
@@ -92,7 +95,7 @@ body {
     -webkit-transition: text-decoration-color 0.33s ease-in-out;
 }
 .linkspagelink .site:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 .linkspagelink .sitedesc {
     /* Font Settings */
@@ -101,6 +104,42 @@ body {
     font-size: 2.125em;
     /* Spacing */
     padding-left: 2%;
+}
+
+/* Specs page */
+#specspage {
+    /* Background Image */
+    background-color: #ffffff;
+    background-image: url("/images/computer.jpeg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 120% 120%;
+}
+#specspagecontent {
+    /* Padding */
+    background-color: #F9E8F3
+}
+.spec {
+    /* Positioning */
+    position: absolute;
+    /* Font Settings */
+    font-family: "DM Mono";
+    font-size: 150%;
+    /* Coloring */
+    color: #ffffff;
+    background-color: #bf0576ff;
+    /* Padding */
+    padding: 1%;
+}
+#cpu {
+    /* Positioning */
+    top: 25%;
+    left: 26%;
+}
+#gpu {
+    /* Positioning */
+    top: 58%;
+    left: 21.5%;
 }
 
 /* About Page */
