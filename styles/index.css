@@ -113,7 +113,7 @@ body {
     background-image: url("/images/computer.jpeg");
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 120% 120%;
+    background-size: 100%;
 }
 #specspagecontent {
     /* Padding */
@@ -124,7 +124,7 @@ body {
     position: absolute;
     /* Font Settings */
     font-family: "DM Mono";
-    font-size: 150%;
+    font-size: 100%;
     /* Coloring */
     color: #ffffff;
     background-color: #bf0576ff;
@@ -133,13 +133,23 @@ body {
 }
 #cpu {
     /* Positioning */
-    top: 25%;
-    left: 26%;
+    top: 22.5%;
+    left: 23%;
+}
+#ram {
+    /* Positioning */
+    top: 40%;
+    left: 35%;
 }
 #gpu {
     /* Positioning */
-    top: 58%;
-    left: 21.5%;
+    top: 60%;
+    left: 15%;
+}
+#ssd {
+    /* Positioning */
+    top: 22.5%;
+    left: 52%;
 }
 
 /* About Page */
