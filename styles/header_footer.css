@@ -20,7 +20,7 @@
     text-align: center;
     padding: 0.75vh 1vw;
     /* Font Settings */
-    font-family: "DM Serif Text", serif;
+    font-family: "DM Mono", monospace;
     font-size: 15px;
     color:#ffffff;
     text-decoration: none;
@@ -55,7 +55,7 @@
     /* Decoration */
     list-style: none;  
     /* Font Settings */
-    font-family: "DM Serif Text", serif; 
+    font-family: "DM Mono", monospace; 
 }
 #footer ul p {
     font-size: 1.25em;
@@ -63,7 +63,7 @@
 }
 #footer ul a {
     /* Font Settings */
-    font-family: "DM Serif Text", serif;
+    font-family: "DM Mono", monospace;
     font-size: 1em;
     text-decoration: none;
     color: #ffffff; 
@@ -75,7 +75,7 @@
     /* Sizing */
     margin-top: 4vh;
     /* Font Settings */
-    font-family: "DM Serif Text", serif;
+    font-family: "DM Monospace", monospace;
     font-size: 1em;
     color: #bbbbbb; 
 }

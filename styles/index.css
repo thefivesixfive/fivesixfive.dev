@@ -45,8 +45,8 @@ body {
 }
 #frontpagecontent p {
     /* Font Settings */
-    font-family: "DM Serif Display", serif;
-    font-size: 5em;
+    font-family: "DM Mono", monospace;
+    font-size: 4em;
     color: #ffffff;
 }
 #frontpagelinks a {
@@ -56,7 +56,7 @@ body {
     margin-right: 3vw;
     float: left;
     /* Font Settings */
-    font-family: "DM Serif Text", serif;
+    font-family: "DM Mono", monospace;
     font-size: 1.75em;
     color: #E8A4CD;
     text-decoration: none;
@@ -86,7 +86,7 @@ body {
 } 
 .linkspagelink .site {
     /* Font Settings */
-    font-family: "DM Serif Text", serif;
+    font-family: "DM Mono", monospace;
     font-size: 4em;
     text-decoration-color: #00000000;
     color: #bf0576ff;
@@ -99,7 +99,7 @@ body {
 }
 .linkspagelink .sitedesc {
     /* Font Settings */
-    font-family: "DM Serif Text", serif;
+    font-family: "DM Mono", monospace;
     color: #E8A4CD;
     font-size: 2.125em;
     /* Spacing */
@@ -123,7 +123,7 @@ body {
     /* Positioning */
     position: absolute;
     /* Font Settings */
-    font-family: "DM Mono";
+    font-family: "DM Mono", monospace;
     font-size: 100%;
     /* Coloring */
     color: #ffffff;
