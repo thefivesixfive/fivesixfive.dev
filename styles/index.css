@@ -30,10 +30,10 @@ body {
     z-index: 1;
     /* Sizing */
     height: 100vh;
-    width: 100vw;
+    width: 80vw;
     min-height: 100vmin;
-    min-width: 100vw;
-    max-width: 100vw;
+    min-width: 80vw;
+    max-width: 80vw;
     /* Positioning */
     position: relative;
 }
