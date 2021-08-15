@@ -26,7 +26,7 @@ body {
 
 /* All Pages */
 #frontpage, #linkspage, 
-#aboutpage, #specspage {
+#aboutpage {
     z-index: 1;
     /* Sizing */
     height: 100vh;
@@ -104,52 +104,6 @@ body {
     font-size: 2.125em;
     /* Spacing */
     padding-left: 2%;
-}
-
-/* Specs page */
-#specspage {
-    /* Background Image */
-    background-color: #ffffff;
-    background-image: url("/images/computer.jpeg");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 100%;
-}
-#specspagecontent {
-    /* Padding */
-    background-color: #F9E8F3
-}
-.spec {
-    /* Positioning */
-    position: absolute;
-    /* Font Settings */
-    font-family: "DM Mono", monospace;
-    font-size: 100%;
-    /* Coloring */
-    color: #ffffff;
-    background-color: #bf0576ff;
-    /* Padding */
-    padding: 1%;
-}
-#cpu {
-    /* Positioning */
-    top: 22.5%;
-    left: 23%;
-}
-#ram {
-    /* Positioning */
-    top: 40%;
-    left: 35%;
-}
-#gpu {
-    /* Positioning */
-    top: 60%;
-    left: 15%;
-}
-#ssd {
-    /* Positioning */
-    top: 22.5%;
-    left: 52%;
 }
 
 /* About Page */
