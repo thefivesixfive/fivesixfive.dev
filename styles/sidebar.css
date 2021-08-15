@@ -1,10 +1,10 @@
-#navbar, .navbarr, #footer, #copyright {
+#sidebar, #footer, #copyright {
     /* Spacing */
     padding: 0;
     margin: 0;
 }
 /* Shared Navbar / Footer */
-#navbar {
+#sidebar {
     z-index: 2;
     /* Positioning */
     position: fixed;
@@ -18,7 +18,7 @@
     /* Coloring */
     background-color: white;
 }
-#navbar a {
+#sidebar a {
     display: block !important;
     /* Positioning + Sizinng */
     width: 100%;
@@ -29,15 +29,14 @@
     font-size: 15px;
     color:#bf0576ff;
     text-decoration: none;
+}
+#sidebar .hoveranim {
     /* Animation */
     transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
     -webkit-transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
 }
-.navbar-right {
-    float: right !important;
-}
 /* Navbar Effects */
-#navbar a:hover {
+#sidebar .hoveranim:hover {
     color: white;
     background-color: #bf0576ff;
 }
