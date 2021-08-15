@@ -25,58 +25,37 @@ body {
 }
 
 /* All Pages */
-#frontpage, #linkspage, 
-#aboutpage {
+#homepage, #aboutpage {
     z-index: 1;
     /* Sizing */
     height: 100vh;
     width: 80vw;
-    min-height: 100vmin;
+    min-height: 100vh;
     min-width: 80vw;
     max-width: 80vw;
     /* Positioning */
     position: relative;
 }
 
-/* Front Page */
-#frontpage {
-    /* Color */
-    background-color:#bf0576ff;
-}
-#frontpagecontent p {
-    /* Font Settings */
-    font-family: "DM Mono", monospace;
-    font-size: 4em;
-    color: #ffffff;
-}
-#frontpagelinks a {
-    /* Spacing */
-    margin-top: 1.5vh;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    float: left;
-    /* Font Settings */
-    font-family: "DM Mono", monospace;
-    font-size: 1.75em;
-    color: #E8A4CD;
-    text-decoration: none;
-}
-#frontpagelinks a:hover {
-    color: #F9E8F3;
-}
-
 /* Links Page */
-#linkspage {
+#homepage {
+    /* Font Settings */
+    font-family: "DM Mono", monospace;
+    color: #bf0576ff;
     /* Color */
-    background-color: #ffffff;
+    background-color: white;
 }
-#linkspagecontent {
+#homepagecontent {
     width: 100%;
     /* Spacing */
-    padding-left: 25vw;
-    padding-right: 25vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
-.linkspagelink {
+#homepagetitle {
+    font-weight: 500;
+    font-size: 3.5em;
+}
+.homepagelink {
     /* Spacing */
     display: flex;
     justify-content: left;
@@ -84,24 +63,25 @@ body {
     /* Sizing */
     width: 100%;
 } 
-.linkspagelink .site {
+.homepagelink .site {
     /* Font Settings */
-    font-family: "DM Mono", monospace;
-    font-size: 4em;
-    text-decoration-color: #00000000;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-decoration-color: #fff0;
+    text-decoration-thickness: 0.11em;
     color: #bf0576ff;
     /* Animation */
     transition: text-decoration-color 0.33s ease-in-out;
     -webkit-transition: text-decoration-color 0.33s ease-in-out;
 }
-.linkspagelink .site:hover {
-    text-decoration: underline !important;
+.homepagelink .site:hover {
+    text-decoration: underline 0.11em !important;
 }
-.linkspagelink .sitedesc {
+.homepagelink .sitedesc {
     /* Font Settings */
     font-family: "DM Mono", monospace;
+    font-size: 1.75em;
     color: #E8A4CD;
-    font-size: 2.125em;
     /* Spacing */
     padding-left: 2%;
 }
@@ -109,7 +89,7 @@ body {
 /* About Page */
 #aboutpage {
     /* Color */
-    background-color: #ffffff
+    background-color: #ffffff;
 }
 #aboutpagecontent {
     /* Padding */
@@ -120,7 +100,7 @@ body {
 }
 #aboutpagecontent p {
     /* Font Settings */
-    font-family: "DM Sans", serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.25em;
     line-height: 2em;
     color: #000000;

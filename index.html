@@ -11,12 +11,12 @@
         <link href="/texts/front-page-about.txt">
         <link href="/texts/front-page-quote.txt">
         <!-- Tab Appearance -->
-        <title>fivesixfive's site</title>
+        <title>fsf's site</title>
         <link rel="icon" type="image/png" href="/images/logo.png">
         <!-- OpenGraph -->
         <meta property="og:type" content="website">
-        <meta property="og:title" content="fivesixfive's site">
-        <meta property="og:description" content="Find videos, search code, donate, and more!">
+        <meta property="og:title" content="fsf's site">
+        <meta property="og:description" content="Find videos, request code, and more!">
         <meta property="og:url" content="https://fivesixfive.dev">
         <meta property="og:image" content="https://fivesixfive.dev/images/og.png">
         <!-- Fonts -->
@@ -36,48 +36,51 @@
     <body>
         <!-- Side Bar -->
         <div id=sidebar>
-            <a href="https://fivesixfive.dev"><img src="/images/logo.png" width=50 height=50></a>
-            <a class=hoveranim href="#linkspage">LINKS</a>
-            <a class=hoveranim href="#aboutpage">ABOUT</a>
-            <a class=hoveranim target="_blank" rel="noopener noreferrer" href="https://fivesixfive.dev/request">REQUEST</a>
-        </div>
-        <!-- Title Page -->
-        <div class=centered id=frontpage>
-            <!-- Page Content -->
-            <div id=frontpagecontent>
-                <p>greetings, fivesixfive here.</p>
-                <div class=centered id=frontpagelinks>
-                    <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">@thefivesixfive</a>
-                    <a id=latest_video target="_blank" rel="noopener noreferrer">Most Recent Video</a>
-                </div>
+            <!-- Top Stuff, Logo + Links -->
+            <div id=uppersidebar>
+                <a href="https://fivesixfive.dev"><img src="/images/logo.png" width=50 height=50></a>
+                <a class=hoveranim href="#homepage">HOME</a>
+                <a class=hoveranim href="#aboutpage">ABOUT</a>
+                <a class=hoveranim target="_blank" rel="noopener noreferrer" href="https://fivesixfive.dev/request">REQUEST</a>
+            </div>
+            <!-- Bottom Stuf, Contact -->
+            <div id=lowersidebar>
+                <!-- Contact -->
+                <a id=title>GET IN TOUCH</a>
+                <a class="hoveranim" href="mailto:contact@fivesixfive.dev?subject=Feedback">contact@fivesixfive.dev</a>
+                <!-- <a class=hoveranim target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">Instagram</a>
+                <a class=hoveranim target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">Discord</a> -->
             </div>
         </div>
         <!-- Links Page -->
-        <div class=centered id=linkspage>
+        <div class=centered id=homepage>
             <!-- Page Content -->
-            <div id=linkspagecontent>
+            <div id=homepagecontent>
+                <div id="homepagetitle">
+                    <p>Greetings, fivesixfive here.</p>
+                </div>
                 <!-- YouTube -->
-                <div class="linkspagelink">
+                <div class="homepagelink">
                     <a class=site target="_blank" rel="noopener noreferrer" href="https://youtube.com/fivesixfive?sub_confirmation=1">YouTube</a>     
-                    <p class=sitedesc>My programming</p>
+                    <p class=sitedesc>My videos</p>
                 </div>
                 <!-- Twitch -->
-                <div class="linkspagelink">
+                <!-- <div class="homepagelink">
                     <a class=site target="_blank" rel="noopener noreferrer" href="https://twitch.tv/fivesixfive">Twitch</a>
                     <p class=sitedesc>My gaming</p>
-                </div>
+                </div> -->
                 <!-- Github -->
-                <div class="linkspagelink">
+                <div class="homepagelink">
                     <a class=site target="_blank" rel="noopener noreferrer" href="https://github.com/thefivesixfive">GitHub</a>
                     <p class=sitedesc>My code</p>
                 </div>
                 <!-- Instagram -->
-                <div class="linkspagelink">
+                <div class="homepagelink">
                     <a class=site target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">Instagram</a>
-                    <p class=sitedesc>My socials</p>
+                    <p class=sitedesc>My social</p>
                 </div>
                 <!-- Discord -->
-                <div class="linkspagelink">
+                <div class="homepagelink">
                     <a class=site target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">Discord</a>
                     <p class=sitedesc>My community</p>
                 </div>
@@ -104,17 +107,9 @@
                 </p>
             </div>
         </div>
-        <!-- True Footer -->
-        <div id=footer>
-            <!-- Contact -->
-            <ul>
-                <li><p>Contact<p></li>
-                <li><a href="mailto:contact@fivesixfive.dev?subject=Feedback">contact@fivesixfive.dev</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">Instagram</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">Discord</a></li>
-            </ul>
-            <!-- Copyright -->
-            <div class=centered id=copyright>
+        <!-- Copyright -->
+        <div class=centered id=copyright>
+            <div id=copyrightcontent>
                 <p>&copy; <span id=year></span> Caleb North</p>
             </div>
         </div>
