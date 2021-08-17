@@ -1,4 +1,4 @@
-#sidebar, #footer, #copyright {
+#sidebar, #copyright {
     /* Spacing */
     padding: 0;
     margin: 0;
@@ -22,9 +22,9 @@
 }
 /* Positioning */
 #uppersidebar { top: 5vh; }
-#lowersidebar { bottom: 2.5vh; }
+#lowersidebar { bottom: 2vh; }
 
-#sidebar a {
+#sidebar a, #sidebar p {
     display: block !important;
     /* Positioning + Sizinng */
     width: 100%;
@@ -35,21 +35,40 @@
     font-size: 1em;
     font-weight: bold;
     color:#bf0576ff;
-    text-decoration: none;
+    /* Text Decoration */
+    text-decoration-color: #fff0;
+    text-decoration-thickness: 0.15em;
 }
-#lowersidebar>.hoveranim {
-    font-size: 0.75em;
+/* Lower Navbar Tweaks */
+#lowersidebar .contactinfo {
+    font-size: 0.8em;
 }
+/* Upper Navbar Effects */
 #sidebar .hoveranim {
     /* Animation */
-    transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
-    -webkit-transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
+    transition: text-decoration-color 0.33s ease-in-out;
+    -webkit-transition: text-decoration-color 0.33s ease-in-out;
 }
-/* Navbar Effects */
 #sidebar .hoveranim:hover {
-    color: white;
-    background-color: #bf0576ff;
+    /* Animation on Hover */
+    text-decoration-color: #bf0576ff !important;
 }
+
+/* Email Hover Reveal
+#sidebar #email::after {
+    content: "EMAIL";
+}
+#sidebar #email:hover::after {
+    content: "contact@fivesixfive.dev";
+}
+
+/* Text Hover Reveal
+#sidebar #phone::after {
+    content: "PHONE";
+}
+#sidebar #phone:hover::after {
+    content: "334~801~1530";
+} */
 
 /* Copyright */
 #copyright {

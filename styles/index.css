@@ -1,11 +1,5 @@
 /* Smoothing */
 * { scroll-behavior: smooth; }
-/* Animation */
-a { 
-    /* Animation */
-    transition: color 0.33s ease-in-out;
-    -webkit-transition: color 0.33s ease-in-out;
-}
 .centered {
     /* Sizing */
     display: flex;
@@ -92,27 +86,37 @@ body {
     background-color: #ffffff;
 }
 #aboutpagecontent {
-    /* Padding */
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding: 5vw;
-    background-color: #F9E8F3
+    /* Spacing */
+    padding: 5%;
 }
-#aboutpagecontent p {
+#aboutpageportrait {
+    /* Spacing */
+    padding-right: 1vw;
+    /* Sizing */
+    width: 40%;
+}
+#aboutpagetext {
+    /* Sizing */
+    width: 40%;
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
     font-size: 1.25em;
-    line-height: 2em;
-    color: #000000;
-    text-align: justify;
+    font-weight: 500;
+    line-height: 1.75em;
+    color: #bf0576ff;
+}
+#aboutpagetext p {
     /* Spacing */
-    margin: 2vh;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 #aboutpagequote {
-    /* Spacing */
-    padding-right: 10vw;
     /* Background Settings */
     background-image: url("/images/quote.png");
     background-repeat: no-repeat;
     background-size: contain; 
+}
+#aboutpagequoteauthor {
+    float: right;
 }
