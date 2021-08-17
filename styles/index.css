@@ -4,7 +4,7 @@
 :root { 
     --primary-color: #bf0576ff;
     --primary-dimmed: #E8A4CD;
-    --secondary-color: #ffff;
+    --secondary-color: #eeef;
     --main-window-width: 80vw;
 }
 /* Centered */
@@ -102,7 +102,7 @@ body {
     /* Positioning */
     position: absolute;
     bottom: 20%;
-    width: var(--main-window-width);
+    width: 100vw;
     /* Font Settings */
     font-family: "DM Mono", monospace;
     font-size: 1.5em;
@@ -127,7 +127,6 @@ body {
     from { bottom: 18%; }
     to { bottom: 22%; }
 }
-/* html:not([data-scroll='0']) header | display:none; */
 #aboutpagecontent {
     /* Spacing */
     padding: 5%;
