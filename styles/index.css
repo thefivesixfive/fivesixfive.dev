@@ -1,5 +1,9 @@
-/* Smoothing */
-* { scroll-behavior: smooth; }
+/* Smoothing + Vars */
+* { 
+    scroll-behavior: smooth;
+    --main-window-width: 80vw;
+}
+/* Centered */
 .centered {
     /* Sizing */
     display: flex;
@@ -23,10 +27,10 @@ body {
     z-index: 1;
     /* Sizing */
     height: 100vh;
-    width: 80vw;
+    width: var(--main-window-width);
     min-height: 100vh;
-    min-width: 80vw;
-    max-width: 80vw;
+    min-width: var(--main-window-width);
+    max-width: var(--main-window-width);
     /* Positioning */
     position: relative;
 }
@@ -83,11 +87,16 @@ body {
 /* Scroll Notif */
 #scrollnotif {
     z-index: 2;
+    /* Animation */
+    animation-name: slideDown;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
     /* Positioning */
     position: absolute;
     bottom: 20%;
-    /* Sizing */
-    width: 80%;
+    width: var(--main-window-width);
     /* Font Settings */
     font-family: "DM Mono", monospace;
     font-size: 1.5em;
@@ -95,21 +104,24 @@ body {
 }
 #scrollnotifcontent {
     /* Animation */
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    /* Appearance */
     transform: rotate(90deg);
-    animation: slideDown 2s;
-    color: #bf0576ff;
+    color: white;
 }
 @keyframes fadeIn {
-      0% { color: white; }
-     75% { color: white; }
-    100% { color: #bf0576ff; }
+    from { color: white; }
+    to { color: #bf0576ff; }
 }
 @keyframes slideDown {
-      0% { translate: 0% 0%; }
-    100% { translate: 0% -10%; }
+    from { bottom: 30%; }
+    to { bottom: 20%; }
 }
-
+/* html:not([data-scroll='0']) header | display:none; */
 #aboutpagecontent {
     /* Spacing */
     padding: 5%;
