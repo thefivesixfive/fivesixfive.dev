@@ -13,7 +13,7 @@
     width: 20vw;
     height: 100%;
     /* Coloring */
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 #uppersidebar, #lowersidebar {
     /* Positioning + Sizing */
@@ -34,7 +34,7 @@
     font-family: "DM Mono", monospace;
     font-size: 1em;
     font-weight: bold;
-    color:#bf0576ff;
+    color:var(--primary-color);
     /* Text Decoration */
     text-decoration-color: #fff0;
     text-decoration-thickness: 0.15em;
@@ -51,7 +51,7 @@
 }
 #sidebar .hoveranim:hover {
     /* Animation on Hover */
-    text-decoration-color: #bf0576ff !important;
+    text-decoration-color: var(--primary-color) !important;
 }
 
 /* Email Hover Reveal

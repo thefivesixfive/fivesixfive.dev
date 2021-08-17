@@ -1,6 +1,10 @@
-/* Smoothing + Vars */
-* { 
-    scroll-behavior: smooth;
+/* Smoothing */
+* { scroll-behavior: smooth; }
+/* Variables */
+:root { 
+    --primary-color: #bf0576ff;
+    --primary-dimmed: #E8A4CD;
+    --secondary-color: #ffff;
     --main-window-width: 80vw;
 }
 /* Centered */
@@ -19,7 +23,7 @@ body {
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 
 /* All Pages */
@@ -39,9 +43,9 @@ body {
 #homepage {
     /* Font Settings */
     font-family: "DM Mono", monospace;
-    color: #bf0576ff;
+    color: var(--primary-color);
     /* Color */
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 #homepagecontent {
     width: 100%;
@@ -67,7 +71,7 @@ body {
     font-weight: 500;
     text-decoration-color: #fff0;
     text-decoration-thickness: 0.11em;
-    color: #bf0576ff;
+    color: var(--primary-color);
     /* Animation */
     transition: text-decoration-color 0.33s ease-in-out;
     -webkit-transition: text-decoration-color 0.33s ease-in-out;
@@ -79,7 +83,7 @@ body {
     /* Font Settings */
     font-family: "DM Mono", monospace;
     font-size: 1.75em;
-    color: #E8A4CD;
+    color: var(--primary-dimmed);
     /* Spacing */
     padding-left: 2%;
 }
@@ -91,7 +95,9 @@ body {
     animation-name: slideDown;
     animation-duration: 2s;
     animation-delay: 3s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
     /* Positioning */
     position: absolute;
@@ -111,15 +117,15 @@ body {
     animation-timing-function: ease-in-out;
     /* Appearance */
     transform: rotate(90deg);
-    color: white;
+    color: var(--secondary-color);
 }
 @keyframes fadeIn {
-    from { color: white; }
-    to { color: #bf0576ff; }
+    from { color: var(--secondary-color); }
+    to { color: var(--primary-color); }
 }
 @keyframes slideDown {
-    from { bottom: 30%; }
-    to { bottom: 20%; }
+    from { bottom: 18%; }
+    to { bottom: 22%; }
 }
 /* html:not([data-scroll='0']) header | display:none; */
 #aboutpagecontent {
@@ -140,7 +146,7 @@ body {
     font-size: 1.25vw;
     font-weight: 500;
     line-height: 2.25vw;
-    color: #bf0576ff;
+    color: var(--primary-color);
 }
 #aboutpagetext p {
     /* Spacing */
