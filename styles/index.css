@@ -4,7 +4,7 @@
 :root { 
     --primary-color: #bf0576ff;
     --primary-dimmed: #E8A4CD;
-    --secondary-color: #eeef;
+    --secondary-color: #f8f8f8;
     --main-window-width: 80vw;
 }
 /* Centered */
@@ -157,7 +157,7 @@ body {
     /* Background Settings */
     background-image: url("/images/quote.png");
     background-repeat: no-repeat;
-    background-size: fill; 
+    background-size: contain; 
 }
 #aboutpagequoteauthor {
     float: right;
