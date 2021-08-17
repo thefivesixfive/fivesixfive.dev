@@ -80,11 +80,36 @@ body {
     padding-left: 2%;
 }
 
-/* About Page */
-#aboutpage {
-    /* Color */
-    background-color: #ffffff;
+/* Scroll Notif */
+#scrollnotif {
+    z-index: 2;
+    /* Positioning */
+    position: absolute;
+    bottom: 20%;
+    /* Sizing */
+    width: 80%;
+    /* Font Settings */
+    font-family: "DM Mono", monospace;
+    font-size: 1.5em;
+    font-weight: bold;
 }
+#scrollnotifcontent {
+    /* Animation */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    transform: rotate(90deg);
+    animation: slideDown 2s;
+    color: #bf0576ff;
+}
+@keyframes fadeIn {
+      0% { color: white; }
+     75% { color: white; }
+    100% { color: #bf0576ff; }
+}
+@keyframes slideDown {
+      0% { translate: 0% 0%; }
+    100% { translate: 0% -10%; }
+}
+
 #aboutpagecontent {
     /* Spacing */
     padding: 5%;
