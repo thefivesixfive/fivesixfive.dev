@@ -100,9 +100,9 @@ body {
     width: 40%;
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
-    font-size: 1.25em;
+    font-size: 1.25vw;
     font-weight: 500;
-    line-height: 1.75em;
+    line-height: 2.25vw;
     color: #bf0576ff;
 }
 #aboutpagetext p {
@@ -115,7 +115,7 @@ body {
     /* Background Settings */
     background-image: url("/images/quote.png");
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: fill; 
 }
 #aboutpagequoteauthor {
     float: right;
