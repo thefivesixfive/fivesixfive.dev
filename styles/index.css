@@ -105,7 +105,7 @@ body {
     width: 100vw;
     /* Font Settings */
     font-family: "DM Mono", monospace;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
 }
 #scrollnotifcontent {
@@ -124,22 +124,27 @@ body {
     to { color: var(--primary-color); }
 }
 @keyframes slideDown {
-    from { bottom: 18%; }
-    to { bottom: 22%; }
+    from { bottom: 8%; }
+    to { bottom: 12%; }
 }
-#aboutpagecontent {
-    /* Spacing */
-    padding: 5%;
+
+/* About Page */
+#aboutpageportrait, #aboutpagetext {
+    /* Sizing */
+    height: 100%;
+    width: 40vw;
 }
-#aboutpageportrait {
+#aboutpageportraitcontent {
     /* Spacing */
     padding-right: 1vw;
+    float: right;
     /* Sizing */
-    width: 40%;
+    width: 75%;
 }
-#aboutpagetext {
-    /* Sizing */
-    width: 40%;
+#aboutpagetextcontent {
+    /* Sizing + Spacing */
+    padding-left: 1vw;
+    width: 75%;
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
     font-size: 1.25vw;
@@ -149,7 +154,6 @@ body {
 }
 #aboutpagetext p {
     /* Spacing */
-    padding-left: 1vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
@@ -207,5 +211,53 @@ body {
         font-size: 1.35em;
         /* Spacing */
         padding: 0;
+    }
+
+    /* About Page */
+    #aboutpagecontent {
+        padding: 0;
+        /* Spacing */
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Sizing */
+        height: 200vh !important;
+    }
+    #aboutpageportrait, #aboutpagetext {
+        /* Sizing */
+        height: 100vh;
+        width: 100vw;
+    }
+    #aboutpageportraitcontent {
+        /* Spacing */
+        padding-right: 25vw;
+        padding-left: 25vw;
+        /* Sizing */
+        width: 50vw;
+    }
+    #aboutpagetext {
+        /* Sizing */
+        width: 40%;
+        /* Font Settings */
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.25vw;
+        font-weight: 500;
+        line-height: 2.25vw;
+        color: var(--primary-color);
+    }
+    #aboutpagetext p {
+        /* Spacing */
+        padding-left: 1vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    #aboutpagequote {
+        /* Background Settings */
+        background-image: url("/images/quote.png");
+        background-repeat: no-repeat;
+        background-size: contain; 
+    }
+    #aboutpagequoteauthor {
+        float: right;
     }
 }

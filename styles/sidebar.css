@@ -90,4 +90,7 @@
     #sidebar {
         display: none;
     }
+    #copyright {
+        font-size: 1em;
+    }
 }
