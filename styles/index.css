@@ -213,51 +213,29 @@ body {
         padding: 0;
     }
 
+    #aboutpageportrait {
+        /* Spacing */
+        padding-right: 0vw;
+        /* Sizing */
+        width: 0%;
+    }
     /* About Page */
-    #aboutpagecontent {
-        padding: 0;
-        /* Spacing */
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        /* Sizing */
-        height: 200vh !important;
-    }
-    #aboutpageportrait, #aboutpagetext {
-        /* Sizing */
-        height: 100vh;
-        width: 100vw;
-    }
-    #aboutpageportraitcontent {
-        /* Spacing */
-        padding-right: 25vw;
-        padding-left: 25vw;
-        /* Sizing */
-        width: 50vw;
-    }
     #aboutpagetext {
         /* Sizing */
-        width: 40%;
+        height: 100%;
+        width: 80vw;
+    }
+    #aboutpagetextcontent {
         /* Font Settings */
-        font-family: "DM Sans", sans-serif;
-        font-size: 1.25vw;
-        font-weight: 500;
-        line-height: 2.25vw;
-        color: var(--primary-color);
+        font-size: 4vw;
+        line-height: 7vw;
     }
     #aboutpagetext p {
         /* Spacing */
-        padding-left: 1vw;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
     }
     #aboutpagequote {
-        /* Background Settings */
-        background-image: url("/images/quote.png");
-        background-repeat: no-repeat;
-        background-size: contain; 
-    }
-    #aboutpagequoteauthor {
-        float: right;
+        background-position-y: center;
     }
 }
