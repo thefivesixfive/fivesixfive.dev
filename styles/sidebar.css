@@ -85,3 +85,9 @@
     font-size: 0.75em;
     color: #9999; 
 }
+
+@media only screen and (max-width: 640px) {
+    #sidebar {
+        display: none;
+    }
+}

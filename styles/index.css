@@ -4,8 +4,8 @@
 :root { 
     --primary-color: #bf0576ff;
     --primary-dimmed: #E8A4CD;
-    --secondary-color: #f8f8f8;
     --main-window-width: 80vw;
+    --secondary-color: #f8f8f8;
 }
 /* Centered */
 .centered {
@@ -39,7 +39,7 @@ body {
     position: relative;
 }
 
-/* Links Page */
+/* Home Page */
 #homepage {
     /* Font Settings */
     font-family: "DM Mono", monospace;
@@ -101,7 +101,7 @@ body {
     animation-timing-function: ease-in-out;
     /* Positioning */
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
     width: 100vw;
     /* Font Settings */
     font-family: "DM Mono", monospace;
@@ -161,4 +161,51 @@ body {
 }
 #aboutpagequoteauthor {
     float: right;
+}
+
+/* MOBILE CSS BELOW */
+
+@media only screen and (max-width: 700px) {
+    /* Variables */
+    :root { 
+        --main-window-width: 100vw;
+    }
+
+    /* Home Page */
+    #homepagetitle {
+        /* Font Settings */
+        font-size: 2.2em;
+        /* Spacing */
+        margin-bottom: 2vw;
+    }
+    #greetings { 
+        font-size: 1.25em; 
+    }
+    #homepagelinks {
+        /* Spacing */
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .homepagelink {
+        /* Spacing */
+        display: block !important;
+        justify-content: left !important;
+        align-items: baseline;
+        /* Sizing */
+        width: 40vw;
+    } 
+    .homepagelink .site {
+        /* Font Settings */
+        font-size: 1.5em;
+    }
+    .homepagelink .site:hover {
+        text-decoration: underline 0.11em !important;
+    }
+    .homepagelink .sitedesc {
+        /* Font Settings */
+        font-size: 1.35em;
+        /* Spacing */
+        padding: 0;
+    }
 }
