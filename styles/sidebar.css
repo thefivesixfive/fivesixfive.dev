@@ -1,40 +1,44 @@
-#navbar, .navbarr, #footer, #copyright {
+#sidebar, #footer, #copyright {
     /* Spacing */
     padding: 0;
     margin: 0;
 }
 /* Shared Navbar / Footer */
-#navbar {
+#sidebar {
     z-index: 2;
     /* Positioning */
     position: fixed;
-    left: 0;
     top: 0;
-    width: 100%;
+    right: 0;
+    /* Spacing */
+    padding-top: 5vh;
+    /* Sizing */
+    width: 20vw;
+    height: 100%;
     /* Coloring */
-    background-color: #bf0576ff;
+    background-color: white;
 }
-#navbar a {
-    /* Positioning */
-    float: left;
+#sidebar a {
+    display: block !important;
+    /* Positioning + Sizinng */
+    width: 100%;
     text-align: center;
-    padding: 0.75vh 1vw;
+    padding: 1vw 1vw 1vw 0vw;
     /* Font Settings */
     font-family: "DM Mono", monospace;
     font-size: 15px;
-    color:#ffffff;
+    color:#bf0576ff;
     text-decoration: none;
+}
+#sidebar .hoveranim {
     /* Animation */
     transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
     -webkit-transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
 }
-.navbarr {
-    float: right !important;
-}
 /* Navbar Effects */
-#navbar a:hover {
-    color: #bf0576ff;
-    background-color: #ffffff;
+#sidebar .hoveranim:hover {
+    color: white;
+    background-color: #bf0576ff;
 }
 
 /* True Footer */
