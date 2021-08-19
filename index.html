@@ -3,9 +3,10 @@
     <!-- Header Content -->
     <head>
         <meta charset="utf-8">
-        <!-- Stylesheet -->
+        <!-- Stylesheet + Scripts -->
         <link rel="stylesheet" href="/styles/index.css">
         <link rel="stylesheet" href="/styles/index_mobile.css">
+        <script src="/scripts/index.js"></script>
         <!-- Texts -->
         <link href="/texts/front-page-about.txt">
         <link href="/texts/front-page-quote.txt">
@@ -33,6 +34,10 @@
     </head>
     <!-- Body Content -->
     <body>
+        <!-- Side Bar Button (mobile only) -->
+        <div class=centered id=hamburger>
+            <a onclick=Hamburger()>|||</a>
+        </div>
         <!-- Side Bar -->
         <div id=sidebar>
             <link rel="stylesheet" href="styles/sidebar.css">
@@ -138,7 +143,6 @@
             </div>
         </div>
         <!-- Run Scripts -->
-        <script src="/scripts/index.js"></script>
         <script type="text/javascript">
             SetCopyrightYear();
             GetLatestVideo();

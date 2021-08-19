@@ -5,7 +5,7 @@
 }
 /* Shared Navbar / Footer */
 #sidebar {
-    z-index: 2;
+    z-index: 3;
     /* Positioning */
     position: fixed;
     right: 0;
@@ -54,6 +54,11 @@
     text-decoration-color: var(--primary-color) !important;
 }
 
+/* Hamburger */
+#hamburger {
+    display: none;
+}
+
 /* Email Hover Reveal
 #sidebar #email::after {
     content: "EMAIL";
@@ -87,9 +92,38 @@
 }
 
 @media only screen and (max-width: 770px) {
+    /* Hamburger */
+    #hamburger {
+        /* Appearance */
+        display: flex !important;
+        transform: rotate(90deg);
+        z-index: 4;
+        /* Positioning */
+        position: fixed;
+        right: 0;
+        /* Sizing */
+        width: 5vh;
+        height: 5vh;
+        /* Coloring */
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
+    #hamburger a {
+        /* Font Settings */
+        font-family: "DM Mono", monospace;
+        font-size: 1.25em;
+        font-weight: 900;
+        letter-spacing: -0.25em;
+        color:var(--primary-color);
+    }
+    /* Shared Navbar / Footer */
     #sidebar {
         display: none;
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
     }
+    /* Copyright */
     #copyright {
         font-size: 1em;
     }

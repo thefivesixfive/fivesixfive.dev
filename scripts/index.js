@@ -4,6 +4,16 @@ function SetCopyrightYear() {
     console.log("SetCopyrightYear() Called");
     document.getElementById("year").innerHTML=new Date().getFullYear();
 }
+// Menu Hamburger
+function Hamburger() {
+    // Get Navbar
+    const sidebar = document.getElementById("sidebar");
+    if (sidebar.style.display == "block") {
+        sidebar.style.display = "none";
+    } else {
+        sidebar.style.display = "block";
+    }
+}
 // Get Latest Video
 function GetLatestVideo() {
     // Set Up Request Variables
