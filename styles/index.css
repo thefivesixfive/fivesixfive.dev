@@ -1,11 +1,15 @@
 /* Smoothing */
 * { scroll-behavior: smooth; }
 /* Variables */
-:root { 
+:root {
+    /* Colors */
     --primary-color: #bf0576ff;
     --primary-dimmed: #E8A4CD;
-    --main-window-width: 80vw;
     --secondary-color: #f8f8f8;
+
+    /* Sizing */
+    --main-window-width: 80vw;
+    --mobile-window-width: 700px;
 }
 /* Centered */
 .centered {
@@ -145,17 +149,17 @@ body {
     padding-right: 1vw;
     float: right;
     /* Sizing */
-    width: 75%;
+    width: 90%;
 }
 #aboutpagetextcontent {
     /* Sizing + Spacing */
     padding-left: 1vw;
-    width: 75%;
+    width: 90%;
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
-    font-size: 1.25vw;
+    font-size: 1.75vw;
     font-weight: 500;
-    line-height: 2.25vw;
+    line-height: 3vw;
     color: var(--primary-color);
 }
 #aboutpagetext p {
@@ -175,7 +179,7 @@ body {
 
 /* MOBILE CSS BELOW */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
     /* Variables */
     :root { 
         --main-window-width: 100vw;
