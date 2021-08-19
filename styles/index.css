@@ -96,13 +96,7 @@ body {
 #scrollnotif {
     z-index: 2;
     /* Animation */
-    animation-name: slideDown;
-    animation-duration: 2s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in-out;
+    animation: slideDown 2s ease-in-out 3s infinite alternate-reverse both;
     /* Positioning */
     position: absolute;
     bottom: 10%;
@@ -111,6 +105,7 @@ body {
     font-family: "DM Mono", monospace;
     font-size: 1.25em;
     font-weight: bold;
+    letter-spacing: -0.15em;
 }
 #scrollnotifcontent {
     /* Animation */
@@ -149,7 +144,7 @@ body {
     padding-right: 1vw;
     float: right;
     /* Sizing */
-    width: 90%;
+    width: 80%;
 }
 #aboutpagetextcontent {
     /* Sizing + Spacing */
