@@ -31,7 +31,7 @@ body {
 }
 
 /* All Pages */
-#homepage, #aboutpage {
+#homepage, #requestpage, #aboutpage {
     z-index: 1;
     /* Sizing */
     height: 100vh;
@@ -44,6 +44,7 @@ body {
 }
 
 /* Home Page */
+
 #homepage {
     /* Font Settings */
     font-family: "DM Mono", monospace;
@@ -92,7 +93,8 @@ body {
     padding-left: 2%;
 }
 
-/* Scroll Notif */
+/* Scroll Notification */
+
 #scrollnotif {
     z-index: 2;
     /* Animation */
@@ -127,13 +129,36 @@ body {
     to { bottom: 12%; }
 }
 
-#homepagecontent {
-    width: 100%;
-    /* Spacing */
-    padding-left: 5vw;
-    padding-right: 5vw;
+/* Request Page */
+
+#requestpagecontent {
+    /* Positioning */
+    padding: 10%;
+    /* Font Settings */
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    color: var(--primary-color);
 }
+#requestpagetitle {
+    /* Font Settings */
+    font-size: 4em;
+    font-weight: 900;
+}
+#requestpageterms {
+    /* Sizing + Spacing */
+    margin-top: 0.5vh;
+    width: 50%;
+    /* Font Settings */
+    line-height: 1.5em;
+    font-size: 1em;
+    font-weight: 500;
+    /* Font Justification */
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 /* About Page */
+
 #aboutpageportrait, #aboutpagetext {
     /* Sizing */
     height: 100%;

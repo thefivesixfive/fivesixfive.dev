@@ -8,10 +8,10 @@ function SetCopyrightYear() {
 function Hamburger() {
     // Get Navbar
     const sidebar = document.getElementById("sidebar");
-    if (sidebar.style.display == "block") {
-        sidebar.style.display = "none";
+    if (sidebar.style.left == "100vw") {
+        sidebar.style.left = "0vw";
     } else {
-        sidebar.style.display = "block";
+        sidebar.style.left = "100vw";
     }
 }
 // Get Latest Video

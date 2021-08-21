@@ -118,11 +118,15 @@
     }
     /* Shared Navbar / Footer */
     #sidebar {
-        display: none;
+        left: 100vw;
         /* Sizing */
         width: 100vw;
         height: 100vh;
+        /* Transition */
+        transition: left 1s ease-in-out;
+        -webkit-transition: left 1s ease-in-out;
     }
+
     /* Copyright */
     #copyright {
         font-size: 1em;
