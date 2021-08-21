@@ -161,6 +161,8 @@ body {
     /* Spacing */
     padding-top: 1vh;
     padding-bottom: 1vh;
+    /* Coloring */
+    color: var(--primary-color);
 }
 #aboutpagequote {
     /* Background Settings */
