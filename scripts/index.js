@@ -4,6 +4,16 @@ function SetCopyrightYear() {
     console.log("SetCopyrightYear() Called");
     document.getElementById("year").innerHTML=new Date().getFullYear();
 }
+// Menu Hamburger
+function Hamburger() {
+    // Get Navbar
+    const sidebar = document.getElementById("sidebar");
+    if (sidebar.style.display == "block") {
+        sidebar.style.display = "none";
+    } else {
+        sidebar.style.display = "block";
+    }
+}
 // Get Latest Video
 function GetLatestVideo() {
     // Set Up Request Variables
@@ -15,8 +25,11 @@ function GetLatestVideo() {
     request.send();
     // Find Latest Video
     const videos = JSON.parse(request.responseText)["items"];
-    console.log(videos);
-    const latest_video = videos[0];
     // Set Video
-    document.getElementById("latest_video").href=latest_video["link"];
+    for (let video = 0; video < 3; video++) {
+        // Get Video via Index
+        var latest_video = videos[video];
+        // Get Element
+        var video_element = document.getElementById("videospagevideo"+video.toString())
+    }
 }

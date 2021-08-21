@@ -1,11 +1,17 @@
 /* Smoothing */
 * { scroll-behavior: smooth; }
-/* Animation */
-a { 
-    /* Animation */
-    transition: color 0.33s ease-in-out;
-    -webkit-transition: color 0.33s ease-in-out;
+/* Variables */
+:root {
+    /* Colors */
+    --primary-color: #bf0576ff;
+    --primary-dimmed: #E8A4CD;
+    --secondary-color: #f8f8f8;
+
+    /* Sizing */
+    --main-window-width: 80vw;
+    --mobile-window-width: 700px;
 }
+/* Centered */
 .centered {
     /* Sizing */
     display: flex;
@@ -21,62 +27,41 @@ body {
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 
 /* All Pages */
-#frontpage, #linkspage, 
-#aboutpage {
+#homepage, #aboutpage {
     z-index: 1;
     /* Sizing */
     height: 100vh;
-    width: 80vw;
-    min-height: 100vmin;
-    min-width: 80vw;
-    max-width: 80vw;
+    width: var(--main-window-width);
+    min-height: 100vh;
+    min-width: var(--main-window-width);
+    max-width: var(--main-window-width);
     /* Positioning */
     position: relative;
 }
 
-/* Front Page */
-#frontpage {
-    /* Color */
-    background-color:#bf0576ff;
-}
-#frontpagecontent p {
+/* Home Page */
+#homepage {
     /* Font Settings */
     font-family: "DM Mono", monospace;
-    font-size: 4em;
-    color: #ffffff;
-}
-#frontpagelinks a {
-    /* Spacing */
-    margin-top: 1.5vh;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    float: left;
-    /* Font Settings */
-    font-family: "DM Mono", monospace;
-    font-size: 1.75em;
-    color: #E8A4CD;
-    text-decoration: none;
-}
-#frontpagelinks a:hover {
-    color: #F9E8F3;
-}
-
-/* Links Page */
-#linkspage {
+    color: var(--primary-color);
     /* Color */
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
 }
-#linkspagecontent {
+#homepagecontent {
     width: 100%;
     /* Spacing */
-    padding-left: 25vw;
-    padding-right: 25vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
-.linkspagelink {
+#homepagetitle {
+    font-weight: 500;
+    font-size: 3.5em;
+}
+.homepagelink {
     /* Spacing */
     display: flex;
     justify-content: left;
@@ -84,55 +69,178 @@ body {
     /* Sizing */
     width: 100%;
 } 
-.linkspagelink .site {
+.homepagelink .site {
     /* Font Settings */
-    font-family: "DM Mono", monospace;
-    font-size: 4em;
-    text-decoration-color: #00000000;
-    color: #bf0576ff;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-decoration-color: #fff0;
+    text-decoration-thickness: 0.11em;
+    color: var(--primary-color);
     /* Animation */
     transition: text-decoration-color 0.33s ease-in-out;
     -webkit-transition: text-decoration-color 0.33s ease-in-out;
 }
-.linkspagelink .site:hover {
-    text-decoration: underline !important;
+.homepagelink .site:hover {
+    text-decoration: underline 0.11em !important;
 }
-.linkspagelink .sitedesc {
+.homepagelink .sitedesc {
     /* Font Settings */
     font-family: "DM Mono", monospace;
-    color: #E8A4CD;
-    font-size: 2.125em;
+    font-size: 1.75em;
+    color: var(--primary-dimmed);
     /* Spacing */
     padding-left: 2%;
 }
 
-/* About Page */
-#aboutpage {
-    /* Color */
-    background-color: #ffffff
-}
-#aboutpagecontent {
-    /* Padding */
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding: 5vw;
-    background-color: #F9E8F3
-}
-#aboutpagecontent p {
+/* Scroll Notif */
+#scrollnotif {
+    z-index: 2;
+    /* Animation */
+    animation: slideDown 2s ease-in-out 3s infinite alternate-reverse both;
+    /* Positioning */
+    position: absolute;
+    bottom: 10%;
+    width: 100vw;
     /* Font Settings */
-    font-family: "DM Sans", serif;
+    font-family: "DM Mono", monospace;
     font-size: 1.25em;
-    line-height: 2em;
-    color: #000000;
-    text-align: justify;
+    font-weight: bold;
+    letter-spacing: -0.15em;
+}
+#scrollnotifcontent {
+    /* Animation */
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    /* Appearance */
+    transform: rotate(90deg);
+    color: var(--secondary-color);
+}
+@keyframes fadeIn {
+    from { color: var(--secondary-color); }
+    to { color: var(--primary-color); }
+}
+@keyframes slideDown {
+    from { bottom: 8%; }
+    to { bottom: 12%; }
+}
+
+#homepagecontent {
+    width: 100%;
     /* Spacing */
-    margin: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+/* About Page */
+#aboutpageportrait, #aboutpagetext {
+    /* Sizing */
+    height: 100%;
+    width: 40vw;
+}
+#aboutpageportraitcontent {
+    /* Spacing */
+    padding-right: 1vw;
+    float: right;
+    /* Sizing */
+    width: 80%;
+}
+#aboutpagetextcontent {
+    /* Sizing + Spacing */
+    padding-left: 1vw;
+    width: 90%;
+    /* Font Settings */
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.75vw;
+    font-weight: 500;
+    line-height: 3vw;
+    color: var(--primary-color);
+}
+#aboutpagetext p {
+    /* Spacing */
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 #aboutpagequote {
-    /* Spacing */
-    padding-right: 10vw;
     /* Background Settings */
     background-image: url("/images/quote.png");
     background-repeat: no-repeat;
     background-size: contain; 
+}
+#aboutpagequoteauthor {
+    float: right;
+}
+
+/* MOBILE CSS BELOW */
+
+@media only screen and (max-width: 770px) {
+    /* Variables */
+    :root { 
+        --main-window-width: 100vw;
+    }
+
+    /* Home Page */
+    #homepagetitle {
+        /* Font Settings */
+        font-size: 2.2em;
+        /* Spacing */
+        margin-bottom: 2vw;
+    }
+    #greetings { 
+        font-size: 1.25em; 
+    }
+    #homepagelinks {
+        /* Spacing */
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .homepagelink {
+        /* Spacing */
+        display: block !important;
+        justify-content: left !important;
+        align-items: baseline;
+        /* Sizing */
+        width: 40vw;
+    } 
+    .homepagelink .site {
+        /* Font Settings */
+        font-size: 1.5em;
+    }
+    .homepagelink .site:hover {
+        text-decoration: underline 0.11em !important;
+    }
+    .homepagelink .sitedesc {
+        /* Font Settings */
+        font-size: 1.35em;
+        /* Spacing */
+        padding: 0;
+    }
+
+    #aboutpageportrait {
+        /* Spacing */
+        padding-right: 0vw;
+        /* Sizing */
+        width: 0%;
+    }
+    /* About Page */
+    #aboutpagetext {
+        /* Sizing */
+        height: 100%;
+        width: 80vw;
+    }
+    #aboutpagetextcontent {
+        /* Font Settings */
+        font-size: 1em !important;
+        line-height: 2em !important;
+    }
+    #aboutpagetext p {
+        /* Spacing */
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+    }
+    #aboutpagequote {
+        background-position-y: center;
+    }
 }

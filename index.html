@@ -3,20 +3,20 @@
     <!-- Header Content -->
     <head>
         <meta charset="utf-8">
-        <!-- Stylesheet -->
+        <!-- Stylesheet + Scripts -->
         <link rel="stylesheet" href="/styles/index.css">
-        <link rel="stylesheet" href="styles/sidebar.css">
-        <!-- <link rel="stylesheet" href="/styles/index_mobile.css"> -->
+        <link rel="stylesheet" href="/styles/index_mobile.css">
+        <script src="/scripts/index.js"></script>
         <!-- Texts -->
         <link href="/texts/front-page-about.txt">
         <link href="/texts/front-page-quote.txt">
         <!-- Tab Appearance -->
-        <title>fivesixfive's site</title>
+        <title>TODO: website title</title>
         <link rel="icon" type="image/png" href="/images/logo.png">
         <!-- OpenGraph -->
         <meta property="og:type" content="website">
-        <meta property="og:title" content="fivesixfive's site">
-        <meta property="og:description" content="Find videos, search code, donate, and more!">
+        <meta property="og:title" content="fsf's site">
+        <meta property="og:description" content="Find videos, request code, and more!">
         <meta property="og:url" content="https://fivesixfive.dev">
         <meta property="og:image" content="https://fivesixfive.dev/images/og.png">
         <!-- Fonts -->
@@ -34,92 +34,115 @@
     </head>
     <!-- Body Content -->
     <body>
+        <!-- Side Bar Button (mobile only) -->
+        <div class=centered id=hamburger>
+            <a onclick=Hamburger()>|||</a>
+        </div>
         <!-- Side Bar -->
         <div id=sidebar>
-            <a href="https://fivesixfive.dev"><img src="/images/logo.png" width=50 height=50></a>
-            <a class=hoveranim href="#linkspage">LINKS</a>
-            <a class=hoveranim href="#aboutpage">ABOUT</a>
-            <a class=hoveranim target="_blank" rel="noopener noreferrer" href="https://fivesixfive.dev/request">REQUEST</a>
+            <link rel="stylesheet" href="styles/sidebar.css">
+            <!-- Top Stuff, Logo + Links -->
+            <div id=uppersidebar>
+                <a tabindex="-1" href="https://fivesixfive.dev"><img src="/images/logo.png" width=50 height=50></a>
+                <a class=hoveranim href="#homepage">HOME</a>
+                <a class=hoveranim href="#aboutpage">ABOUT</a>
+                <a class=hoveranim target="_blank" rel="noopener noreferrer" href="https://fivesixfive.dev/request">REQUEST</a>
+            </div>
+            <!-- Bottom Stuf, Contact -->
+            <div id=lowersidebar>
+                <!-- Contact -->
+                <p id=title>GET IN TOUCH</p>
+                <p class=contactinfo>contact@fivesixfive.dev</p>
+                <p class=contactinfo>334 801 1530</p>
+                <!-- <a class=hoveranim target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">Instagram</a>
+                <a class=hoveranim target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">Discord</a> -->
+            </div>
         </div>
-        <!-- Title Page -->
-        <div class=centered id=frontpage>
-            <!-- Page Content -->
-            <div id=frontpagecontent>
-                <p>greetings, fivesixfive here.</p>
-                <div class=centered id=frontpagelinks>
-                    <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">@thefivesixfive</a>
-                    <a id=latest_video target="_blank" rel="noopener noreferrer">Most Recent Video</a>
+        <!-- Pages -->
+        <div id=pages>
+            <!-- Home Page -->
+            <div class=centered id=homepage>
+                <!-- Page Content -->
+                <div id=homepagecontent>
+                    <div id="homepagetitle">
+                        <p><span id=greetings>Greetings,</span> fivesixfive here</p>
+                    </div>
+                    <!-- YouTube -->
+                    <div id=homepagelinks>
+                        <div class="homepagelink">
+                            <a class=site target="_blank" rel="noopener noreferrer" href="https://youtube.com/fivesixfive?sub_confirmation=1">YouTube</a>     
+                            <p class=sitedesc> My videos</p>
+                        </div>
+                        <!-- Twitch -->
+                        <!-- <div class="homepagelink">
+                            <a class=site target="_blank" rel="noopener noreferrer" href="https://twitch.tv/fivesixfive">Twitch</a>
+                            <p class=sitedesc>My gaming</p>
+                        </div> -->
+                        <!-- Github -->
+                        <div class="homepagelink">
+                            <a class=site target="_blank" rel="noopener noreferrer" href="https://github.com/thefivesixfive">GitHub</a>
+                            <p class=sitedesc>My code</p>
+                        </div>
+                        <!-- Instagram -->
+                        <div class="homepagelink">
+                            <a class=site target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">Instagram</a>
+                            <p class=sitedesc>My social</p>
+                        </div>
+                        <!-- Discord -->
+                        <div class="homepagelink">
+                            <a class=site target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">Discord</a>
+                            <p class=sitedesc>My community</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down! -->
+            <div class=centered id=scrollnotif>
+                <div id=scrollnotifcontent>
+                    <p> >>> </p>
+                </div>
+            </div>
+
+            <!-- About-->
+            <div class=centered id=aboutpage>
+                <!-- Page Content -->
+                <div class=centered id=aboutpagecontent>
+                    <!-- Me -->
+                    <div id=aboutpageportrait>
+                        <img id=aboutpageportraitcontent src="/images/me.jpg">
+                    </div>
+                    <!-- Bio -->
+                    <div id=aboutpagetext>
+                        <div id=aboutpagetextcontent>
+                            <p>
+                                Well, I'm not great at summarizing things, so here goes.
+                                If it wasn't apparent by now, I'm a programmer. I do my own
+                                stuff and publish videos about it on YouTube, and sometimes
+                                I program stuff for others live.
+                            </p>
+                            <p>
+                                I'm also a Christian, and all the content I make is
+                                guaranteed clean. I'm not one of <em>those</em> Christians though.
+                            </p>
+                            <p id=aboutpagequote>
+                                "There is a certain branch of Christianity that has so effectively
+                                hijacked the word 'Christian' that I feel uncomfortable sometimes
+                                using it to describe myself. But I am a Christian."<br>
+                                <em id=aboutpagequoteauthor>John Green</em>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Links Page -->
-        <div class=centered id=linkspage>
-            <!-- Page Content -->
-            <div id=linkspagecontent>
-                <!-- YouTube -->
-                <div class="linkspagelink">
-                    <a class=site target="_blank" rel="noopener noreferrer" href="https://youtube.com/fivesixfive?sub_confirmation=1">YouTube</a>     
-                    <p class=sitedesc>My programming</p>
-                </div>
-                <!-- Twitch -->
-                <div class="linkspagelink">
-                    <a class=site target="_blank" rel="noopener noreferrer" href="https://twitch.tv/fivesixfive">Twitch</a>
-                    <p class=sitedesc>My gaming</p>
-                </div>
-                <!-- Github -->
-                <div class="linkspagelink">
-                    <a class=site target="_blank" rel="noopener noreferrer" href="https://github.com/thefivesixfive">GitHub</a>
-                    <p class=sitedesc>My code</p>
-                </div>
-                <!-- Instagram -->
-                <div class="linkspagelink">
-                    <a class=site target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">Instagram</a>
-                    <p class=sitedesc>My socials</p>
-                </div>
-                <!-- Discord -->
-                <div class="linkspagelink">
-                    <a class=site target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">Discord</a>
-                    <p class=sitedesc>My community</p>
-                </div>
-            </div>
-        </div>
-        <!-- About -->
-        <div class=centered id=aboutpage>
-            <!-- Page Content -->
-            <div id=aboutpagecontent>
-                <p>
-                    Well, I'm not great at summarizing things, so here goes.
-                    If it wasn't apparent by now, I'm a programmer. I do my own
-                    stuff and publish videos about it on YouTube, and sometimes
-                    I program stuff for others live.
-                </p>
-                <p>
-                    I'm also a Christian, and all the content I make is
-                    guaranteed clean. I'm not one of <em>those</em> Christians though.
-                </p>
-                <p id=aboutpagequote>
-                    There is a certain branch of Christianity that has so effectively<br>
-                    hijacked the word "Christian" that I feel uncomfortable sometimes<br>
-                    using it to describe myself. But I am a Christian.<br></newline>-John Green
-                </p>
-            </div>
-        </div>
-        <!-- True Footer -->
-        <div id=footer>
-            <!-- Contact -->
-            <ul>
-                <li><p>Contact<p></li>
-                <li><a href="mailto:contact@fivesixfive.dev?subject=Feedback">contact@fivesixfive.dev</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">Instagram</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">Discord</a></li>
-            </ul>
-            <!-- Copyright -->
-            <div class=centered id=copyright>
+        <!-- Copyright -->
+        <div class=centered id=copyright>
+            <div id=copyrightcontent>
                 <p>&copy; <span id=year></span> Caleb North</p>
             </div>
         </div>
         <!-- Run Scripts -->
-        <script src="/scripts/index.js"></script>
         <script type="text/javascript">
             SetCopyrightYear();
             GetLatestVideo();

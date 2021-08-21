@@ -1,85 +1,130 @@
-#sidebar, #footer, #copyright {
+#sidebar, #copyright {
     /* Spacing */
     padding: 0;
     margin: 0;
 }
 /* Shared Navbar / Footer */
 #sidebar {
-    z-index: 2;
+    z-index: 3;
     /* Positioning */
     position: fixed;
-    top: 0;
     right: 0;
-    /* Spacing */
-    padding-top: 5vh;
     /* Sizing */
     width: 20vw;
     height: 100%;
     /* Coloring */
-    background-color: white;
+    background-color: var(--secondary-color);
 }
-#sidebar a {
+#uppersidebar, #lowersidebar {
+    /* Positioning + Sizing */
+    position: absolute !important;
+    width: 100%;
+}
+/* Positioning */
+#uppersidebar { top: 5vh; }
+#lowersidebar { bottom: 2vh; }
+
+#sidebar a, #sidebar p {
     display: block !important;
     /* Positioning + Sizinng */
     width: 100%;
     text-align: center;
-    padding: 1vw 1vw 1vw 0vw;
+    padding: 0.5vw 0vw;
     /* Font Settings */
     font-family: "DM Mono", monospace;
-    font-size: 15px;
-    color:#bf0576ff;
-    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color:var(--primary-color);
+    /* Text Decoration */
+    text-decoration-color: #fff0;
+    text-decoration-thickness: 0.15em;
 }
+/* Lower Navbar Tweaks */
+#lowersidebar .contactinfo {
+    font-size: 0.8em;
+}
+/* Upper Navbar Effects */
 #sidebar .hoveranim {
     /* Animation */
-    transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
-    -webkit-transition: color 0.33s ease-in-out, background-color 0.166s ease-in-out;
+    transition: text-decoration-color 0.33s ease-in-out;
+    -webkit-transition: text-decoration-color 0.33s ease-in-out;
 }
-/* Navbar Effects */
 #sidebar .hoveranim:hover {
-    color: white;
-    background-color: #bf0576ff;
+    /* Animation on Hover */
+    text-decoration-color: var(--primary-color) !important;
 }
 
-/* True Footer */
-#footer {
-    /* Sizing */
-    width: 100%;
-    height: 20vh;
-    /* Coloring */
-    background-color: #000000;
+/* Hamburger */
+#hamburger {
+    display: none;
 }
-#footer ul {
-    /* Set Spacing */
-    padding: 0;
-    /* Positioning */
-    position: relative;
-    top: 2vh;
-    left: 2vw;
-    /* Decoration */
-    list-style: none;  
-    /* Font Settings */
-    font-family: "DM Mono", monospace; 
+
+/* Email Hover Reveal
+#sidebar #email::after {
+    content: "EMAIL";
 }
-#footer ul p {
-    font-size: 1.25em;
-    color: #ffffff;
+#sidebar #email:hover::after {
+    content: "contact@fivesixfive.dev";
 }
-#footer ul a {
-    /* Font Settings */
-    font-family: "DM Mono", monospace;
-    font-size: 1em;
-    text-decoration: none;
-    color: #ffffff; 
+
+/* Text Hover Reveal
+#sidebar #phone::after {
+    content: "PHONE";
 }
-#footer ul a:hover {
-    color: #E8A4CD;
-}
+#sidebar #phone:hover::after {
+    content: "334~801~1530";
+} */
+
+/* Copyright */
 #copyright {
+    z-index: 2;
+    /* Positioning */
+    position: fixed;
+    bottom: 0;
     /* Sizing */
+    width: 100vw;
+    height: 2.5vh;
     margin-top: 4vh;
     /* Font Settings */
-    font-family: "DM Monospace", monospace;
-    font-size: 1em;
-    color: #bbbbbb; 
+    font-family: "DM Mono", monospace;
+    font-size: 0.75em;
+    color: #9999; 
+}
+
+@media only screen and (max-width: 770px) {
+    /* Hamburger */
+    #hamburger {
+        /* Appearance */
+        display: flex !important;
+        transform: rotate(90deg);
+        z-index: 4;
+        /* Positioning */
+        position: fixed;
+        right: 0;
+        /* Sizing */
+        width: 5vh;
+        height: 5vh;
+        /* Coloring */
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
+    #hamburger a {
+        /* Font Settings */
+        font-family: "DM Mono", monospace;
+        font-size: 1.25em;
+        font-weight: 900;
+        letter-spacing: -0.25em;
+        color:var(--primary-color);
+    }
+    /* Shared Navbar / Footer */
+    #sidebar {
+        display: none;
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
+    }
+    /* Copyright */
+    #copyright {
+        font-size: 1em;
+    }
 }
