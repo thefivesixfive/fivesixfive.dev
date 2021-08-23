@@ -201,7 +201,7 @@ body {
 
 /* MOBILE CSS BELOW */
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 16cm) {
     /* Variables */
     :root { 
         --main-window-width: 100vw;
