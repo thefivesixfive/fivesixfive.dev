@@ -209,9 +209,9 @@ body {
     }
     .homepagelink .sitedesc {
         /* Font Settings */
-        font-size: 1.35em;
+        font-size: 1.15em;
         /* Spacing */
-        padding: 0;
+        padding-right: 0.3em;
     }
 
     #aboutpageportrait {
