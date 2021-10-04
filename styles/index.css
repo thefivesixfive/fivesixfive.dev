@@ -168,6 +168,24 @@ body {
     float: right;
 }
 
+/* Series Ad */
+#seriesad {
+    z-index: 4;
+    /* Positioning */
+    position: fixed;
+    top: 0;
+    /* Sizing */
+    width: 100vw;
+    height: 4vh;
+    
+    /* Font Settings */
+    font-family: "DM Mono", monospace;
+    font-size: 0.9em;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff; 
+}
+
 /* MOBILE CSS BELOW */
 
 @media only screen and (max-width: 16cm) {
