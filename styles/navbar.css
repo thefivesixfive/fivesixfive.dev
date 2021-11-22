@@ -1,0 +1,25 @@
+/* Global */
+#navbar * {
+    /* Font Settings */
+    font-family: 'DM Sans', monospace;
+    font-weight: 600;
+    font-size: 1.25vw;
+    text-decoration: none;
+    color: #bf0576;
+
+    /* Resets */
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    /* Padding and Position */
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+    float: left !important;
+}
+#navbar .navbarlink {
+    padding-right: 2.5vw;
+}
+
+@media only screen and (max-width: 16cm) {}
