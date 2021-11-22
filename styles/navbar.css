@@ -22,4 +22,20 @@
     padding-right: 2.5vw;
 }
 
+/* Copyright */
+#copyright {
+    z-index: 2;
+    /* Positioning */
+    position: fixed;
+    bottom: 0;
+    /* Sizing */
+    width: 100vw;
+    height: 5vh;
+    margin-top: 4vh;
+    /* Font Settings */
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.85em;
+    color: #9999; 
+}
+
 @media only screen and (max-width: 16cm) {}
