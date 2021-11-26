@@ -3,9 +3,8 @@
     /* Font Settings */
     font-family: 'DM Sans', monospace;
     font-weight: 600;
-    font-size: 1.25vw;
+    font-size: 1em;
     text-decoration: none;
-    color: #bf0576;
 
     /* Resets */
     margin: 0;
@@ -13,13 +12,35 @@
 }
 
 #navbar {
-    /* Padding and Position */
+    /* Padding */
+    z-index: 999;    
     margin-top: 2.5vw;
     margin-left: 2.5vw;
-    float: left !important;
+    /* Positioning  and Sizing */
+    position: static;
+    float: left;
+    /* Coloring */
+    background-color: #fff;
 }
 #navbar .navbarlink {
-    padding-right: 2.5vw;
+    /* Padding */
+    margin-right: 2.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    /* Positioning */
+    position: relative;
+    float: left !important;
+    /* Coloring */
+    color: #bf0576;
+    /* Animation */
+    transition: color 0.25s, background-color 0.25s;
+}
+#navbar .navbarlink:hover {
+    /* Coloring */
+    color: #fff;
+    background-color: #bf0576;
 }
 
 /* Copyright */
