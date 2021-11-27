@@ -14,11 +14,12 @@
 #navbar {
     /* Padding */
     z-index: 999;    
-    margin-top: 2.5vw;
-    margin-left: 2.5vw;
+    padding: 2.5%;
     /* Positioning  and Sizing */
-    position: static;
-    float: left;
+    position: fixed !important;
+    width: 100%;
+    left: 0;
+    top: 0;
     /* Coloring */
     background-color: #fff;
 }
@@ -30,7 +31,7 @@
     padding-top: 1vh;
     padding-bottom: 1vh;
     /* Positioning */
-    position: relative;
+    position: static;
     float: left !important;
     /* Coloring */
     color: #bf0576;
@@ -45,14 +46,13 @@
 
 /* Copyright */
 #copyright {
-    z-index: 2;
+    z-index: 999;
     /* Positioning */
-    position: fixed;
+    position: fixed !important;
     bottom: 0;
     /* Sizing */
     width: 100vw;
     height: 5vh;
-    margin-top: 4vh;
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
     font-size: 0.85em;
