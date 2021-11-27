@@ -1,7 +1,6 @@
 /* Smoothing + Random Fix */
 * {
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 /* Variables */
 :root {
@@ -25,8 +24,8 @@ a,p {
 
 /* Fit to Entire Page */
 body {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
     overflow-x: hidden;
     margin: 0;
 }
@@ -36,40 +35,46 @@ body {
     /* Sizing */
     max-width: 100vw;
     max-height: 100vh;
+    height: 100vh;
 }
-
 .demowrap {
-    /* Sizing + Padding */
-    padding: 20%;
-    /* Font Settings */
-    font-family: 'DM Sans', monospace;
-    font-weight: 500;
-    font-size: 1em;
-}
-.demoimage img {
-    max-width: 100%;
+    /* Sizing */
+    width: 40%;
 }
 .demosec {
+    /* Font Settings */
+    font-family: "DM Sans", sans-serif;
     /* Spacing */
     margin-top: 1vh;
-    margin-bottom: 1vh;
 }
 .demotitle {
     /* Font Settings */
+    font-size: 1.25em;
     font-weight: 600;
-    font-size: 1.1em;
     color: #bf0576;
 }
-.demodesc p {
-    text-align: justify;
+.demodesc {
+    /* Font Settings */
+    font-size: 1em;
+    color: #000;
 }
 .demolinks a {
-    /* Spacing */
-    margin-right: 2vw;
     /* Font Settings */
-    font-weight: 600;
+    text-decoration: none !important;
+    font-size: 1em;
     color: #bf0576;
-    text-decoration: none;
+    /* Spacing */
+    margin-right: 1vw;
+}
+.demoimage {
+    /* Sizing */
+    max-width: 100%;
+}
+
+/*                   */
+/* Ultrawide Screens */
+/*                   */
+@media only screen and (min-width: 1920px) {
 }
 
 @media only screen and (max-width: 16cm) {}
