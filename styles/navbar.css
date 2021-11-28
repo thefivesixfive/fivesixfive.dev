@@ -1,0 +1,60 @@
+/* Global */
+#navbar * {
+    /* Font Settings */
+    font-family: 'DM Sans', monospace;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+
+    /* Resets */
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    /* Padding */
+    z-index: 999;    
+    padding: 2%;
+    /* Positioning  and Sizing */
+    position: fixed !important;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* Coloring */
+    background-color: #fff;
+}
+#navbar .navbarlink {
+    /* Padding */
+    margin-right: 2.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    /* Positioning */
+    position: static;
+    float: left !important;
+    /* Coloring */
+    color: #bf0576;
+    /* Animation */
+    transition: border-color 0.25s;
+}
+#navbar .navbarlink:hover {
+    /* Coloring */
+    color: #fff;
+    border-color: #bf0576;
+}
+
+/* Copyright */
+#copyright {
+    z-index: 999;
+    /* Positioning */
+    position: fixed !important;
+    bottom: 0;
+    /* Sizing */
+    width: 100vw;
+    height: 5vh;
+    /* Font Settings */
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.85em;
+    color: #9999; 
+}
+
+@media only screen and (max-width: 16cm) {}
