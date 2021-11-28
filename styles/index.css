@@ -44,24 +44,30 @@ body {
 .demosec {
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
-    /* Spacing */
-    margin-top: 1vh;
 }
 .demotitle {
     /* Font Settings */
     font-size: 1.25em;
     font-weight: 600;
     color: #bf0576;
+    /* Spacing */
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
 }
 .demodesc {
     /* Font Settings */
     font-size: 1em;
     color: #000;
+    /* Spacing */
+    margin-bottom: 0.5vh;
 }
 .demolinks a {
     /* Font Settings */
-    text-decoration: none !important;
+    text-decoration-color: #bf0576;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
     font-size: 1em;
+    font-weight: 600;
     color: #bf0576;
     /* Spacing */
     margin-right: 1vw;
