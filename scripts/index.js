@@ -33,3 +33,35 @@ function GetLatestVideo() {
         var video_element = document.getElementById("videospagevideo"+video.toString())
     }
 }
+
+// Get Demo
+function SetDemoSec(url, sec, attribute, element)
+{
+    var req = new XMLHttpRequest();
+    req.open("GET", url, true);
+    req.send();
+    // When REQ Loads
+    req.onload = function()
+    {
+        if (req.status == 200)
+        {
+            var response = req.responseText.split("\n");
+            if (attribute != "innerHTML")
+            {
+                element.setAttribute(attribute, response[1]);
+            }
+            else
+            {
+                element.innerHTML = response[1];
+            }
+        }
+    }
+}
+function SetDemo(demo, url)
+{
+    // Set Image
+    document.getElementById(demo).getElementsByClassName("demoimage")[0].setAttribute("src",url+"/.png");
+    // Fetch text from Psuedo-CDN
+    SetDemoSec(url+"/.txt", 0, "innerHTML", document.getElementsByClassName("demodesc")[0]);
+
+}
