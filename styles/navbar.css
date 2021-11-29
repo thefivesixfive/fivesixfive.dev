@@ -17,17 +17,20 @@
     padding: 2%;
     /* Positioning  and Sizing */
     position: fixed !important;
-    width: 100%;
+    width: 100vw;
+    height: 5vh;
     left: 0;
     top: 0;
     /* Coloring */
     background-color: #fff;
 }
+#navbar .navwrap {
+    justify-content: left !important;
+}
 #navbar .navbarlink {
     /* Padding */
     margin-right: 2.5vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding: 0.5vh 1vw 0.5vh 1vw;
     /* Border */
     border-style: solid;
     border-width: 2px;
@@ -43,6 +46,14 @@
 #navbar .navbarlink:hover {
     /* Coloring */
     border-color: #bf0576;
+}
+#navbar .navbarimg {
+    /* Sizing and Positioning */
+    float: left;
+    height: 3vh;
+    /* Spacing */
+    margin-right: 2.5vw;
+    padding: 0;
 }
 
 /* Copyright */
