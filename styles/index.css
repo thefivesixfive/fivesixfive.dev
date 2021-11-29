@@ -78,8 +78,14 @@ body {
     text-decoration-color: #bf0576;
 }
 .demoimage {
+    /* Spacing */
+    padding: 1%;
     /* Sizing */
-    max-width: 100%;
+    max-width: 99%;
+    /* Border */
+    border-color: #bf0576;
+    border-width: 3px;
+    border-style: solid;
 }
 
 /*                   */
