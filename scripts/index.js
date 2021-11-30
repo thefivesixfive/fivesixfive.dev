@@ -35,10 +35,14 @@ function GetLatestVideo() {
 }
 
 // Get Demo
-function SetDemoSec(url, sec, attribute, element)
+function BuildVideoDemo(demo_name)
 {
+    url = "https://raw.githubusercontent.com/thefivesixfive/cdn.fivesixfive.dev/master/ytpost/"+demo_name;
+    // Set image
+    document.getElementById(demo_name).getElementsByClassName("demoimage")[0].setAttribute("src", url+"/.png");
+    // Set text
     var req = new XMLHttpRequest();
-    req.open("GET", url, true);
+    req.open("GET", url+"/.txt", true);
     req.send();
     // When REQ Loads
     req.onload = function()
@@ -46,22 +50,21 @@ function SetDemoSec(url, sec, attribute, element)
         if (req.status == 200)
         {
             var response = req.responseText.split("\n");
-            if (attribute != "innerHTML")
+            // Set Image
+            var demo = document.getElementById(demo_name).getElementsByClassName("demoimage")[0];
+            var demo_children = document.getElementById(demo_name).getElementsByClassName("demotext")[0];
+            // Title
+            demo_children.getElementsByClassName("demotitle")[0].getElementsByTagName("p")[0].innerHTML = response[0];
+            // Description
+            demo_children.getElementsByClassName("demodesc")[0].getElementsByTagName("p")[0].innerHTML = response[1];
+            // Links
+            var demo_links = demo_children.getElementsByClassName("demolinks")[0].getElementsByTagName("a");
+            for (var link_index = 0; link_index < demo_links.length; link_index++)
             {
-                element.setAttribute(attribute, response[1]);
-            }
-            else
-            {
-                element.innerHTML = response[1];
+                var response_index = link_index * 2
+                demo_links[link_index].setAttribute("href", response[response_index+2]);
+                demo_links[link_index].innerHTML = response[response_index+3];
             }
         }
     }
-}
-function SetDemo(demo, url)
-{
-    // Set Image
-    document.getElementById(demo).getElementsByClassName("demoimage")[0].setAttribute("src",url+"/.png");
-    // Fetch text from Psuedo-CDN
-    SetDemoSec(url+"/.txt", 0, "innerHTML", document.getElementsByClassName("demodesc")[0]);
-
 }

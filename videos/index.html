@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <!-- Header Content -->
+    <head>
+        <meta charset="utf-8">
+        <!-- Stylesheet + Scripts -->
+        <link rel="stylesheet" href="../styles/index.css">
+        <script src="/scripts/index.js"></script>
+        <!-- Tab Appearance -->
+        <title>fivesixfive's videos</title>
+        <link rel="icon" type="image/png" href="/images/logo_favicon.png?v=2">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans&family=DM+Serif+Display&family=DM+Serif+Text&display=swap" rel="stylesheet">
+    </head>
+    <!-- Body Content -->
+    <body>
+        <!-- Side Bar Button (mobile only)
+        <div class=centered id=hamburger>
+            <a onclick=Hamburger()>|||</a>
+        </div> -->
+        <!-- Side Bar -->
+        <div id=navbar>
+            <link rel="stylesheet" href="../styles/navbar.css">
+            <!-- Top Stuff, Logo + Links -->
+            <div class="navwrap centered">
+                <img class="navbarimg" src="/images/logo_full.png">
+                <a class="navbarlink" href="../index.html">HOME</a>
+            </div>
+        </div>
+        <!-- Latest Demo -->
+        <div id="MOWReview" class="demo centered">
+            <div class="demowrap">
+                <!-- Img -->
+                <img
+                    class=demoimage
+                    src="/images/logo_full.png"
+                >
+                <!-- Text -->
+                <div class="demotext">
+                    <!-- Title -->
+                    <div class="demosec demotitle">
+                        <p>Demo Title</p>
+                    </div>
+                    <!-- Description -->
+                    <div class="demosec demodesc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <!-- Links -->
+                    <div class="demosec demolinks">
+                        <a class="demolink" target="_blank" rel="noreferrer noopener">
+                            Link 1
+                        </a>
+                        <a class="demolink" target="_blank" rel="noreferrer noopener">
+                            Link 2
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class=centered id=copyright>
+            <div id=copyrightcontent>
+                <p>&copy; 2021<span id=year></span> Caleb North</p>
+            </div>
+        </div>
+        <!-- Run Scripts -->
+        <script type="text/javascript">
+            SetCopyrightYear();
+            BuildVideoDemo("MOWReview");
+        </script>
+    </body>
+</html>
