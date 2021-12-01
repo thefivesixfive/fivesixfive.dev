@@ -38,7 +38,7 @@
             <a onclick=Hamburger()>|||</a>
         </div> -->
         <!-- Side Bar -->
-        <link rel="stylesheet" href="styles/navbar.css">s
+        <link rel="stylesheet" href="styles/navbar.css">
         <div id=navbar>
             <div class="navwrap centered">
                 <!-- Left Float -->
@@ -49,38 +49,7 @@
             </div>
         </div>
         <!-- Latest Demo -->
-        <div id="latest" class="demo centered">
-            <div class="demowrap">
-                <!-- Img -->
-                <img
-                    class=demoimage
-                    src="../images/code.jpg"
-                >
-                <!-- Text -->
-                <div class=demotext>
-                    <!-- Title -->
-                    <div class="demosec demotitle">
-                        <p>Huge Site Overhaul!</p>
-                    </div>
-                    <!-- Description -->
-                    <div class="demosec demodesc">
-                        <p>Yeah, I'm overhauling the site! I'm prepping the site to hold, or at least refrence, all my content outside of any other site! This'll take a bit, so for now here's the links that were on my old site.</p>
-                    </div>
-                    <!-- Links -->
-                    <div class="demosec demolinks">
-                        <a class="demolink" target="_blank" rel="noreferrer noopener" href="https://youtube.com/fivesixfive">
-                            YouTube
-                        </a>
-                        <a class="demolink" target="_blank" rel="noreferrer noopener" href="https://github.com/thefivesixfive">
-                            GitHub
-                        </a>
-                        <a class="demolink" target="_blank" rel="noreferrer noopener" href="https://instagram.com/thefivesixfive">
-                            Instagram
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id=demos></div>
         <!-- Copyright -->
         <div class=centered id=copyright>
             <div id=copyrightcontent>
@@ -90,7 +59,7 @@
         <!-- Run Scripts -->
         <script type="text/javascript">
             SetCopyrightYear();
-            Sem
+            BuildDemos("https://raw.githubusercontent.com/thefivesixfive/cdn.fivesixfive.dev/master/homepost/.txt", 0);
         </script>
     </body>
 </html>
