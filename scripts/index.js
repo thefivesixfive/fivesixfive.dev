@@ -34,12 +34,35 @@ function GetLatestVideo() {
     }
 }
 
-// Get Demo
-function BuildVideoDemo(demo_name)
+// Grab Video Deoms
+function BuildVideoDemos(url)
 {
-    url = "https://raw.githubusercontent.com/thefivesixfive/cdn.fivesixfive.dev/master/ytpost/"+demo_name;
-    // Set image
-    document.getElementById(demo_name).getElementsByClassName("demoimage")[0].setAttribute("src", url+"/.png");
+    BuildDemos(url, 999);
+}
+function BuildDemos(url, iters)
+{
+    // Grab Indexing File
+    var index = new XMLHttpRequest();
+    index.open("GET", url, true);
+    index.send();
+    // Build Demos from Index
+    index.onload = function()
+    {
+        // Split index
+        demo_list = this.responseText.split("\n");
+        // Loop through each one
+        for (var i=0; (i<demo_list.length)&&(i<(iters*2)+1); i+=2)
+        {
+            BuildDemo(demo_list[i], demo_list[i+1]);
+        }
+    }
+}
+
+// Build Demo from Link
+function BuildDemo(url, demo_name)
+{
+    // Grab Parent Element
+    var demo_container = document.getElementById("demos");
     // Set text
     var req = new XMLHttpRequest();
     req.open("GET", url+"/.txt", true);
@@ -49,22 +72,72 @@ function BuildVideoDemo(demo_name)
     {
         if (req.status == 200)
         {
-            var response = req.responseText.split("\n");
-            // Set Image
-            var demo = document.getElementById(demo_name).getElementsByClassName("demoimage")[0];
-            var demo_children = document.getElementById(demo_name).getElementsByClassName("demotext")[0];
-            // Title
-            demo_children.getElementsByClassName("demotitle")[0].getElementsByTagName("p")[0].innerHTML = response[0];
-            // Description
-            demo_children.getElementsByClassName("demodesc")[0].getElementsByTagName("p")[0].innerHTML = response[1];
+            // Important Text
+            demo_fill_text = this.responseText.split("\n");
+
+            // Create Demo Element
+            var demo = document.createElement("div")
+            demo.id = demo_name;
+            demo.classList = ["demo centered"];
+            demo_container.appendChild(demo);
+
+            // Add Wrap
+            var demowrap = document.createElement("div");
+            demowrap.classList = ["demowrap"];
+            demo.appendChild(demowrap);
+
+            // Add Image
+            var demoimage = document.createElement("img");
+            demoimage.classList = ["demoimage"];
+            demoimage.src = url+"/.png";
+            demowrap.appendChild(demoimage);
+
+            // Add Text Wrapper
+            var demotext = document.createElement("div");
+            demotext.classList = ["demotext"];
+            demowrap.appendChild(demotext);
+
+            // Add Text Objects
+            var demotitle = document.createElement("div");
+            demotitle.classList = ["demosec demotitle"];
+
+            var innerText = document.createElement("p");
+            innerText.innerHTML = demo_fill_text[0];
+            demotitle.appendChild(innerText);
+            demotext.appendChild(demotitle);
+
+            var demodesc = document.createElement("div");
+            demodesc.classList = ["demosec demodesc"];
+
+            var innerText = document.createElement("p");
+            innerText.innerHTML = demo_fill_text[1];
+            demodesc.appendChild(innerText);
+            demotext.appendChild(demodesc);
+
+            // Link Wrapper
+            var demolinks = document.createElement("div");
+            demolinks.classList = ["demosec demolinks"];
+            demotext.appendChild(demolinks);
+
+
             // Links
-            var demo_links = demo_children.getElementsByClassName("demolinks")[0].getElementsByTagName("a");
-            for (var link_index = 0; link_index < demo_links.length; link_index++)
+            var link_count = (demo_fill_text.length - 2)/2;
+            // Loop through and add links
+            for (var link_num=0; link_num < link_count; link_num++)
             {
-                var response_index = link_index * 2
-                demo_links[link_index].setAttribute("href", response[response_index+2]);
-                demo_links[link_index].innerHTML = response[response_index+3];
+                var demolink = document.createElement("a");
+                demolink.classList = ["demolink"]
+                demolink.setAttribute("target", "_blank");
+                demolink.setAttribute("rel", "noreferrer noopener");
+                // Set Link Text
+                var index = (link_num*2)+2;
+                demolink.href = demo_fill_text[index];
+                demolink.innerHTML = demo_fill_text[index+1];
+                demolinks.appendChild(demolink);
+                
+                // <a class="demolink" target="_blank" rel="noreferrer noopener" href="https://youtube.com/fivesixfive">
             }
+            
         }
     }
 }

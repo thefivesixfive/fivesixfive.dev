@@ -29,73 +29,8 @@
                 <a class="navbarlink" href="../index.html">HOME</a>
             </div>
         </div>
-        <!-- Latest Demo -->
-        <div id="MOWReview" class="demo centered">
-            <div class="demowrap">
-                <!-- Img -->
-                <img
-                    class=demoimage
-                    src="/images/logo_full.png"
-                >
-                <!-- Text -->
-                <div class="demotext">
-                    <!-- Title -->
-                    <div class="demosec demotitle">
-                        <p>Demo Title</p>
-                    </div>
-                    <!-- Description -->
-                    <div class="demosec demodesc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <!-- Links -->
-                    <div class="demosec demolinks">
-                        <a class="demolink" target="_blank" rel="noreferrer noopener">
-                            Link 1
-                        </a>
-                        <a class="demolink" target="_blank" rel="noreferrer noopener">
-                            Link 2
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="DiscordWarning" class="demo centered">
-            <div class="demowrap">
-                <img class=demoimage>
-                <div class="demotext">
-                    <div class="demosec demotitle"><p></p></div>
-                    <div class="demosec demodesc"><p></p></div>
-                    <div class="demosec demolinks">
-                        <a class="demolink" target="_blank" rel="noreferrer noopener"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="Programming" class="demo centered">
-            <div class="demowrap">
-                <img class=demoimage>
-                <div class="demotext">
-                    <div class="demosec demotitle"><p></p></div>
-                    <div class="demosec demodesc"><p></p></div>
-                    <div class="demosec demolinks">
-                        <a class="demolink" target="_blank" rel="noreferrer noopener"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="Keyboard" class="demo centered">
-            <div class="demowrap">
-                <img class=demoimage>
-                <div class="demotext">
-                    <div class="demosec demotitle"><p></p></div>
-                    <div class="demosec demodesc"><p></p></div>
-                    <div class="demosec demolinks">
-                        <a class="demolink" target="_blank" rel="noreferrer noopener"></a>
-                        <a class="demolink" target="_blank" rel="noreferrer noopener"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id=demos></div>
+            <!-- Latest Demo --
         <!-- Copyright -->
         <div class=centered id=copyright>
             <div id=copyrightcontent>
@@ -105,10 +40,7 @@
         <!-- Run Scripts -->
         <script type="text/javascript">
             SetCopyrightYear();
-            BuildVideoDemo("MOWReview");
-            BuildVideoDemo("DiscordWarning");
-            BuildVideoDemo("Programming");
-            BuildVideoDemo("Keyboard")
+            BuildVideoDemos("https://raw.githubusercontent.com/thefivesixfive/cdn.fivesixfive.dev/master/ytpost/.txt");
         </script>
     </body>
 </html>
