@@ -1,13 +1,13 @@
 /* Global */
 #navbar * {
     /* Font Settings */
-    font-family: 'DM Sans', monospace;
-    font-weight: 600;
-    font-size: 1em;
+    font-family: 'Fruktur', serif;
+    font-size: 1.25em;
     text-decoration: none;
 
     /* Resets */
     margin: 0;
+    border: 0;
     padding: 0;
 }
 
@@ -18,14 +18,16 @@
     /* Positioning  and Sizing */
     position: fixed !important;
     width: 100vw;
-    height: 5vh;
+    height: 100vh;
     left: 0;
     top: 0;
     right: 0;
-    /* Coloring */
+    /* Padding */
+    padding: 0;
 }
 #navbar .navwrap {
-    justify-content: left !important;
+    height: 100vh;
+    justify-content: center !important;
 }
 #navbar .navbarlink {
     /* Padding */
@@ -34,7 +36,7 @@
     /* Border */
     border-style: solid;
     border-width: 2px;
-    border-color: #fff;
+    border-color: #fdf;
     /* Coloring */
     color: #bf0576;
     /* Animation */
