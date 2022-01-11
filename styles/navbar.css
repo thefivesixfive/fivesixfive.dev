@@ -1,7 +1,7 @@
 /* Global */
 #navbar * {
     /* Font Settings */
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fruktur', serif;
     font-size: 1.25em;
     text-decoration: none;
 
@@ -17,39 +17,30 @@
     padding: 2%;
     /* Positioning  and Sizing */
     position: fixed !important;
-    width: 33vw;
+    width: 100vw;
     height: 100vh;
     left: 0;
     top: 0;
+    right: 0;
     /* Padding */
     padding: 0;
 }
 #navbar .navwrap {
-    overflow: auto;
-    /* Sizing */
-    height: 50vh;
-    width: 33vw;
-    /* Positioning */
-    display: flex;
-    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center !important;
 }
 #navbar .navbarlink {
-    /* Siziing */
-    width: 100%;
-    /* Positioning */
-    text-align: center;
-    display: block !important;
-    /* Spacing */
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    /* Padding */
+    margin-right: 1vw;
+    padding: 0.5vh 1vw 0.5vh 1vw;
     /* Border */
     border-style: solid;
     border-width: 2px;
-    border-color: #fff;
+    border-color: #fdf;
     /* Coloring */
     color: #bf0576;
     /* Animation */
-    transition: border-color 0.33s;
+    transition: border-color 0.5s;
 }
 #navbar .navbarlink:hover {
     /* Coloring */
@@ -59,7 +50,7 @@
     /* Sizing and Positioning */
     height: 3vh;
     /* Spacing */
-    margin: 1vw;
+    margin-right: 1vw;
     padding: 0;
 }
 

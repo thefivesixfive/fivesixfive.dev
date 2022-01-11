@@ -1,0 +1,134 @@
+#sidebar, #copyright {
+    /* Spacing */
+    padding: 0;
+    margin: 0;
+}
+/* Shared Navbar / Footer */
+#sidebar {
+    z-index: 3;
+    /* Positioning */
+    position: fixed;
+    right: 0;
+    /* Sizing */
+    width: 20vw;
+    height: 100%;
+    /* Coloring */
+    background-color: var(--secondary-color);
+}
+#uppersidebar, #lowersidebar {
+    /* Positioning + Sizing */
+    position: absolute !important;
+    width: 100%;
+}
+/* Positioning */
+#uppersidebar { top: 5vh; }
+#lowersidebar { bottom: 2vh; }
+
+#sidebar a, #sidebar p {
+    display: block !important;
+    /* Positioning + Sizinng */
+    width: 100%;
+    text-align: center;
+    padding: 0.5vw 0vw;
+    /* Font Settings */
+    font-family: "DM Mono", monospace;
+    font-size: 1em;
+    font-weight: bold;
+    color:var(--primary-color);
+    /* Text Decoration */
+    text-decoration-color: #fff0;
+    text-decoration-thickness: 0.15em;
+}
+/* Lower Navbar Tweaks */
+#lowersidebar .contactinfo {
+    font-size: 0.8em;
+}
+/* Upper Navbar Effects */
+#sidebar .hoveranim {
+    /* Animation */
+    transition: text-decoration-color 0.33s ease-in-out;
+    -webkit-transition: text-decoration-color 0.33s ease-in-out;
+}
+#sidebar .hoveranim:hover {
+    /* Animation on Hover */
+    text-decoration-color: var(--primary-color) !important;
+}
+
+/* Hamburger */
+#hamburger {
+    display: none;
+}
+
+/* Email Hover Reveal
+#sidebar #email::after {
+    content: "EMAIL";
+}
+#sidebar #email:hover::after {
+    content: "contact@fivesixfive.dev";
+}
+
+/* Text Hover Reveal
+#sidebar #phone::after {
+    content: "PHONE";
+}
+#sidebar #phone:hover::after {
+    content: "334~801~1530";
+} */
+
+/* Copyright */
+#copyright {
+    z-index: 2;
+    /* Positioning */
+    position: fixed;
+    bottom: 0;
+    /* Sizing */
+    width: 100vw;
+    height: 2.5vh;
+    margin-top: 4vh;
+    /* Font Settings */
+    font-family: "DM Mono", monospace;
+    font-size: 0.75em;
+    color: #9999; 
+}
+
+@media only screen and (max-width: 16cm) {
+    /* Hamburger */
+    #hamburger {
+        /* Appearance */
+        display: flex !important;
+        transform: rotate(90deg);
+        z-index: 4;
+        /* Positioning */
+        position: fixed;
+        right: 0;
+        /* Sizing */
+        width: 5vh;
+        height: 5vh;
+        /* Coloring */
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
+    #hamburger a {
+        /* Font Settings */
+        font-family: "DM Mono", monospace;
+        font-size: 1.25em;
+        font-weight: 900;
+        letter-spacing: -0.25em;
+        color:var(--primary-color);
+    }
+    /* Shared Navbar / Footer */
+    #sidebar {
+        left: 100vw;
+        /* Sizing */
+        width: 100vw;
+        height: 100vh;
+        /* Transition */
+        transition: left 1s ease-in-out;
+        -webkit-transition: left 1s ease-in-out;
+    }
+
+    /* Copyright */
+    #copyright {
+        font-size: 1em;
+    }
+}
