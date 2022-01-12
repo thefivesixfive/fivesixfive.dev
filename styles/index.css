@@ -12,7 +12,7 @@
 
     /* Sizing */
     --main-window-width: 80vw;
-    --mobile-window-width: 700px;
+    --mobile-window-width: 100vw;
 }
 /* Centered */
 .centered {
@@ -57,8 +57,7 @@ body {
 #homepagecontent {
     width: 100%;
     /* Spacing */
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 0vh 5vw;
 }
 #homepagetitle {
     /* Font Settings */
@@ -77,10 +76,10 @@ body {
 }
 .homepageparagraph {
     /* Spacing */
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     /* Font Settings */
     font-size: 1em;
-    line-height: 1.7em;
+    line-height: 1.5em;
     text-align: justify;
     text-justify: distribute;
 }
@@ -123,4 +122,18 @@ body {
 @keyframes slideDown {
     from { bottom: 8%; }
     to { bottom: 12%; }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    :root {
+        --main-window-width: 100vw;
+    }
+    #homepagetitle {
+        padding-top: 3vh;
+    }
+    .homepageparagraph {
+        /* Font Settings */
+        font-size: 2.5em !important;
+        padding-top: 2vh;
+    }
 }

@@ -28,8 +28,8 @@
     box-sizing: border-box;
     /* Positioning + Sizinng */
     width: 100%;
-    text-align: center;
-    padding: 2vh 0vw;
+    text-align: left;
+    padding: 2vh 5vw;
     /* margin: 1vw 0vw; */
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
@@ -43,11 +43,11 @@
 /* Lower Navbar Tweaks */
 #lowersidebar #title {
     font-size: 1em !important;
-    padding: 0;
+    padding-bottom: 0;
 }
 #lowersidebar .contactinfo {
     font-size: 0.75em;
-    padding: 0;
+    padding-top: 0;
 }
 /* Upper Navbar Effects */
 #sidebar .hoveranim {
@@ -95,10 +95,10 @@
     /* Font Settings */
     font-family: "DM Mono", monospace;
     font-size: 0.75em;
-    color: #fff; 
+    color: var(--primary-color); 
 }
 
-@media only screen and (max-width: 16cm) {
+@media only screen and (hover: none) and (pointer: coarse) {
     /* Hamburger */
     #hamburger {
         /* Appearance */
@@ -111,6 +111,9 @@
         /* Sizing */
         width: 5vh;
         height: 5vh;
+        /* Spacing */
+        top: 3%;
+        right: 5%;
         /* Coloring */
         color: var(--primary-color);
         background-color: var(--secondary-color);
@@ -118,10 +121,11 @@
     #hamburger a {
         /* Font Settings */
         font-family: "DM Mono", monospace;
-        font-size: 1.25em;
+        font-size: 4em;
         font-weight: 900;
         letter-spacing: -0.25em;
         color:var(--primary-color);
+        user-select: none;
     }
     /* Shared Navbar / Footer */
     #sidebar {
@@ -130,12 +134,25 @@
         width: 100vw;
         height: 100vh;
         /* Transition */
-        transition: left 1s ease-in-out;
-        -webkit-transition: left 1s ease-in-out;
+        transition: left 0.5s ease-in-out;
+        -webkit-transition: left 0.5s ease-in-out;
+    }
+
+    #sidebar a, #sidebar p {
+        /* Font Settings */
+        font-size: 3.5vh;
+        font-weight: normal;
+    }
+
+    #lowersidebar #title {
+        font-size: 3em !important;
+    }
+    #lowersidebar .contactinfo {
+        font-size: 2em;
     }
 
     /* Copyright */
     #copyright {
-        font-size: 1em;
+        display: none;
     }
 }
