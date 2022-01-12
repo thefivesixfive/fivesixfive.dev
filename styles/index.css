@@ -3,12 +3,12 @@
 /* Variables */
 :root {
     /* Colors */
-    /* --primary-color: #bf0576ff;
+    --primary-color: #bf0576ff;
     --primary-dimmed: #E8A4CD;
-    --secondary-color: #f8f8f8; */
-
+    --secondary-color: #fff;
+/* 
     --primary-color: #fff;
-    --secondary-color: #bf0576;
+    --secondary-color: #bf0576; */
 
     /* Sizing */
     --main-window-width: 80vw;
@@ -49,7 +49,7 @@ body {
 /* Home Page */
 #homepage {
     /* Font Settings */
-    font-family: "DM Mono", monospace;
+    font-family: "DM Sans", sans-serif;
     color: var(--primary-color);
     /* Color */
     background-color: var(--secondary-color);
@@ -57,50 +57,36 @@ body {
 #homepagecontent {
     width: 100%;
     /* Spacing */
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 #homepagetitle {
     /* Font Settings */
     font-weight: 500;
-    font-size: 3em;
+    font-size: 4em;
     font-family: Fruktur, serif;
-    color: #ffffff;
+    color: var(--primary-color);
+    user-select: none;
     /* Positioning + Sizing */
     justify-content: left !important;
-    padding-left: 5vw;
-    top: 0;
-    height: 30vh;
+    height: 10vh;
 }
-.homepagelink {
+#homepagebodytitle {
+    /* Font Settings */
+    font-weight: 900;
+}
+.homepageparagraph {
     /* Spacing */
-    display: flex;
-    justify-content: left;
-    align-items: baseline !important;
-    /* Sizing */
-    width: 100%;
-} 
-.homepagelink .site {
+    margin-top: 2vh;
     /* Font Settings */
-    font-size: 2.5em;
-    font-weight: 500;
-    text-decoration-color: #fff0;
-    text-decoration-thickness: 0.11em;
-    color: var(--primary-color);
-    /* Animation */
-    transition: text-decoration-color 0.33s ease-in-out;
-    -webkit-transition: text-decoration-color 0.33s ease-in-out;
+    font-size: 1em;
+    line-height: 1.7em;
+    text-align: justify;
+    text-justify: distribute;
 }
-.homepagelink .site:hover {
-    text-decoration: underline 0.11em !important;
-}
-.homepagelink .sitedesc {
-    /* Font Settings */
+#bodyemail {
     font-family: "DM Mono", monospace;
-    font-size: 1.75em;
-    color: var(--primary-dimmed);
-    /* Spacing */
-    padding-left: 2%;
+    font-size: 0.9em;
 }
 
 /* Scroll Notification */

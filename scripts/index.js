@@ -33,3 +33,51 @@ function GetLatestVideo() {
         var video_element = document.getElementById("videospagevideo"+video.toString())
     }
 }
+
+// Grab Video Deoms
+function BuildVideoDemos(url)
+{
+    BuildDemos(url, 999);
+}
+function BuildDemos(url, iters)
+{
+    // Grab Indexing File
+    var index = new XMLHttpRequest();
+    index.open("GET", url, true);
+    index.send();
+    // Build Demos from Index
+    index.onload = function()
+    {
+        // Split index
+        demo_list = this.responseText.split("\n");
+        // Loop through each one
+        for (var i=0; (i<demo_list.length)&&(i<(iters*2)+1); i+=2)
+        {
+            BuildDemo(demo_list[i], demo_list[i+1]);
+        }
+    }
+}
+
+// Build Demo from Link
+function CompleteBody()
+{
+    // Grab Parent Element
+    var demo_container = document.getElementById("demos");
+    // Set text
+    var req = new XMLHttpRequest();
+    req.open("GET", "homepage/.txt", true);
+    req.send();
+    // When REQ Loads
+    req.onload = function()
+    {
+        if (req.status == 200)
+        {
+            // Important Text
+            homepage_paragraphs = this.responseText.split("!ENDPAR");
+            for (let index = 0; index < homepage_paragraphs.length; index++)
+            {
+                document.getElementById("homepageparagraph"+index) = homepage_paragraphs[index];
+            }            
+        }
+    }
+}

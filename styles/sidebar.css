@@ -43,10 +43,11 @@
 /* Lower Navbar Tweaks */
 #lowersidebar #title {
     font-size: 1em !important;
+    padding: 0;
 }
 #lowersidebar .contactinfo {
-    padding: 0;
     font-size: 0.75em;
+    padding: 0;
 }
 /* Upper Navbar Effects */
 #sidebar .hoveranim {
@@ -94,7 +95,7 @@
     /* Font Settings */
     font-family: "DM Mono", monospace;
     font-size: 0.75em;
-    color: #9999; 
+    color: #fff; 
 }
 
 @media only screen and (max-width: 16cm) {

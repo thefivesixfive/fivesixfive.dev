@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/styles/index.css">
         <link rel="stylesheet" href="/styles/index_mobile.css">
         <script src="/scripts/index.js"></script>
+        <link rel="alternate" type="text" href="/homepage/.txt">
         <!-- Texts -->
         <link href="/texts/front-page-about.txt">
         <link href="/texts/front-page-quote.txt">
@@ -43,13 +44,30 @@
             <link rel="stylesheet" href="styles/sidebar.css">
             <!-- Top Stuff, Logo + Links -->
             <div id=uppersidebar>
-                <a class=hoveranim href="#homepage">Twitch</a>
-                <a class=hoveranim href="#homepage">YouTube</a>
-                <a class=hoveranim href="#homepage">Discord</a>
-                <a class=hoveranim href="#homepage">Twitter</a>
-                <a class=hoveranim href="#homepage">TikTok</a>
-                <a class=hoveranim href="#homepage">Instagram</a>
-                <a class=hoveranim href="#homepage">Rebound</a>
+                <a href="https://discord.gg/ZaWpT57QT4" id=reboundlink class=hoveranim target="_blank" rel="noopener noreferrer">
+                    Rebound
+                </a>
+                <a href="https://twitch.tv/fivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
+                    Twitch
+                </a>
+                <a href="https://youtube.com/fivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
+                    YouTube
+                </a>
+                <a href="https://discord.gg/HkSBsHYYnP" class=hoveranim target="_blank" rel="noopener noreferrer">
+                    Discord
+                </a>
+                <a href="https://github.com/thefivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <a href="https://tiktok.com/@thefivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
+                    TikTok
+                </a>
+                <a href="https://twitter.com/thefivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
+                    Twitter
+                </a>
+                <a href="https://instagram.com/thefivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
+                    Instagram
+                </a>
             </div>
             <!-- Bottom Stuf, Contact -->
             <div id=lowersidebar>
@@ -72,8 +90,44 @@
             <div class=centered id=homepage>
                 <!-- Page Content -->
                 <div id=homepagecontent>
+                    <!-- TODO replace title with logo -->
                     <div id=homepagetitle class=centered>
                         fivesixfive
+                    </div>
+                    <div id=homepagebody>
+                        <div class=homepageparagraph>
+                            <p>
+                                <span id=homepagebodytitle>About Me</span>
+                            </p>
+                        </div>
+                        <div id=homepageparagraph0 class=homepageparagraph>
+                            <p>
+                                Greetings, fivesixfive here. I'm somewhere between "developer" and "gamer", and my content is too.
+                                I'm currently making a game called Rebound while recording the development on YouTube and my
+                                various social medias. I also enjoy playing, uploading, and livestreaming Krunker content.
+                            </p>
+                        </div>
+                        <div id=homepageparagraph1 class=homepageparagraph>
+                            <p>
+                                My real name is Caleb North, and I've been working with code for an upwards of 8 years. I've always
+                                enjoyed being able to truly make whatever I could possibly want, specifically, games. While my 
+                                repertoire includes a web scraper, a handful of Discord bots, and this website, I love game dev
+                                the most because of how it combines coding, music, art, and game design all into one project.
+                            </p>
+                        </div>
+                        <div id=homepageparagraph2 class=homepageparagraph>
+                            <p>
+                                I'm 15, homeschooled, and live in the deep south of Alabama. My faovrite color, if it weren't obivous, is pink.
+                                My favorite hobbies in no particular order include programming, playing video games, journaling, and spending time with friends,
+                                either online or in person. I'm also Christian, and I do not identify with any polical party.
+                            </p>
+                        </div>
+                        <div class=homepageparagraph>
+                            <p>
+                                Questions, comments, or concerns?<br>
+                                Head on over to my Discord or shoot me an email at <span id=bodyemail>contact@fivesixfive.dev</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,6 +148,7 @@
         <!-- Run Scripts -->
         <script type="text/javascript">
             SetCopyrightYear();
+            // CompleteBody();
             // GetLatestVideo();
         </script>
     </body>
