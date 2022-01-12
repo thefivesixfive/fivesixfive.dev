@@ -3,9 +3,12 @@
 /* Variables */
 :root {
     /* Colors */
-    --primary-color: #bf0576ff;
+    /* --primary-color: #bf0576ff;
     --primary-dimmed: #E8A4CD;
-    --secondary-color: #f8f8f8;
+    --secondary-color: #f8f8f8; */
+
+    --primary-color: #fff;
+    --secondary-color: #bf0576;
 
     /* Sizing */
     --main-window-width: 80vw;
@@ -31,20 +34,19 @@ body {
 }
 
 /* All Pages */
-#homepage, #aboutpage {
+#homepage {
     z-index: 1;
     /* Sizing */
-    height: 100%;
     width: var(--main-window-width);
     min-height: 100vh;
     min-width: var(--main-window-width);
     max-width: var(--main-window-width);
     /* Positioning */
-    position: relative;
+    right: 0;
+    position: absolute;
 }
 
 /* Home Page */
-
 #homepage {
     /* Font Settings */
     font-family: "DM Mono", monospace;
@@ -59,8 +61,16 @@ body {
     padding-right: 5vw;
 }
 #homepagetitle {
+    /* Font Settings */
     font-weight: 500;
-    font-size: 3.5em;
+    font-size: 3em;
+    font-family: Fruktur, serif;
+    color: #ffffff;
+    /* Positioning + Sizing */
+    justify-content: left !important;
+    padding-left: 5vw;
+    top: 0;
+    height: 30vh;
 }
 .homepagelink {
     /* Spacing */
@@ -127,134 +137,4 @@ body {
 @keyframes slideDown {
     from { bottom: 8%; }
     to { bottom: 12%; }
-}
-
-/* About Page */
-#aboutpagecontent {
-    width: 100%;
-    /* Spacing */
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-#aboutpageportrait {
-    /* Sizing + Spacing */
-    height: 20vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
-#aboutpagetextcontent {
-    /* Sizing + Spacing */
-    /* Font Settings */
-    font-family: "DM Sans", sans-serif;
-    font-size: 150%;
-    font-weight: 500;
-    line-height: 150%;
-    color: var(--primary-color);
-}
-#aboutpagetext p {
-    /* Spacing */
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    /* Coloring */
-    color: var(--primary-color);
-}
-#aboutpagequote {
-    /* Background Settings */
-    background-image: url("/images/quote.png");
-    background-repeat: no-repeat;
-    background-size: contain; 
-}
-#aboutpagequoteauthor {
-    float: right;
-}
-
-/* Series Ad */
-#seriesad {
-    z-index: 4;
-    /* Positioning */
-    position: fixed;
-    top: 0;
-    /* Sizing */
-    width: 100vw;
-    height: 4vh;
-    
-    /* Font Settings */
-    font-family: "DM Mono", monospace;
-    font-size: 0.9em;
-    text-decoration: none;
-    background-color: #000;
-    color: #fff; 
-}
-
-/* MOBILE CSS BELOW */
-
-@media only screen and (max-width: 16cm) {
-    /* Variables */
-    :root { 
-        --main-window-width: 100vw;
-    }
-
-    /* Home Page */
-    #homepagetitle {
-        /* Font Settings */
-        font-size: 2.2em;
-        /* Spacing */
-        margin-bottom: 2vw;
-    }
-    #greetings { 
-        font-size: 1.25em; 
-    }
-    #homepagelinks {
-        /* Spacing */
-        display: flex;
-        justify-content: left;
-        flex-wrap: wrap;
-    }
-    .homepagelink {
-        /* Spacing */
-        display: block !important;
-        justify-content: left !important;
-        align-items: baseline;
-        /* Sizing */
-        width: 40vw;
-    } 
-    .homepagelink .site {
-        /* Font Settings */
-        font-size: 1.5em;
-    }
-    .homepagelink .site:hover {
-        text-decoration: underline 0.11em !important;
-    }
-    .homepagelink .sitedesc {
-        /* Font Settings */
-        font-size: 1.15em;
-        /* Spacing */
-        padding-right: 0.3em;
-    }
-
-    #aboutpageportrait {
-        /* Spacing */
-        padding-right: 0vw;
-        /* Sizing */
-        width: 0%;
-    }
-    /* About Page */
-    #aboutpagetext {
-        /* Sizing */
-        height: 100%;
-        width: 80vw;
-    }
-    #aboutpagetextcontent {
-        /* Font Settings */
-        font-size: 1em !important;
-        line-height: 2em !important;
-    }
-    #aboutpagetext p {
-        /* Spacing */
-        padding-top: 1.5vh;
-        padding-bottom: 1.5vh;
-    }
-    #aboutpagequote {
-        background-position-y: center;
-    }
 }
