@@ -13,7 +13,7 @@
     width: 20vw;
     height: 100vh;
     /* Coloring */
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
 }
 #uppersidebar, #lowersidebar {
     /* Positioning + Sizing */
@@ -136,6 +136,7 @@
         /* Transition */
         transition: left 0.5s ease-in-out;
         -webkit-transition: left 0.5s ease-in-out;
+        background-color: var(--secondary-color);
     }
 
     #sidebar a, #sidebar p {

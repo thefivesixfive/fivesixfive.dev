@@ -3,9 +3,10 @@
 /* Variables */
 :root {
     /* Colors */
-    --primary-color: #bf0576ff;
+    --primary-color: #fff;
     --primary-dimmed: #E8A4CD;
-    --secondary-color: #fff;
+    --secondary-color: #bf0576ff;
+    --background-color: rgba(0, 0, 0, 0);
 /* 
     --primary-color: #fff;
     --secondary-color: #bf0576; */
@@ -30,7 +31,16 @@ body {
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+#bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
 /* All Pages */
@@ -52,12 +62,13 @@ body {
     font-family: "DM Sans", sans-serif;
     color: var(--primary-color);
     /* Color */
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
 }
 #homepagecontent {
     width: 100%;
     /* Spacing */
-    padding: 0vh 5vw;
+    padding: 6vh 5vw;
+    background-color: var(--secondary-color);
 }
 #homepagetitle {
     /* Font Settings */
