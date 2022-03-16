@@ -1,0 +1,12 @@
+#nb {
+    z-index: 2;
+    /* Sizing */
+    height: 5vh;
+    width: 100vw;
+    /* Positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: white;
+}

@@ -1,8 +1,6 @@
 /* Variables */
 :root {
-    /* Colors */
-    --primary-color: #bf0576;
-    --secondary-color: #fff;
+    --text-color: #333;
 }
 /* Smoothing */
 * {
@@ -14,7 +12,6 @@ html, body {
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: var(--background-color);
 }
 /* Centered */
 .centered {
@@ -24,117 +21,53 @@ html, body {
     align-items: center;
 }
 
-#bgvideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}
-
-/* All Pages */
-#homepage {
-    z-index: 1;
+/* Global Page Settings */
+.page {
+    position: relative;
+    /* Display */
+    overflow: hidden;
+    display: block;
     /* Sizing */
-    width: var(--main-window-width);
-    min-height: 100vh;
-    min-width: var(--main-window-width);
-    max-width: var(--main-window-width);
-    /* Positioning */
-    right: 0;
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
 
-/* Home Page */
-#homepage {
-    /* Font Settings */
-    font-family: "DM Sans", sans-serif;
-    color: var(--primary-color);
-    /* Color */
-    background-color: var(--background-color);
+#fp {
+    width: 100vw;
+    background-color: #FED4F8;
 }
-#homepagecontent {
-    width: 100%;
-    /* Spacing */
-    padding: 6vh 5vw;
-    background-color: var(--secondary-color);
-}
-#homepagetitle {
+#fp-welcome {
+    position: absolute;
     /* Font Settings */
+    font-family: "DM Mono";
     font-weight: 500;
     font-size: 4em;
-    font-family: Fruktur, serif;
-    color: var(--primary-color);
-    user-select: none;
-    /* Positioning + Sizing */
-    justify-content: left !important;
-    height: 10vh;
-}
-#homepagebodytitle {
-    /* Font Settings */
-    font-weight: 900;
-}
-.homepageparagraph {
-    /* Spacing */
-    margin-top: 1.5vh;
-    /* Font Settings */
-    font-size: 1em;
-    line-height: 1.5em;
-    text-align: justify;
-    text-justify: distribute;
-}
-#bodyemail {
-    font-family: "DM Mono", monospace;
-    font-size: 0.9em;
-}
-
-/* Scroll Notification */
-
-#scrollnotif {
-    z-index: 2;
-    /* Animation */
-    animation: slideDown 2s ease-in-out 3s infinite alternate-reverse both;
+    color: var(--text-color);
+    /* Sizing */
+    height: 20vh;
     /* Positioning */
+    left: 5vw;
+    top: 40vh;
+}
+#fp-welcome p {
+    vertical-align: center;
+}
+#fp-image {
     position: absolute;
-    bottom: 10%;
+    /* Sizing */
+    height: 60vh;
+    /* Positioning */
+    top: 20vh;
+    right: -10vw;
+}
+/* Copyright */
+#copyright {
+    z-index: 2;
+    /* Positioning */
+    position: fixed;
+    bottom: 1vh;
     width: 100vw;
     /* Font Settings */
     font-family: "DM Mono", monospace;
-    font-size: 1.25em;
-    font-weight: bold;
-    letter-spacing: -0.15em;
-}
-#scrollnotifcontent {
-    /* Animation */
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-    /* Appearance */
-    transform: rotate(90deg);
-    color: var(--secondary-color);
-}
-@keyframes fadeIn {
-    from { color: var(--secondary-color); }
-    to { color: var(--primary-color); }
-}
-@keyframes slideDown {
-    from { bottom: 8%; }
-    to { bottom: 12%; }
-}
-
-@media only screen and (hover: none) and (pointer: coarse) {
-    :root {
-        --main-window-width: 100vw;
-    }
-    #homepagetitle {
-        padding-top: 3vh;
-    }
-    .homepageparagraph {
-        /* Font Settings */
-        font-size: 2.5em !important;
-        padding-top: 2vh;
-    }
+    font-size: 0.75em;
 }
