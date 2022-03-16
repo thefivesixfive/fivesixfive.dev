@@ -1,19 +1,20 @@
-/* Smoothing */
-* { scroll-behavior: smooth; }
 /* Variables */
 :root {
     /* Colors */
     --primary-color: #bf0576;
-    --primary-dimmed: #E8A4CD;
     --secondary-color: #fff;
-    --background-color: #fff;
-/* 
-    --primary-color: #fff;
-    --secondary-color: #bf0576; */
-
-    /* Sizing */
-    --main-window-width: 80vw;
-    --mobile-window-width: 100vw;
+}
+/* Smoothing */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+/* Fit to Entire Page */
+html, body {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: var(--background-color);
 }
 /* Centered */
 .centered {
@@ -21,17 +22,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/* CSS Clear */
-a,p,ul { margin: 0; }
-
-/* Fit to Entire Page */
-body {
-    margin: 0;
-    height: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    background-color: var(--background-color);
 }
 
 #bgvideo {

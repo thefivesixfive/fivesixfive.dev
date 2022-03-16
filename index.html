@@ -2,22 +2,6 @@
 <html>
     <!-- Header Content -->
     <head>
-        <meta charset="utf-8">
-        <!-- Stylesheet + Scripts -->
-        <link rel="stylesheet" href="/styles/index.css">
-        <link rel="stylesheet" href="/styles/index_mobile.css">
-        <script src="/scripts/index.js"></script>
-        <link rel="alternate" type="text" href="/homepage/.txt">
-        <!-- Texts -->
-        <link href="/texts/front-page-about.txt">
-        <link href="/texts/front-page-quote.txt">
-        <!-- Tab Appearance -->
-        <title>fivesixfive's site</title>
-        <link rel="icon" type="image/png" href="/images/logo_favicon.png">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans&family=DM+Serif+Display&family=DM+Serif+Text&family=Fruktur&display=swap" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRDZMD2ED3"></script>
         <script>
@@ -29,117 +13,6 @@
     </head>
     <!-- Body Content -->
     <body>
-        <!-- Background Video -->
-        <!-- <video autoplay muted loop id=bgvideo>
-            <source src="images/fsfpano_color.mp4" type="video/mp4">
-        </video> -->
-        <!-- Side Bar Button (mobile only) -->
-        <div class=centered id=hamburger>
-            <a onclick=Hamburger()>|||</a>
-        </div>
-        <!-- Side Bar -->
-        <div id=sidebar class=centered>
-            <link rel="stylesheet" href="styles/sidebar.css">
-            <!-- Top Stuff, Logo + Links -->
-            <div id=uppersidebar>
-                <a href="https://discord.gg/ZaWpT57QT4" id=reboundlink class=hoveranim target="_blank" rel="noopener noreferrer">
-                    Rebound
-                </a>
-                <a href="https://twitch.tv/fivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
-                    Twitch
-                </a>
-                <a href="https://youtube.com/fivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
-                    YouTube
-                </a>
-                <a href="https://open.spotify.com/artist/1yYIeGIP7CU9CjtOsz1WTT?si=7CSZij5TQG2USrcOcKXiaw" class=hoveranim target="_blank" rel="noopener noreferrer">
-                    Spotify
-                </a>
-                <a href="https://discord.gg/HkSBsHYYnP" class=hoveranim target="_blank" rel="noopener noreferrer">
-                    Discord
-                </a>
-                <a href="https://github.com/thefivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-                <a href="https://twitter.com/thefivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
-                    Twitter
-                </a>
-                <a href="https://instagram.com/thefivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
-                    Instagram
-                </a>
-                <a href="https://tiktok.com/@thefivesixfive" class=hoveranim target="_blank" rel="noopener noreferrer">
-                    TikTok
-                </a>
-            </div>
-            <!-- Bottom Stuf, Contact -->
-            <div id=lowersidebar>
-                <!-- Contact -->
-                <p id=title>Get in Touch</p>
-                <p class=contactinfo>contact@fivesixfive.dev</p>
-                <!-- <a class=hoveranim target="_blank" rel="noopener noreferrer" href="https://instagram.com/thefivesixfive">Instagram</a>
-                <a class=hoveranim target="_blank" rel="noopener noreferrer" href="https://discord.gg/HkSBsHYYnP">Discord</a> -->
-            </div>
-        </div>
-        <!-- Pages -->
-        <div id=pages>
-            <!-- Series Ad -->
-            <!-- <a href="https://youtube.com/fivesixfive?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class=centered id=seriesad>
-                <div id=seriesadcontent>
-                    <p>New series out on YouTube on 10.10.21</p>
-                </div>
-            </a> -->
-            <!-- Home Page -->
-            <div class=centered id=homepage>
-                <!-- Page Content -->
-                <div id=homepagecontent>
-                    <!-- TODO replace title with logo -->
-                    <div id=homepagetitle class=centered>
-                        fivesixfive
-                    </div>
-                    <div id=homepagebody>
-                        <!-- <div class=homepageparagraph>
-                            <p>
-                                <span id=homepagebodytitle>About Me</span>
-                            </p>
-                        </div> -->
-                        <div id=homepageparagraph0 class=homepageparagraph>
-                            <p>
-                                Greetings, fivesixfive here. I type, I click, and magic happens. Right now I'm making a game called Rebound,
-                                and I'm also working on music whenever I can. Sometimes I livestream or upload a video or two as well. If you want
-                                to keep up with my game development, take a look at my YouTube, Twitter, Tiktok, or join the Rebound Discord server.
-                            </p>
-                        </div>
-                        <div id=homepageparagraph1 class=homepageparagraph>
-                            <p>
-                                My real name is Caleb North, and I've been working with code for an upwards of 8 years. I've always
-                                loved being truly able to make whatever I could possibly want. While my repertoire includes a web scraper,
-                                a handful of Discord bots, and this website, I enjoy game development the most because of how it
-                                combines coding, music, art, and game design all into one project.
-                            </p>
-                        </div>
-                        <div id=homepageparagraph2 class=homepageparagraph>
-                            <p>
-                                I'm 15, homeschooled, and  I live in the deep south of Alabama. My favorite color, if it weren't obvious,
-                                is pink. My favorite hobbies (in no particular order) include programming, playing video games, journaling, 
-                                and spending time with friends, online and in person. I'm also Christian, but I do not identify with any political party.
-                            </p>
-                        </div>
-                        <div class=homepageparagraph>
-                            <p>
-                                Questions, comments, or concerns?<br>
-                                Head on over to my Discord or shoot me an email at <span id=bodyemail>contact@fivesixfive.dev</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Scroll Down! -->
-            <!-- <div class=centered id=scrollnotif>
-                <div id=scrollnotifcontent>
-                    <p> >>> </p>
-                </div>
-            </div> -->
-
         <!-- Copyright -->
         <div class=centered id=copyright>
             <div id=copyrightcontent>
@@ -148,9 +21,8 @@
         </div>
         <!-- Run Scripts -->
         <script type="text/javascript">
-            SetCopyrightYear();
-            // CompleteBody();
-            // GetLatestVideo();
+            // Set Copyright Year
+            document.getElementById("year").innerHTML=new Date().getFullYear();
         </script>
     </body>
 </html>
