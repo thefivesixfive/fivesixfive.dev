@@ -1,6 +1,7 @@
 /* Variables */
 :root {
-    --text-color: #333;
+    --text-color: #444;
+    --pink: #fed4f8;
 }
 /* Smoothing */
 * {
@@ -34,7 +35,8 @@ html, body {
 
 #fp {
     width: 100vw;
-    background-color: #FED4F8;
+    /* background-color: #FED4F8; */
+    background-color: white;
 }
 #fp-welcome {
     position: absolute;
@@ -59,6 +61,8 @@ html, body {
     /* Positioning */
     top: 20vh;
     right: -10vw;
+    /* Appearance */
+    image-rendering:crisp-edges;
 }
 /* Copyright */
 #copyright {

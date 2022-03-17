@@ -1,12 +1,44 @@
 #nb {
     z-index: 2;
     /* Sizing */
-    height: 5vh;
     width: 100vw;
     /* Positioning */
     position: fixed;
     top: 0;
     left: 0;
-
-    background-color: white;
+    /* Coloring */
+    background-color: #fff;
+}
+.nb-link {
+    cursor: pointer;
+    /* Sizing */
+    padding: 2vh 0.5vw;
+    width: 7.5vw;
+    /* Coloring */
+    color: var(--text-color);
+}
+.nb-link a {
+    /* Font Settings */
+    font-family: "Work Sans", monospace;
+    font-weight: 500;
+    font-size: 1.25em;
+    color: inherit;
+    /* Text Decoration */
+    text-decoration: underline;
+    text-decoration-color: #0000;
+    text-decoration-thickness: 3px;
+    /* Animate */
+    transition: text-decoration-color 0.5s;
+}
+.nb-link:hover a {
+    text-decoration: underline;
+    text-decoration-color: color;
+    text-decoration-thickness: 3px;
+}
+#feat-nb-link a {
+    /* Coloring */
+    color:#DAA520;
+    /* background-image:;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
 }
