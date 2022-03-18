@@ -1,0 +1,42 @@
+/* Variables */
+:root {
+    /* Constants */
+    --text-color: #444;
+    --pink: #fed4f8;
+
+    /* Navbar */
+    --nb-bg: var(--pink);
+    --nb-text-color: var(--text-color);
+
+    /* Homepage */
+    --bg: var(--pink);
+}
+/* Smoothing */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+/* Fit to Entire Page */
+html, body {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* Centered */
+.centered {
+    /* Sizing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Global Page Settings */
+.page {
+    position: relative;
+    /* Display */
+    overflow: hidden;
+    display: block;
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+}
