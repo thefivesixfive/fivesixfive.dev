@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     /* Coloring */
-    background-color: #fff;
+    background-color:#fff;
 }
 .nb-link {
     cursor: pointer;
@@ -15,7 +15,7 @@
     padding: 2vh 0.5vw;
     width: 7.5vw;
     /* Coloring */
-    color: var(--text-color);
+    color: #444;
 }
 .nb-link a {
     /* Font Settings */
@@ -25,7 +25,7 @@
     color: inherit;
     /* Text Decoration */
     text-decoration: underline;
-    text-decoration-color: #0000;
+    text-decoration-color: #fff;
     text-decoration-thickness: 3px;
     /* Animate */
     transition: text-decoration-color 0.5s;
@@ -35,9 +35,22 @@
     text-decoration-color: color;
     text-decoration-thickness: 3px;
 }
-#feat-nb-link a {
+.nb-dropdown-container {
+    /* Positioning */
+    position: relative;
+    display: inline-block;
+}
+.nb-dropdown-link {
+    position: absolute;
+}
+.nb-dropdown:hover .nb-dropdown-container {
+    display: inline-block;
+}
+
+/* Currently NOT IN USE */
+#ffeat-nb-link a {
     /* Coloring */
-    color:#DAA520;
+    color:darkturquoise;
     /* background-image:;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; */

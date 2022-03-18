@@ -36,20 +36,22 @@ html, body {
 #fp {
     width: 100vw;
     /* background-color: #FED4F8; */
-    background-color: white;
+    background-color: #fff;
 }
-#fp-welcome {
+#fp-title {
     position: absolute;
     /* Font Settings */
     font-family: "DM Mono";
     font-weight: 500;
-    font-size: 4em;
-    color: var(--text-color);
+    font-size: 6vh;
     /* Sizing */
     height: 20vh;
+    padding: 5vh;
     /* Positioning */
-    left: 5vw;
-    top: 40vh;
+    left: 50vw;
+    top: 35vh;
+    /* Coloring */
+    color: var(--text-color);
 }
 #fp-welcome p {
     vertical-align: center;
@@ -57,12 +59,24 @@ html, body {
 #fp-image {
     position: absolute;
     /* Sizing */
-    height: 60vh;
+    height: 40vh;
     /* Positioning */
-    top: 20vh;
-    right: -10vw;
+    top: 30vh;
+    right: 55vw;
     /* Appearance */
     image-rendering:crisp-edges;
+}
+#fp-links {
+    margin-top: 2vh;
+    /* Positioning */
+    float: left;
+}
+.fp-link a {
+    width: 3vw;
+}
+.fp-link img {
+    image-rendering: crisp-edges;
+    height: 3vh;
 }
 /* Copyright */
 #copyright {
