@@ -6,15 +6,11 @@
     position: fixed;
     top: 0;
     left: 0;
-}
-#nb, .nb-dropdown-container {
     /* Coloring */
-    background-color: var(--nb-bg);
-    backdrop-filter: blur(20px);
+    background-color: #fff;
 }
 .nb-link {
     display: block;
-    cursor: pointer;
     /* Sizing */
     padding: 1.5vh 2vw;
     /* Coloring */
@@ -25,7 +21,7 @@
     /* Font Settings */
     font-family: "Work Sans", monospace;
     font-weight: 500;
-    font-size: 1.25em;
+    font-size: 1.06vw;
     color: inherit;
     /* Text Decoration */
     text-decoration: underline;

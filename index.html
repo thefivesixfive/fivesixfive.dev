@@ -12,13 +12,16 @@
         </script>
         <!-- Connect to CSS + JS -->
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <link rel="stylesheet" href="../styles/css.css">
-        <link rel="stylesheet" href="../styles/nb.css">
+        <link rel="stylesheet" href="../css.css">
+        <link rel="stylesheet" href="../nb/nb.css">
         <link rel="stylesheet" href="index.css">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Tab Appearance -->
+        <title>fivesixfive | Home</title>
+        <link rel="icon" href="../images/Lisa/Lisa-Icon-Full_Color-Pink-BG-Rounded.png">
     </head>
     <!-- Body Content -->
     <body>
@@ -26,32 +29,17 @@
         <div id="nb" class="centered"></div>
         <script>
             $(function(){
-                $("#nb").load("nb.html");
+                $("#nb").load("../nb/nb.html");
             });
         </script>
         <!-- Front Page -->
         <div class="page" id="fp">
-            <img id="fp-image" src="images/Lisa-Icon-Full_Color-Large.png">
-            <div id="fp-title">
-                <div id="fp-welcome">
-                    <p><i>greetings</i></p>
-                    <p>fivesixfive here</p>
-                </div>
-                <div class="centered" id="fp-links">
-                    <div class="fp-link">
-                        <a class="centered" href="https://youtube.com/fivesixfive" target="_blank" rel="noopener noreferrer">
-                            <img src="images/logos/youtube.png">
-                        </a>
-                    </div>
-                    <div class="fp-link">
-                        <a class="centered" href="https://twitch.tv/fivesixfive" target="_blank" rel="noopener noreferrer">
-                            <img src="images/logos/twitch.png">
-                        </a>
-                    </div>
-                    <div class="fp-link">
-                        <a class="centered" href="https://discord.gg/HkSBsHYYnP" target="_blank" rel="noopener noreferrer">
-                            <img src="images/logos/discord.png">
-                        </a>
+            <img id="fp-image" src="images/clouds.jpeg">
+            <div id="fp-content" class="centered">
+                <div id="fp-title">
+                    <div id="fp-welcome">
+                        <p><i>greetings</i></p>
+                        <p>fivesixfive here</p>
                     </div>
                 </div>
             </div>

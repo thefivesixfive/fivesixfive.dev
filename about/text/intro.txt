@@ -1,0 +1,17 @@
+<span style="font-size: 1.2vw">Greetings</span><br>
+fivesixfive here. I'm a 15-year-old developer who likes coding a little too much.
+Right now I'm making an online multiplayer game and uploading my progress to YouTube. 
+Sometimes I stream if I'm in the mood, and I post to my socials if I'm not YouTubing.
+<br><br>
+My real name is Caleb North, and I've been working with code for an upwards of 8 years.
+The love I have for the art of coding formed when I made a Scratch account in hopes of crafting my own games.
+Although I do have a couple classes under my belt, most of my knowledge is self taught.
+As such I'm fluent in Python and have solid experience in languages such as Java, C#, HTML, CSS, and GDScript.
+<br><br>
+I'm a proud homeschooler living in the deep south of Alabama. My favorite color is pink and my favorite food
+is pizza, but given that I'm a teenager I will eat pretty much anything put before me. My hobbies, in no particular order,
+include programming, hanging out with friends (in person and online), playing video games, listening to music, and drawing.
+<br><br>
+I'm also a devout Christian, and I don't identify with any particular political party. So please know,
+<i>anyone</i> is welcome in my community, no matter who they are. We as humans should be able to get along despite
+our beliefs, not be divided because of them. 

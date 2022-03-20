@@ -1,15 +1,33 @@
+#about {}
 .ab-half {
+    /* Positioning */
+    position: relative;
     /* Sizing */
     height: 100%;
     width: 50%;
 }
 #ab-left {
     /* Positioning */
-    position: relative;
-    top: -7.5vw;
+    position: absolute;
 }
 #ab-left img {
     /* Sizing */
-    width: 100%;
-    /* Coloring */
+    height:80%;
+}
+#ab-right {
+    /* Positioning */
+    position: absolute;
+    right: 0;
+    /* Font Settings */
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 0.9vw;
+    letter-spacing: normal;
+    text-align: justify;
+    color: var(--text-color);
+}
+#ab-about-me {
+    /* Sizing */
+    height: 100%;
+    padding: 0 7vw;
 }

@@ -12,13 +12,16 @@
         </script>
         <!-- Connect to CSS + JS -->
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <link rel="stylesheet" href="../styles/css.css">
-        <link rel="stylesheet" href="../styles/nb.css">
+        <link rel="stylesheet" href="../css.css">
+        <link rel="stylesheet" href="../nb/nb.css">
         <link rel="stylesheet" href="index.css">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Tab Appearance -->
+        <title>fivesixfive | About</title>
+        <link rel="icon" href="../images/Lisa/Lisa-Icon-Full_Color-Pink-BG-Rounded.png">
     </head>
     <!-- Body Content -->
     <body>
@@ -26,16 +29,23 @@
         <div id="nb" class="centered"></div>
         <script>
             $(function(){
-                $("#nb").load("../nb.html");
+                $("#nb").load("../nb/nb.html");
             });
         </script>
         <!-- Front Page -->
         <div class="page" id="about">
-            <div class="ab-half" id="ab-left">
+            <div class="ab-half centered" id="ab-left">
                 <img src="../images/selfie.jpeg">
             </div>
             <div class="ab-half" id="ab-right">
-
+                <div id="ab-about-me" class="centered">
+                    <p id="ab-about-me-text"></p>
+                    <script>
+                        $(function(){
+                            $("#ab-about-me-text").load("text/intro.txt");
+                        });
+                    </script>
+                </div>
             </div>
         </div>
         <!-- Copyright -->
