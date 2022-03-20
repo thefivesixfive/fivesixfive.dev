@@ -1,0 +1,15 @@
+.ab-half {
+    /* Sizing */
+    height: 100%;
+    width: 50%;
+}
+#ab-left {
+    /* Positioning */
+    position: relative;
+    top: -7.5vw;
+}
+#ab-left img {
+    /* Sizing */
+    width: 100%;
+    /* Coloring */
+}
