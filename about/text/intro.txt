@@ -1,4 +1,4 @@
-<span style="font-size: 1.2vw">Greetings</span><br>
+<span style="font-size: 1.4vw">Greetings</span><br>
 fivesixfive here. I'm a 15-year-old developer who likes coding a little too much.
 Right now I'm making an online multiplayer game and uploading my progress to YouTube. 
 Sometimes I stream if I'm in the mood, and I post to my socials if I'm not YouTubing.
@@ -13,5 +13,5 @@ is pizza, but given that I'm a teenager I will eat pretty much anything put befo
 include programming, hanging out with friends (in person and online), playing video games, listening to music, and drawing.
 <br><br>
 I'm also a devout Christian, but I don't identify with any particular political party.
-<br>"There is a certain branch of Christianity that has so effectively hijacked the word Christian that I feel uncomfortable sometimes using it to describe myself. But I am a Christian.”
+"There is a certain branch of Christianity that has so effectively hijacked the word Christian that I feel uncomfortable sometimes using it to describe myself. But I am a Christian.”
 <br>- John Green

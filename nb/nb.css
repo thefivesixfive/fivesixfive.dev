@@ -23,6 +23,7 @@
     font-weight: 500;
     font-size: 1.06vw;
     color: inherit;
+    white-space: nowrap;
     /* Text Decoration */
     text-decoration: underline;
     text-decoration-color: #0000;
