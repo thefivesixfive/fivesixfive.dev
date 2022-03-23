@@ -1,4 +1,3 @@
-#about {}
 .ab-half {
     /* Positioning */
     position: relative;
@@ -21,7 +20,7 @@
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 1.1em;
     letter-spacing: normal;
     text-align: justify;
     color: var(--text-color);
@@ -29,5 +28,5 @@
 #ab-about-me {
     /* Sizing */
     height: 100%;
-    padding: 0 7vw;
+    padding: 0 07vw;
 }

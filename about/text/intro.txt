@@ -1,4 +1,4 @@
-<span style="font-size: 1.4vw">Greetings</span><br>
+<span style="font-size: 1.5em">Greetings</span><br>
 fivesixfive here. I'm a 15-year-old developer who likes coding a little too much.
 Right now I'm making an online multiplayer game and uploading my progress to YouTube. 
 Sometimes I stream if I'm in the mood, and I post to my socials if I'm not YouTubing.

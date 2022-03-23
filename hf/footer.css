@@ -1,0 +1,11 @@
+/* Copyright */
+#ft {
+    z-index: 2;
+    /* Positioning */
+    position: fixed;
+    bottom: 1vh;
+    width: 100vw;
+    /* Font Settings */
+    font-family: "DM Mono", monospace;
+    font-size: 0.75em;
+}

@@ -2,6 +2,7 @@
 <html>
     <!-- Header Content -->
     <head>
+        <link rel="stylesheet" href="index.css">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRDZMD2ED3"></script>
         <script>
@@ -10,31 +11,37 @@
             gtag('js', new Date());
             gtag('config', 'G-FRDZMD2ED3');
         </script>
-        <!-- Connect to CSS + JS -->
+        
+        <!-- Header + Footer -->
+        <div id="nb" class="centered"></div>
+        <div id="ft" class="centered"></div>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <link rel="stylesheet" href="../css.css">
-        <link rel="stylesheet" href="../nb/nb.css">
-        <link rel="stylesheet" href="index.css">
+        <script>
+            $(function(){
+                $("#nb").load("/hf/header.html");
+                $("#ft").load("/hf/footer.html");
+            });
+        </script>
+
+        <!-- Connect to CSS + JS -->
+        <link rel="stylesheet" href="/css.css">
+        <link rel="stylesheet" href="/hf/header.css">
+        <link rel="stylesheet" href="/hf/footer.css">
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+        
         <!-- Tab Appearance -->
-        <title>fivesixfive | Home</title>
-        <link rel="icon" href="../images/Lisa/Lisa-Icon-Full_Color-Pink-BG-Rounded.png">
+        <title>Home | fivesixfive</title>
+        <link rel="icon" type="image/png" href="/favicon.png">
     </head>
     <!-- Body Content -->
     <body>
-        <!-- Navigation Bar -->
-        <div id="nb" class="centered"></div>
-        <script>
-            $(function(){
-                $("#nb").load("../nb/nb.html");
-            });
-        </script>
         <!-- Front Page -->
         <div class="page" id="fp">
-            <img id="fp-image" src="images/clouds.jpeg">
+            <img id="fp-image" src="/images/clouds.jpeg">
             <div id="fp-content" class="centered">
                 <div id="fp-title">
                     <div id="fp-welcome">
@@ -44,16 +51,5 @@
                 </div>
             </div>
         </div>
-        <!-- Copyright -->
-        <div class=centered id=copyright>
-            <div id=copyrightcontent>
-                <p>&copy; <span id=year>2021</span> Caleb North</p>
-            </div>
-        </div>
-        <!-- Run Scripts -->
-        <script type="text/javascript">
-            // Set Copyright Year
-            document.getElementById("year").innerHTML=new Date().getFullYear();
-        </script>
     </body>
 </html>

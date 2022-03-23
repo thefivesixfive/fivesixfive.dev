@@ -1,0 +1,70 @@
+#minefob-page-background {
+    /* Positioning */
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+#minefob-page {
+    /* Sizing */
+    width: 30vw;
+    /* Spacing */
+    margin-top: 25vh;
+    margin-left: 7.5vw;
+    /* Font Settings */
+    font-family: "Work Sans";
+    font-weight: 600;
+    color: #fff;
+}
+#minefob-page-title {
+    /* Spacing */
+    margin-left: -0.2vw;
+    margin-bottom: -2%;
+    /* Font Settings */
+    font-size: 4em;
+}
+#minefob-page-subtitle, #minefob-version {
+    /* Font Settings */
+    font-size: 0.8em;
+}
+#minefob-page-content {
+    /* Spacing */
+    margin-top: 1vh;
+}
+#minefob-page-content-disclaimer {
+    /* Font Settings */
+    font-style: italic;
+}
+#minefob-page-content-about {
+    /* Spacing */
+    margin-top: 0.5vh;
+    text-align: justify;
+}
+#minefob-page-links {
+    /* Spacing */
+    margin-top: 4vh;
+}
+#minefob-page-links a {
+    /* Spacing */
+    padding: 2%;
+    margin-right :2%;
+    /* Coloring */
+    color: #fff;
+    background-color:rgb(78, 108, 165);
+    /* Font Settings */
+    text-decoration: none;
+    /* Text Decoration */
+    text-decoration: underline;
+    text-decoration-color: #0000;
+    text-decoration-thickness: 2px;
+    /* Animate */
+    transition: text-decoration-color 0.5s;
+}
+#minefob-page-links a:hover {
+    /* Text Decoration */
+    text-decoration: underline;
+    text-decoration-color: color;
+    text-decoration-thickness: 2px;
+}
+#ft {
+    color: #fff !important;
+}

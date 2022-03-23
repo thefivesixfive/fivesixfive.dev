@@ -2,8 +2,6 @@
 <html>
     <!-- Header Content -->
     <head>
-        <!-- Header Content -->
-    <head>
         <link rel="stylesheet" href="index.css">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRDZMD2ED3"></script>
@@ -36,25 +34,36 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
         
         <!-- Tab Appearance -->
-        <title>About | fivesixfive</title>
-        <link rel="icon" href="/images/Lisa/Lisa-Icon-Full_Color-Pink-BG-Rounded.png">
-    </head>
+        <title>Minefob | fivesixfive</title>
+        <link rel="icon" href="/images/Lisa/Lisa-Icon-Full_Color-Pink-BG-Rounded">
     </head>
     <!-- Body Content -->
     <body>
-        <!-- Front Page -->
-        <div class="page" id="about">
-            <div class="ab-half centered" id="ab-left">
-                <img src="/images/selfie.jpeg">
-            </div>
-            <div class="ab-half" id="ab-right">
-                <div id="ab-about-me" class="centered">
-                    <p id="ab-about-me-text"></p>
+        <!-- Main Div -->
+        <div class="page" id="minefob">
+            <img id="minefob-page-background" src="background/background.png">
+            <div id="minefob-page">
+                <div id="minefob-page-header">
+                    <p id="minefob-page-title">Minefob</p>
+                    <p id="minefob-version">v1.0.2</p>
+                    <p id="minefob-page-subtitle">A Python module to control your Minehut servers</p>
+                </div>
+                <div id="minefob-page-content">
+                    <p id="minefob-page-content-disclaimer">
+                        DISCLAIMER! This module no longer works.
+                    </p>
+                    <p id="minefob-page-content-about"></p>
                     <script>
-                        $(function(){
-                            $("#ab-about-me-text").load("text/intro.txt");
-                        });
+                        $(function(){ $("#minefob-page-content-about").load("minefob-about.html") });
                     </script>
+                </div>
+                <div id="minefob-page-links">
+                    <a href="https://github.com/thefivesixfive/minefob" target="_blank" rel="noopener noreferrer">
+                        GitHub Page
+                    </a>
+                    <a href="https://pypi.org/project/minefob/" target="_blank" rel="noopener noreferrer">
+                        PyPi Page
+                    </a>
                 </div>
             </div>
         </div>
