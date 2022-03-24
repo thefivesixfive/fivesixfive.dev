@@ -1,0 +1,71 @@
+#webeye-sidebar {
+    /* Positioning */
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
+    /* Sizing */
+    width: 20vw;
+    height: 95vh;
+    /* background-color: lightblue; */
+}
+#webeye-body {
+    /* Sizing */
+    flex-direction: column;
+    /* Font Settings */
+    font-family: "Comfortaa", sans-serif;
+}
+#webeye-title {
+    /* Font Settings */
+    font-size: 3em;
+}
+#webeye-subtitle {
+    /* Font Settings */
+    font-size: 0.9em;
+}
+#webeye-body-content {
+    /* Spacing */
+    margin-top: 1.5vh;
+    /* Font Settings */
+    font-weight: 500;
+    text-align: justify;
+    line-height:2.5vh;
+}
+#webeye-demo-img {
+    /* Positioning */
+    position: absolute;
+    left: 0;
+    top: 5vh;
+    /* Sizing */
+    width: 75vw;
+    height: 95vh;
+}
+#webeye-body-links {
+    flex-direction: column;
+    /* Spacing */
+    padding-top: 2vh;
+    /* Sizing */
+    width: 100%;
+}
+#webeye-body-links a {
+    /* Spacing */
+    padding: 2% 4%;
+    margin-right: 1vw;
+    float: left;
+    /* Coloring */
+    color: #000;
+    /* Border */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+    /* Text Decoration */
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #0000;
+    /* Animate */
+    transition: text-decoration-color 0.5s;
+}
+#webeye-body-links a:hover {
+    /* Text Decoration */
+    text-decoration: underline;
+    text-decoration-color: color;
+}

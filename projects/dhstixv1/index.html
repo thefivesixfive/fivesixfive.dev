@@ -34,20 +34,29 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
         
         <!-- Tab Appearance -->
+        <title>DHStix v1 | fivesixfive</title>
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        <title>Home | fivesixfive</title>
     </head>
     <!-- Body Content -->
     <body>
-        <!-- Front Page -->
-        <div class="page" id="fp">
-            <img id="fp-image" src="/img/clouds.jpeg">
-            <div id="fp-content" class="centered">
-                <div id="fp-title">
-                    <div id="fp-welcome">
-                        <p><i>greetings</i></p>
-                        <p>fivesixfive here</p>
-                    </div>
+        <!-- Main Div -->
+        <div class="page" id="dhstixv1">
+            <img id="dhstixv1-page-background" src="background/background.png">
+            <div id="dhstixv1-page">
+                <div id="dhstixv1-page-header">
+                    <p id="dhstixv1-page-title">DHStix</p>
+                    <p id="dhstixv1-page-subtitle">An esolang for programmers who hate themselves</p>
+                </div>
+                <div id="dhstixv1-page-content">
+                    <p id="dhstixv1-page-content-about"></p>
+                    <script>
+                        $(function(){ $("#dhstixv1-page-content-about").load("dhstixv1-about.html") });
+                    </script>
+                </div>
+                <div id="dhstixv1-page-links">
+                    <a href="https://github.com/thefivesixfive/dhstix" target="_blank" rel="noopener noreferrer">
+                        GitHub Page
+                    </a>
                 </div>
             </div>
         </div>

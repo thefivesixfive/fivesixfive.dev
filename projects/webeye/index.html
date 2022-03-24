@@ -31,25 +31,39 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
         
         <!-- Tab Appearance -->
+        <title>DHStix v1 | fivesixfive</title>
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        <title>Home | fivesixfive</title>
     </head>
     <!-- Body Content -->
     <body>
-        <!-- Front Page -->
-        <div class="page" id="fp">
-            <img id="fp-image" src="/img/clouds.jpeg">
-            <div id="fp-content" class="centered">
-                <div id="fp-title">
-                    <div id="fp-welcome">
-                        <p><i>greetings</i></p>
-                        <p>fivesixfive here</p>
+         <div class="page" id="webeye">
+            <div id="webeye-sidebar">
+                <div class="centered" id="webeye-logo">
+                    <img src="img/webeye_icon.png">
+                </div>
+                <div class="centered" id="webeye-body">
+                    <p id="webeye-title">webeye</p>
+                    <p id="webeye-subtitle">A lightweight Python webscraper</p>
+                    <p id="webeye-body-content"></p>
+                    <div id="webeye-body-links">
+                        <a href="https://github.com/thefivesixfive/webeye/raw/master/webeye-1.0.0/exec/webeye-setup.exe" target="_blank" rel="noopener noreferrer">
+                            Download
+                        </a>
+                        <a href="https://github.com/thefivesixfive/webeye" target="_blank" rel="noopener noreferrer">
+                            GitHub
+                        </a>
                     </div>
                 </div>
+                <script>
+                    $(function(){ $("#webeye-body-content").load("webeye-about.html") });
+                </script>
             </div>
-        </div>
+            <div class="centered" id="webeye-demo-img">
+                <img src="img/webeye_demo.png">
+            </div>
+         </div>
     </body>
 </html>

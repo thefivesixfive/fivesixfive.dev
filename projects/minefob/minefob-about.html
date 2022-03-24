@@ -1,11 +1,7 @@
-<p>Minehut is a Minecraft server host that offers free servers in exchange for certain limitations.
-While not so much anymore, I used to use Minehut frequently, to the point I once had three accounts.
-Because I was so familiar with Minehut and its community I saw a glaring flaw: there was a full-fledged API
-and no modules (at least for Python) that took advantage of it. So I made Minefob.
-</p><br>
-<p>The module quickly began being used and as of writing this Minefob has 5,000+ downloads. I was, and still am,
-immensely proud of myself that I was able to find an issue and address it using my skills. So what went wrong?
-Why did it break? Well, it's pretty simple. The
-<a href="https://api.bennydoesstuff.me/#/users/login" target="_blank" rel="noopener norefferer" style="text-decoration: underline;color:#fff">
-    closest thing to official documentation</a>
-simply marks the login endpoint as 'depreciated'. So despite my best efforts the project remains permanently nonfunctional.</p>
+Minefob: the best Python module to control any Minehut server. Simply install with pip, login with your Minehut account, 
+and have full access to your server through code.<br><br>
+I made this module back in 2020 during the peak of COVID to control the Minehut server my friends and I played on frequently. It became
+apparent to me there was no public Python module that did what mine could, so I published it on PyPi. The aptly named 'Minefob' took off and as of writing this
+the module has over 5,000 downloads.<br><br>Unforunately the module is permanently nonfunctional at no fault of my own; rather, Minehut simply depreciated username and password authentication
+through the API, leaving the only current way to log in through so convoluted it's easier for the end user to use the online control panel. Maybe one day
+I'll make another module that works around this...
