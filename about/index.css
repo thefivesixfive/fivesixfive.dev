@@ -20,7 +20,8 @@
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1em;
+    line-height: 1.4em;
     letter-spacing: normal;
     text-align: justify;
     color: var(--text-color);
