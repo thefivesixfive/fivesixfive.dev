@@ -5,20 +5,25 @@
     top: 0;
 }
 #minefob-page {
+    flex-direction: column;
     /* Sizing */
     width: 30vw;
+    height: 100vh;
     /* Spacing */
-    margin-top: 25vh;
-    margin-left: 7.5vw;
+    margin-left: 7.5%;
     /* Font Settings */
     font-family: "Work Sans";
     font-weight: 600;
     color: #fff;
 }
+#minefob-page-header {
+    /* Sizing */
+    width: 100%;
+}
 #minefob-page-title {
     /* Spacing */
-    margin-left: -0.2vw;
-    margin-bottom: -2%;
+    margin-left: -0.4vw;
+    margin-bottom: -1.5vh;
     /* Font Settings */
     font-size: 4em;
 }
@@ -33,9 +38,14 @@
 #minefob-page-content-about {
     /* Spacing */
     margin-top: 0.5vh;
-    text-align: justify;
+    /* Font Settigns */
+    text-align:justify;
+    text-justify: newspaper;
 }
 #minefob-page-links {
+    flex-direction: row;
+    /* Sizing */
+    width: 100%;
     /* Spacing */
     margin-top: 4vh;
 }

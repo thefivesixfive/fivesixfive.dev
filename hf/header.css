@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     /* Coloring */
-    background-color: #fff;
+    background-color: var(--nb-bg);
 }
 .nb-link {
     display: block;

@@ -39,24 +39,39 @@
     </head>
     <!-- Body Content -->
     <body>
-        <!-- Main Div -->
         <div class="page" id="dhstixv1">
-            <img id="dhstixv1-page-background" src="background/background.png">
-            <div id="dhstixv1-page">
-                <div id="dhstixv1-page-header">
-                    <p id="dhstixv1-page-title">DHStix</p>
-                    <p id="dhstixv1-page-subtitle">An esolang for programmers who hate themselves</p>
+            <div id="dhstixv1-content">
+                <div class="dhstixv1-bar centered">
+                    <div class="dhstixv1-bar-content centered">
+                        <p id="dhstixv1-title">dhstix v1</p>
+                    </div>
                 </div>
-                <div id="dhstixv1-page-content">
-                    <p id="dhstixv1-page-content-about"></p>
-                    <script>
-                        $(function(){ $("#dhstixv1-page-content-about").load("dhstixv1-about.html") });
-                    </script>
+                <div class="dhstixv1-bar centered">
+                    <div class="dhstixv1-bar-content centered" id="blank">
+                        <p id="dhstixv1-quote"></p>
+                        <script>
+                            $(function(){ $("#dhstixv1-quote").load("text/dhstixv1-quote.html") });
+                        </script>
+                    </div>
                 </div>
-                <div id="dhstixv1-page-links">
-                    <a href="https://github.com/thefivesixfive/dhstix" target="_blank" rel="noopener noreferrer">
-                        GitHub Page
-                    </a>
+                <div class="dhstixv1-bar centered ">
+                    <div class="dhstixv1-bar-content"></div>
+                </div>
+                <div class="dhstixv1-bar centered ">
+                    <div class="dhstixv1-bar-content centered"></div>
+                </div>
+                <div class="dhstixv1-bar centered ">
+                    <div class="dhstixv1-bar-content centered" id="about">
+                        <p id="dhstixv1-about"></p>
+                        <script>
+                            $(function(){ $("#dhstixv1-about").load("text/dhstixv1-about.html") });
+                        </script>
+                        <div id="dhstixv1-links">
+                            <a href="https://github.com/thefivesixfive/dhstix" rel="noopener noreferrer" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

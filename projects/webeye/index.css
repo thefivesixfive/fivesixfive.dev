@@ -36,8 +36,12 @@
     left: 0;
     top: 5vh;
     /* Sizing */
-    width: 75vw;
-    height: 95vh;
+    width: 75%;
+    height: 95%;
+}
+#webeye-demo-img img {
+    /* Sizing */
+    width: 90%;
 }
 #webeye-body-links {
     flex-direction: column;
