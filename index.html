@@ -13,16 +13,8 @@
         </script>
         
         <!-- Header + Footer -->
-        <div id="nb" class="centered"></div>
-        <div id="ft" class="centered"></div>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script>
-            $(function(){
-                $("#nb").load("/hf/header.html");
-                $("#ft").load("/hf/footer.html");
-            });
-        </script>
-
+        
         <!-- Connect to CSS + JS -->
         <link rel="stylesheet" href="/css.css">
         <link rel="stylesheet" href="/hf/header.css">
@@ -39,34 +31,53 @@
     </head>
     <!-- Body Content -->
     <body>
+        <div id="nb" class="centered"></div>
         <!-- Front Page -->
         <div class="page" id="fp">
             <div id="fp-content">
-                <div class="fp-section centered">
-                    <div class="fp-section-content centered" id="socials">
-                        <img src="img/fp/socials.png">
-                        <a href="/socials/">Socials</a>
-                    </div>
+                <div class="fp-content-half centered" id="fp-content-left">
+                    <p id="fp-title">greetings, fivesixfive here</p>
+                    <p>scroll to start exploring</p>
                 </div>
-                <div class="fp-section centered">
-                    <div class="fp-section-content centered" id="projects">
-                        <img src="img/fp/keyboard.png">
-                        <a href="/projects/">Projects</a>
-                    </div>
-                </div>
-                <div class="fp-section centered">
-                    <div class="fp-section-content centered" id="about">
-                        <img src="img/other_selife.png">
-                        <a href="/about/">About</a>
-                    </div>
-                </div>
-                <div class="fp-section centered">
-                    <div class="fp-section-content centered" id="donate">
-                        <img src="img/fp/wallet.png">
-                        <a href="/donate/">Donate</a>
-                    </div>
+                <div class="fp-content-half centered" id="fp-content-right">
+                    <img id="fp-logo" src="/img/Lisa/Lisa-Icon-Full_Color-Large.png">
                 </div>
             </div>
         </div>
+        <div class="page" id="lp">
+            <div id="lp-content">
+                <a href="/socials/" rel="noopener noreferrer" class="lp-section centered">
+                    <div class="lp-section-content centered" id="socials">
+                        <img src="img/lp/socials.png">
+                        <p>Socials</p>
+                    </div>
+                </a>
+                <a href="/projects/" rel="noopener noreferrer" class="lp-section centered">
+                    <div class="lp-section-content centered" id="projects">
+                        <img src="img/lp/keyboard.png">
+                        <p>Projects</p>
+                    </div>
+                </a>
+                <a href="/about/" rel="noopener noreferrer" class="lp-section centered">
+                    <div class="lp-section-content centered" id="about">
+                        <img src="img/other_selife.png">
+                        <p>About</p>
+                    </div>
+                </a>
+                <a href="/donate/" rel="noopener noreferrer" class="lp-section centered">
+                    <div class="lp-section-content centered" id="donate">
+                        <img src="img/lp/money.png">
+                        <p>Donate</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="ft" class="centered"></div>
+        <script>
+            $(function(){
+                $("#nb").load("/hf/header.html");
+                $("#ft").load("/hf/footer.html");
+            });
+        </script>
     </body>
 </html>

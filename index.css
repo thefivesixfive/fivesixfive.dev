@@ -1,12 +1,35 @@
 :root {
-    --transition-time: 0.75s;
+    --transition-time: 0.5s;
 }
-#fp {
-    width: 100vw;
-    /* background-color: #FED4F8; */
-    background-color: #fff0;
+
+#fp-content {
+    height: 100%;
+    background-color: #ffd4f9;
 }
-.fp-section {
+.fp-content-half {
+    box-sizing: border-box;
+    /* Display */
+    display: inline-flex !important;
+    float: left;
+    /* Sizing */
+    width: 50vw;
+    height: 100vh;
+}
+#fp-logo {
+    /* Sizing */
+    width: 75%;
+}
+#fp-content-left {
+    /* Sizing */
+    padding: 5%;
+}
+#fp-title {
+    /* Font Settings */
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-size: 3em;
+}
+.lp-section {
     flex-direction: column;
     overflow: hidden;
     /* Display */
@@ -16,46 +39,50 @@
     width: 25vw;
     height: 100vh;
 }
-.fp-section-content {
+.lp-section-content {
     position: relative;
     /* Sizing */
     width: 100%;
     height: 100%;
 }
-.fp-section-content a {
+.lp-section-content p {
     position: absolute;
+    bottom: 0;
+    /* Sizing */
+    width: 100%;
+    padding: 2vh 0;
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     text-decoration: none;
+    text-align: center;
     /* Coloring */
-    background-color: #ffd4f999;
-    color: #ffff;
-    /* Spacing */
-    padding: 3%;
+    background-color: #ffff;
+    color: #444f;
     /* Animation */
-    transition: font-size var(--transition-time), background-color var(--transition-time);
+    transition: font-size var(--transition-time), background-color var(--transition-time), padding var(--transition-time);
 }
-.fp-section-content img {
+.lp-section-content img {
     position: relative;
     /* Sizing */
     height: 110%;
     /* Filter */
-    filter: grayscale(50%);
+    filter: grayscale(60%);
     /* Animation */
     transition: filter var(--transition-time), height var(--transition-time);
 }
-.fp-section-content#projects img {
+.lp-section-content#projects img {
     left: -70%;
 }
-.fp-section-content:hover>a {
+.lp-section-content:hover>p {
     /* Font Settings */
-    background-color: #ffd4f9cc;
-    font-size: 3.3em;
+    background-color: #ffd4f9;
+    padding: 4vh 0;
+    /* font-size: 4em; */
 }
-.fp-section-content:hover>img {
+.lp-section-content:hover>img {
     /* Sizing */
     height: 130%;
     /* Filter */
-    filter: grayscale(0%)
+    filter: grayscale(0%);
 }
