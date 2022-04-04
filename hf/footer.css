@@ -11,7 +11,16 @@
 }*/
 
 #ft {
-    position: relative;
-    bttom: 0;
-    z-index: 2;
+    /* Coloring */
+    background-color: var(--text-color);
+    color: #ffff;
+    /* Sizing */
+    height: 5vh;
+    /* Font Settings */
+    font-family: "DM Mono", monospace;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+#ft-content {
+    margin-right: 25%;
 }

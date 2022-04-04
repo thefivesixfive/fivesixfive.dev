@@ -63,7 +63,8 @@
     transition: font-size var(--transition-time), background-color var(--transition-time), padding var(--transition-time);
 }
 .lp-section-content img {
-    position: relative;
+    /* Positioning */
+    position: static;
     /* Sizing */
     height: 110%;
     /* Filter */
