@@ -18,9 +18,8 @@
 }
 /* Fit to Entire Page */
 body {
-    position: relative;
     height: 100%;
-    max-width: 100%;
+    min-width: 100vw;
     overflow-x: hidden;
 }
 /* Centered */

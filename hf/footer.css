@@ -1,26 +1,26 @@
-/* Copyright 
 #ft {
-    z-index: 2;
-    /* Positioning *
-    position: fixed;
-    bottom: 1vh;
-    width: 100vw;
-    /* Font Settings *
-    font-family: "DM Mono", monospace;
-    font-size: 0.75em;
-}*/
-
-#ft {
-    /* Coloring */
-    background-color: var(--text-color);
-    color: #ffff;
-    /* Sizing */
-    height: 5vh;
     /* Font Settings */
     font-family: "DM Mono", monospace;
-    font-size: 0.8em;
     font-weight: 500;
+    font-size: 0.8em;
+    /* Coloring */
+    color: #ffff;
+    background-color: #444f;
+    /* Position */
+    position: absolute;
+    /* Sizing */
+    height: 10vh;
+    width: 100%;
 }
-#ft-content {
-    margin-right: 25%;
+#ft #left {
+    width:47vw;
+    justify-content: left;
+}
+#ft #right {
+    width:47vw;
+    justify-content: right;
+}
+#ft #right img {
+    height: 9vh;
+    image-rendering: crisp-edges;
 }

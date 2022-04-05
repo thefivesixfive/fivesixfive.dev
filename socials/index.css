@@ -1,0 +1,32 @@
+#socials {
+    /* Font Settings */
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    background-color: #ffff;
+    color: #444f;
+}
+#socials-content {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+#socials-banner {
+    flex-direction: column;
+}
+#socials-banner p {
+    font-size: 3em;
+    padding-top: 3vh;
+}
+#socials-banner img {
+    width: 80%;
+}
+#socials-links a {
+    /* Font Settings */
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-size: 1.25em;
+    /* Coloring */
+    color: #444f;
+    /* Spacing */
+    padding: 0 0.5vw;
+}
