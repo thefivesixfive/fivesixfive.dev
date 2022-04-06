@@ -1,0 +1,76 @@
+#projects-content {
+    /* Sizing */
+    height: 100%;
+    width: 100%;
+}
+#projects-body {
+    float: left;;
+    /* Spacing */
+    padding: 20vh 2vw 0 5vw;
+    /* Sizing */
+    box-sizing: border-box;
+    height: 100%;
+    width: 55%;
+    /* Font Settings */
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    /* Coloring */
+    color: #444f;
+}
+#projects-image {
+    /* Sizing */
+    box-sizing: border-box;
+    height: 100%;
+    width: 45%;
+}
+#projects-image img {
+    /* Sizing */
+    width: 75%;
+}
+#projects-title p {
+    font-size: 3em;
+}
+
+#projects-list {
+    padding: 3vh 0;
+}
+.projects-list-project {
+    position: relative;
+    line-height: 4vh;
+}
+.projects-list-project a {
+    /* Font Settings */
+    text-decoration: none;
+    color: #444f;
+    /* Spacing */
+    align-items: baseline;
+    justify-content: left;
+    margin: 0 0 0 0;
+    /* Animation */
+    transition: margin 0.25s;
+}
+.projects-list-project-arrow {
+    /* Font Settings */
+    font-size: 1.4em;
+    color: #ffff;
+    /* Positioning */
+    position: absolute;
+    left: -1.5vw;
+    /* Animation */
+    transition: color 0.25s;
+}
+.projects-list-project-title {
+    /* Font Settings */
+    font-size: 1.4em;
+    white-space: nowrap;
+    /* Sizing */
+    margin: 0 0.25vw 0 0;
+    width: 30%;
+}
+.projects-list-project:hover a {
+    margin: 0 0 0 0.25vw;
+}
+.projects-list-project:hover .projects-list-project-arrow {
+    /* Font Settings */
+    color: #444f;
+}

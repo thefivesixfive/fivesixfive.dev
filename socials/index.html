@@ -14,6 +14,12 @@
         
         <!-- Header + Footer -->
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function(){
+                $("#nb").load("/hf/header.html");
+                $("#ft").load("/hf/footer.html");
+            });
+        </script>
         
         <!-- Connect to CSS + JS -->
         <link rel="stylesheet" href="/css.css">
@@ -64,11 +70,5 @@
             </div>
         </div>
         <div id="ft" class="centered"></div>
-        <script>
-            $(function(){
-                $("#nb").load("/hf/header.html");
-                $("#ft").load("/hf/footer.html");
-            });
-        </script>
     </body>
 </html>

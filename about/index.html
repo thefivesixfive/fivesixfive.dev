@@ -13,7 +13,14 @@
             gtag('js', new Date());
             gtag('config', 'G-FRDZMD2ED3');
         </script>
+        <!-- Header + Footer  -->
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function(){
+                $("#nb").load("/hf/header.html");
+                $("#ft").load("/hf/footer.html");
+            });
+        </script>
         <!-- Connect to CSS + JS -->
         <link rel="stylesheet" href="/css.css">
         <link rel="stylesheet" href="/hf/header.css">
@@ -31,6 +38,7 @@
     </head>
     <!-- Body Content -->
     <body>
+        <div id="nb" class="centered"></div>
         <!-- Front Page -->
         <div class="page" id="about">
             <div class="ab-half centered" id="ab-left">
@@ -48,13 +56,6 @@
             </div>
         </div>
         <!-- Header + Footer -->
-        <div id="nb" class="centered"></div>
         <div id="ft" class="centered"></div>
-        <script>
-            $(function(){
-                $("#nb").load("/hf/header.html");
-                $("#ft").load("/hf/footer.html");
-            });
-        </script>
     </body>
 </html>

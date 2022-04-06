@@ -14,6 +14,12 @@
         
         <!-- Header + Footer -->
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function(){
+                $("#nb").load("/hf/header.html");
+                $("#ft").load("/hf/footer.html");
+            });
+        </script>
         
         <!-- Connect to CSS + JS -->
         <link rel="stylesheet" href="/css.css">
@@ -32,9 +38,18 @@
     <!-- Body Content -->
     <body>
         <div id="nb" class="centered"></div>
-        <div class="page"></div>
-        
-        <div class="page" id="lp">
+        <div class="page" id="fp">
+            <div id="fp-content" class="centered">
+                <div id="fp-image" class="centered">
+                    <img src="/img/Lisa/Lisa-Icon-Full_Color-Large.png">
+                </div>
+                <div id="fp-body" class="centered">
+                    <p id="greetings">greetings</p>
+                    <p id="fivesixfive-here">fivesixfive here</p>
+                </div>
+            </div>
+        </div>
+        <!--<div class="page" id="lp">
             <div id="lp-content">
                 <a href="/socials/" rel="noopener noreferrer" class="lp-section centered">
                     <div class="lp-section-content centered" id="socials">
@@ -61,13 +76,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div>-->
         <div id="ft" class="centered"></div>
-        <script>
-            $(function(){
-                $("#nb").load("/hf/header.html");
-                $("#ft").load("/hf/footer.html");
-            });
-        </script>
     </body>
 </html>
