@@ -10,6 +10,10 @@
 
     /* Homepage */
     --bg: var(--pink);
+
+    /* Media Query Sizing */
+    --small-page: 1575px;
+    --phone-page: 1000px;
 }
 /* Smoothing */
 * {
