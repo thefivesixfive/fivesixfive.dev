@@ -1,5 +1,5 @@
 #nb {
-    z-index: 2;
+    z-index: 3;
     /* Sizing */
     width: 100vw;
     /* Positioning */
@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     /* Coloring */
-    background-color: var(--nb-bg);
+    background-color: #fff;
 }
 .nb-link {
     display: block;
@@ -45,6 +45,7 @@
 }
 .nb-dropdown {
     position: relative;
+    cursor: pointer;
 }
 .nb-dropdown-container {
     display: none;
@@ -56,7 +57,7 @@
     left: 0;
     top: 100%;
     /* Coloring */
-    background-color: var(--nb-bg)
+    background-color: #fff;
 }
 .nb-dropdown:hover .nb-dropdown-container {
     display: block;
