@@ -1,16 +1,5 @@
 /* Variables */
 :root {
-    /* Constants */
-    --text-color: #444;
-    --pink: #fed4f8;
-
-    /* Navbar */
-    --nb-bg: #ffff;
-    --nb-text-color:var(--text-color);
-
-    /* Homepage */
-    --bg: var(--pink);
-
     /* Media Query Sizing */
     --small-page: 1575px;
     --phone-page: 1000px;
