@@ -1,139 +1,105 @@
 :root {
     --transition-time: 0.5s;
 }
-@keyframes textUp {
-    0% {
-        transform: translateY(0vh);
-    }
-    100% {
-        transform: translateY(-17vh);
-    }
-}
-@keyframes textDown {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(17vh);
-    }
-}
 #fp-content {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     /* Positioning */
-    position: relative;
+    position: absolute;
     /* Sizing */
     height: 100%;
     width: 100%;
     /* Coloring */
-    background-color: #ffd4f9;
-}
-#fp-image {
-    /* Sizing */
-    width: 50%;
-}
-#fp-image img {
-    z-index: 2;
-    /* Sizing */
-    width: 50%;
+    color: #000;
+    background-color: #fff;
 }
 #fp-body {
-    flex-direction: column;
     /* Positioning */
     position: absolute;
-    /* Font Settings */
-    font-family: "DM Mono", monospace;
-    font-size: 2em;
-    font-weight: 500;
-    color: #444f;
-}
-#greetings {
-    transform: translateY(-17vh);
-    /* Animation */
-    animation: 2s ease-out 0s 1 textUp;
-}
-#fivesixfive-here {
-    transform: translateY(17vh);
-    /* Animation */
-    animation: 2s ease-out 0s 1 textDown;
-}
-.fp-content-half {
-    box-sizing: border-box;
-    /* Display */
-    display: inline-flex !important;
-    float: left;
-    /* Sizing */
-    width: 50vw;
-    height: 100vh;
-}
-#fp-logo {
-    /* Sizing */
-    width: 75%;
-}
-#fp-content-left {
-    /* Sizing */
-    padding: 5%;
-}
-#fp-title {
-    /* Font Settings */
-    font-family: "DM Mono", monospace;
-    font-weight: 500;
-    font-size: 3em;
-}
-.lp-section {
-    flex-direction: column;
-    overflow: hidden;
-    /* Display */
-    float: left;
-    display: inline-flex !important;
-    /* Sizing */
-    width: 25vw;
-    height: 100vh;
-}
-.lp-section-content {
-    position: relative;
+    top: 10%;
     /* Sizing */
     width: 100%;
-    height: 100%;
 }
-.lp-section-content p {
+#fp-body p {
+    width: 100%;
+}
+#fp-body-content {
+    flex-wrap: wrap;
+    width: 500px
+}
+#fp-body #greetings {
+    /* Font Settings */
+    font-family: "DM Sans", sans-serif;
+    font-size: 400%;
+    font-weight: 600;
+    line-height: 110%;
+}
+#fp-body #desc {
+    /* Font Settings */
+    font-family: "DM Sans", sans-serif;
+    font-size: 120%;
+}
+#fp-image {
+    /* Positioning */
     position: absolute;
     bottom: 0;
     /* Sizing */
+    height: 65%;
+    width: auto;
+}
+#fp-image img {
+    object-fit: contain;
+    /* Sizing */;
+    height: 100%;
+    width: auto;
+}
+
+.ab-content-half {
+    /* Sizing */
+    width: 50%;
+    height: 100%;
+}
+#ab {
+    /* background-color: #ffd4f9; */
+    background-color: #000;
+}
+#ab-content {
+    height: 100%;
+    color: #fff;
+}
+#ab-body {
+    /* Sizing */
+    height: 100%;
+    padding: 5%;
+}
+#ab-body-content {
+    flex-wrap: wrap;
+}
+#ab-body-content #title {
+    /* Positioning */
+    text-align: left;
+    /* Sizing */
     width: 100%;
-    padding: 2vh 0;
+    height: 10%;
     /* Font Settings */
     font-family: "DM Sans", sans-serif;
-    font-size: 2.5em;
-    text-decoration: none;
-    text-align: center;
-    /* Coloring */
-    background-color: #ffff;
-    color: #444f;
-    /* Animation */
-    transition: font-size var(--transition-time), background-color var(--transition-time), padding var(--transition-time);
+    font-size: 300%;
+    font-weight: 600;
 }
-.lp-section-content img {
-    /* Positioning */
-    position: static;
-    /* Sizing */
-    height: 110%;
-    /* Filter */
-    filter: grayscale(60%);
-    /* Animation */
-    transition: filter var(--transition-time), height var(--transition-time);
-}
-.lp-section-content#projects img {
-    left: -70%;
-}
-.lp-section-content:hover>p {
+#ab-body-content #content {
     /* Font Settings */
-    background-color: #ffd4f9;
-    padding: 4vh 0;
-    /* font-size: 4em; */
+    font-family: "DM Sans", sans-serif;
+    font-size: 120%;
+    line-height: 140%;
+    font-weight: 500;
+    text-align: justify;
 }
-.lp-section-content:hover>img {
-    /* Sizing */
-    height: 130%;
-    /* Filter */
-    filter: grayscale(0%);
+#ab-image {
+    /* Positioning */
+    position: relative;
+}
+#ab-image img {
+    position: absolute;
+    height: 90%;
+    bottom: 0;
 }

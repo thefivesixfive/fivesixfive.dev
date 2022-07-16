@@ -7,14 +7,15 @@
     top: 0;
     left: 0;
     /* Coloring */
-    background-color: #fff;
+    background-color: #000;
 }
 .nb-link {
+    /* Display */
     display: block;
     /* Sizing */
     padding: 1.5vh 2vw;
     /* Coloring */
-    color: var(--nb-text-color);
+    color: #fff;
 }
 .nb-link a {
     text-align: center;
@@ -57,7 +58,7 @@
     left: 0;
     top: 100%;
     /* Coloring */
-    background-color: #fff;
+    background-color: #000;
 }
 .nb-dropdown:hover .nb-dropdown-container {
     display: block;
